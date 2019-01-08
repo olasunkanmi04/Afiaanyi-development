@@ -1,0 +1,26 @@
+{
+  "name": "tradex-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.23.5",
+    "chart.js": "^2.7.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.3.1",
+    "tether": "^1.4.3"
+  },
+  "devDependencies": {
+    "gulp-install": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
