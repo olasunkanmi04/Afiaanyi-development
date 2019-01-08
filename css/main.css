@@ -644,12 +644,15 @@ body {
     height: 100%;
     overflow: hidden;
     position: relative; }
+    .hero__background-img {
+      height: 100vh !important; }
   .hero__content {
     width: 60%;
-    top: 193px;
     position: absolute;
     left: 196px;
-    transition: .5s; }
+    transition: .5s;
+    top: 50%;
+    transform: translateY(-50%); }
     .hero__content-logo {
       width: 200px;
       height: 160px;
@@ -755,29 +758,32 @@ body {
         color: #E6B712; }
 
 .interest {
-  margin-top: 63px; }
+  margin-top: 43px; }
   .interest__container {
     margin: 0 77px; }
   .interest__head {
     text-align: center;
-    margin-bottom: 69px; }
+    margin-bottom: 43px; }
     .interest__head-text {
-      font-size: 36px;
+      font-size: 30px;
       color: #000000;
       font-weight: 500;
       margin-bottom: 9px; }
     .interest__head-sub {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: normal;
       color: #000000; }
   .interest__third {
-    height: 475px; }
+    height: 475px;
+    width: 400px;
+    margin-right: 42px; }
   .interest__individual {
     height: 475px;
     width: 349px;
     box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
     border-radius: 4px;
-    position: relative; }
+    position: relative;
+    margin-right: 42px; }
     .interest__individual-third {
       width: 100%;
       height: 210px;
@@ -788,6 +794,12 @@ body {
       background: rgba(0, 0, 0, 0.3);
       height: 100%;
       border-radius: 4px; }
+      .interest__individual-cover-img {
+        width: 100px;
+        height: 100px !important;
+        position: absolute;
+        top: -6px;
+        right: 0; }
     .interest__individual-restauarant {
       background: url("../images/restaurants.png") no-repeat;
       background-position-x: -364px;
@@ -840,7 +852,7 @@ body {
 
 .place-ad {
   height: 230px;
-  margin-top: 119px;
+  margin-top: 84px;
   margin-bottom: 46px; }
 
 .best-rated__container {
@@ -852,12 +864,15 @@ body {
 
 .best-rated__individual {
   height: 407px; }
-  .best-rated__individual-image-wrapper {
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
-    border-radius: 4px 4px 0px 0px; }
+  .best-rated__individual-image {
+    width: 100%;
+    height: 100%; }
+    .best-rated__individual-image-wrapper {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
+      border-radius: 4px 4px 0px 0px; }
   .best-rated__individual-info {
     margin-bottom: 13px; }
     .best-rated__individual-info-wrapper {
@@ -865,13 +880,15 @@ body {
       box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
       border-radius: 0px 0px 4px 4px;
       max-height: 207px;
-      padding: 28px 26px;
-      position: relative; }
+      padding: 24px 20px;
+      position: relative;
+      display: inline-flex;
+      width: 100%; }
     .best-rated__individual-info svg {
       margin-right: 13px; }
     .best-rated__individual-info span {
       vertical-align: middle;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: normal;
       color: #000000; }
     .best-rated__individual-info-name {
@@ -879,7 +896,6 @@ body {
       font-weight: 500 !important; }
     .best-rated__individual-info-location {
       display: inline-block;
-      width: 195px;
       vertical-align: middle; }
 
 .best-rated__rate {
@@ -887,9 +903,7 @@ body {
   border-radius: 4px;
   height: 30px;
   width: 50px;
-  position: absolute;
-  top: 28px;
-  right: 26px; }
+  margin-left: auto; }
   .best-rated__rate p {
     font-weight: 600;
     color: #ffffff;
@@ -1205,9 +1219,30 @@ a:hover {
   .icon:last-child {
     fill: #C4C4C4; }
 
-@media screen and (max-width: 1040px) {
+.slick-dots li button:before {
+  content: " " !important; }
+
+.slick-dots li {
+  border: 3px solid #E6B712 !important;
+  border-radius: 50% !important; }
+
+.slick-dots li.slick-active button:before {
+  content: "." !important;
+  font-size: 160px !important;
+  color: rgba(230, 183, 18, 0.5) !important;
+  margin-left: -12px;
+  margin-top: -51px; }
+
+.slick-dots {
+  bottom: -36px !important; }
+
+@media screen and (max-width: 1024px) {
   .hero__content {
-    width: 70%; } }
+    width: 70%; }
+  .hero {
+    height: 609px; }
+    .hero__background-img {
+      height: 609px !important; } }
 
 @media screen and (max-width: 992px) {
   .hero__content {
@@ -1246,6 +1281,11 @@ a:hover {
   .hero__search-companies {
     width: 90%;
     transition: .5s; } }
+
+@media screen and (max-width: 670px) {
+  .interest__container,
+  .best-rated__container {
+    margin: 0 3px; } }
 
 @media screen and (max-width: 600px) {
   .hero__content {

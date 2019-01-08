@@ -8,14 +8,19 @@
         overflow: hidden;
         position: relative;
 
+        &-img {
+            height: 100vh !important;
+        }
+
     }
 
     &__content {
         width: 60%;
-        top: 193px;
         position: absolute;
         left: 196px;
         transition: .5s;
+        top: 50%;
+        transform: translateY(-50%);
 
         &-logo {
             width: 200px;
@@ -174,7 +179,7 @@
 }
 
 .interest {
-    margin-top: 63px;
+    margin-top: 43px;
 
     &__container {
         margin: 0 77px;
@@ -182,17 +187,17 @@
 
     &__head {
         text-align: center;
-        margin-bottom: 69px;
+        margin-bottom: 43px;
 
         &-text {
-            font-size: 36px;
+            font-size: 30px;
             color: #000000;
             font-weight: 500;
             margin-bottom: 9px;
         }
 
         &-sub {
-            font-size: 24px;
+            font-size: 18px;
             font-weight: normal;
             color: #000000;
         }
@@ -200,6 +205,8 @@
 
     &__third {
         height: 475px;
+        width: 400px;
+        margin-right: 42px;
     }
 
     &__individual {
@@ -208,6 +215,7 @@
         box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
         border-radius: 4px;
         position: relative;
+        margin-right: 42px;
 
 
         &-third {
@@ -222,6 +230,15 @@
             background: rgba(0, 0, 0, 0.3);
             height: 100%;
             border-radius: 4px;
+
+            &-img {
+                width: 100px;
+                height: 100px !important;
+                position: absolute;
+                top: -6px;
+                right: 0;
+
+            }
         }
 
         &-restauarant {
@@ -303,7 +320,7 @@
 
 .place-ad {
     height: 230px;
-    margin-top: 119px;
+    margin-top: 84px;
     margin-bottom: 46px;
 }
 
@@ -321,6 +338,9 @@
         height: 407px;
 
         &-image {
+            width: 100%;
+            height: 100%;
+
             &-wrapper {
                 height: 200px;
                 position: relative;
@@ -338,8 +358,11 @@
                 box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
                 border-radius: 0px 0px 4px 4px;
                 max-height: 207px;
-                padding: 28px 26px;
+                padding: 24px 20px;
                 position: relative;
+                display: inline-flex;
+                width: 100%;
+
             }
 
             svg {
@@ -348,7 +371,7 @@
 
             span {
                 vertical-align: middle;
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: normal;
                 color: #000000;
 
@@ -361,7 +384,6 @@
 
             &-location {
                 display: inline-block;
-                width: 195px;
                 vertical-align: middle;
             }
         }
@@ -372,9 +394,10 @@
         border-radius: 4px;
         height: 30px;
         width: 50px;
-        position: absolute;
-        top: 28px;
-        right: 26px;
+        margin-left: auto;
+        // position: absolute;
+        // top: 28px;
+        // right: 26px;
 
         p {
             font-weight: 600;
@@ -824,10 +847,39 @@ a {
     }
 }
 
+.slick-dots li button:before {
+    content: " " !important;
+}
 
-@media screen and (max-width: 1040px) {
+.slick-dots li {
+    border: 3px solid #E6B712 !important;
+    border-radius: 50% !important;
+}
+
+.slick-dots li.slick-active button:before {
+    content: "." !important;
+    font-size: 160px !important;
+    color: rgba(230, 183, 18, 0.5) !important;
+    margin-left: -12px;
+    margin-top: -51px;
+}
+
+.slick-dots {
+    bottom: -36px !important;
+}
+
+
+@media screen and (max-width: 1024px) {
     .hero__content {
         width: 70%;
+    }
+
+    .hero {
+        height: 609px;
+
+        &__background-img {
+            height: 609px !important;
+        }
     }
 }
 
@@ -899,12 +951,21 @@ a {
     }
 }
 
+@media screen and (max-width: 670px) {
+
+    .interest__container,
+    .best-rated__container {
+        margin: 0 3px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .hero__content {
         left: 18px;
         transition: .5s;
         width: 82%;
     }
+
 }
 
 @media screen and (max-width:564px) {
