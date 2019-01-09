@@ -1203,13 +1203,13 @@ body {
     color: #E6B712;
     font-size: 12px;
     font-weight: 600;
-    margin-bottom: 19px; }
+    margin-bottom: 14px; }
   .footer__app-store {
     display: inline-block !important;
     width: 120px; }
   .footer a {
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     font-size: 12px;
     font-weight: 500;
     color: #ffffff; }
