@@ -916,7 +916,7 @@ body {
   width: 100%;
   background: url("../images/promote-background2.png") no-repeat;
   background-size: cover;
-  padding: 31.5px 0;
+  padding: 31.5px 18px;
   margin-bottom: 55px;
   margin-top: 62px; }
   .promote__container {
@@ -1247,7 +1247,10 @@ a:hover {
 @media screen and (max-width: 992px) {
   .hero__content {
     left: 72px;
-    transition: .5s; } }
+    transition: .5s; }
+  .promote {
+    margin-top: 10px;
+    margin-bottom: 40px; } }
 
 @media screen and (max-width: 1348px) and (min-width: 990px) {
   .hero__tab-wrapper img {
@@ -1260,6 +1263,13 @@ a:hover {
     height: 18px; }
   .hero__tab {
     padding: 34px 10px; } }
+
+@media screen and (max-width: 842px) {
+  .promote__info {
+    width: 350px;
+    transition: .5s; }
+  .promote__info-text {
+    font-size: 28px; } }
 
 @media screen and (max-width: 834px) {
   .hero__content-heading {
@@ -1282,10 +1292,27 @@ a:hover {
     width: 90%;
     transition: .5s; } }
 
+@media screen and (max-width: 694px) {
+  .promote__image-wrapper {
+    width: 270px; } }
+
 @media screen and (max-width: 670px) {
   .interest__container,
   .best-rated__container {
     margin: 0 3px; } }
+
+@media screen and (max-width: 658px) {
+  .promote__image-wrapper {
+    width: 200px; }
+  .promote__info {
+    width: 300px;
+    transition: .5s; }
+  .promote__info-text {
+    font-size: 24px; }
+  .promote__info-btn {
+    font-size: 14px;
+    padding: 14px;
+    transition: .5s; } }
 
 @media screen and (max-width: 600px) {
   .hero__content {
@@ -1302,6 +1329,15 @@ a:hover {
     padding: 20px 6px; }
   .hero__tabs-wrapper {
     width: 100%; } }
+
+@media screen and (max-width: 554px) {
+  .promote {
+    height: 200px; }
+  .promote__info {
+    width: 100%; }
+  .promote__image-wrapper {
+    display: none;
+    transition: .5s; } }
 
 @media screen and (max-width: 480px) {
   .hero__content-heading,
