@@ -1158,6 +1158,8 @@ body {
     color: #000000;
     font-size: 12px;
     line-height: 24px; }
+    .newsletter__info-getupdate {
+      font-style: italic; }
   .newsletter__input {
     height: 37px;
     width: 80%;
@@ -1211,11 +1213,14 @@ body {
     margin-right: 20px; }
   .footer__social a {
     display: inline-block; }
+  .footer__states {
+    margin-left: 15px; }
   .footer__copyright {
     color: #FFFFFF;
     font-size: 12px;
     font-weight: 500;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: 15px; }
   .footer__design {
     position: absolute;
     bottom: -60px;
