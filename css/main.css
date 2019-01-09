@@ -863,7 +863,9 @@ body {
   right: 0; }
 
 .best-rated__individual {
-  height: 407px; }
+  height: 407px;
+  width: 320px;
+  margin-right: 38px; }
   .best-rated__individual-image {
     width: 100%;
     height: 100%; }
@@ -950,7 +952,6 @@ body {
     padding: 0 98px; }
   .community__individual {
     background-color: #ffffff;
-    box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
     border-radius: 4px;
     padding: 24px 16px;
     position: relative; }
@@ -1236,6 +1237,16 @@ a:hover {
 .slick-dots {
   bottom: -36px !important; }
 
+.slick-active.slick-center.community__individual {
+  z-index: 1;
+  box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
+  border-radius: 4px; }
+
+.slick-active.slick-center {
+  opacity: 1 !important;
+  margin: 0 -40px !important;
+  z-index: 10000; }
+
 @media screen and (max-width: 1024px) {
   .hero__content {
     width: 70%; }
@@ -1264,7 +1275,7 @@ a:hover {
   .hero__tab {
     padding: 34px 10px; } }
 
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 878px) {
   .promote__info {
     width: 350px;
     transition: .5s; }
@@ -1330,14 +1341,19 @@ a:hover {
   .hero__tabs-wrapper {
     width: 100%; } }
 
-@media screen and (max-width: 554px) {
+@media screen and (max-width: 548px) {
+  .promote__image-wrapper {
+    width: 200px; } }
+
+@media screen and (max-width: 540px) {
   .promote {
     height: 200px; }
-  .promote__info {
-    width: 100%; }
   .promote__image-wrapper {
-    display: none;
-    transition: .5s; } }
+    width: 115px; }
+  .promote__info-text {
+    font-size: 16px; }
+  .promote__info-btn {
+    font-size: 12px; } }
 
 @media screen and (max-width: 480px) {
   .hero__content-heading,
@@ -1352,6 +1368,10 @@ a:hover {
     margin-top: -29px;
     margin-left: -26px; } }
 
+@media screen and (max-width: 455px) {
+  .promote__info {
+    width: 237px; } }
+
 @media screen and (max-width: 415px) {
   .hero__tab-wrapper img {
     width: 15px;
@@ -1360,6 +1380,16 @@ a:hover {
     font-size: 12px; }
   .hero__tab-more span {
     font-size: 12px; } }
+
+@media screen and (max-width: 393px) {
+  .promote__info-btn {
+    padding: 8px; }
+  .promote__info-text {
+    margin-bottom: 10px; }
+  .promote__info {
+    width: 120px; }
+  .promote__container {
+    width: 100%; } }
 
 @media screen and (max-width: 375px) {
   .hero__content-heading,
@@ -1372,3 +1402,11 @@ a:hover {
 @media screen and (max-width: 356px) {
   .hero__content-about-seperator {
     margin: 0 20px; } }
+
+@media screen and (max-width: 277px) {
+  .promote__image-wrapper {
+    display: none !important; }
+  .promote__info {
+    width: 100%; }
+  .promote {
+    height: 130px; } }
