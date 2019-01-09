@@ -633,7 +633,13 @@ body {
 
 @media screen and (max-width: 992px) {
   .navbar__item {
-    border: none; } }
+    border: none; }
+  .responsive__nav-menu {
+    background: #E6B712;
+    text-align: center;
+    padding: 20px; }
+    .responsive__nav-menu li {
+      margin-bottom: 20px; } }
 
 /* MODULES */
 .hero {
@@ -1340,7 +1346,7 @@ a:hover {
 @media screen and (max-width: 670px) {
   .interest__container,
   .best-rated__container {
-    margin: 0 3px; } }
+    margin: 0 18px; } }
 
 @media screen and (max-width: 658px) {
   .promote__image-wrapper {

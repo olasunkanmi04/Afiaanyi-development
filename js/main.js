@@ -1,5 +1,7 @@
 $(window).scroll(function () {
     $('header').toggleClass('bg__scroll', $(this).scrollTop() > 100);
+    // $('.responsive__nav-menu').css('background-color', 'transparent', $(this).scrollTop() > 136);
+
 });
 
 $(document).ready(function () {
