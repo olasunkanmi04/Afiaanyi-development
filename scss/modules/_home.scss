@@ -237,6 +237,8 @@
         border-radius: 4px;
         position: relative;
         margin-right: 42px;
+        top: 0;
+        transition: top ease 0.5s;
 
 
         &-third {
@@ -245,6 +247,8 @@
             box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
             border-radius: 4px;
             position: relative;
+            top: 0;
+            transition: top ease 0.5s;
         }
 
         &-cover {
@@ -975,9 +979,10 @@ a {
     margin: auto -40px !important;
 }
 
-// .interest__individual:hover {
-//     transform: scale(1.0);
-// }
+.interest__individual:hover,
+.interest__individual-third:hover {
+    top: -20px;
+}
 
 @media screen and (max-width: 1024px) {
     .hero__content {
