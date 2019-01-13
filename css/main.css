@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* CORE */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -1288,6 +1289,23 @@ a:hover {
 
 .slick-dots .slick-active {
   background: rgba(230, 183, 18, 0.4); }
+
+.slick-prev:before,
+.slick-next:before {
+  color: #E6B712 !important;
+  font-size: 30px; }
+
+.slick-prev {
+  margin-left: 60px; }
+
+.slick-next {
+  margin-right: 60px; }
+
+.slick-prev:before {
+  content: '⭅'; }
+
+.slick-next:before {
+  content: '⭆'; }
 
 .slick-dots {
   bottom: -36px !important; }

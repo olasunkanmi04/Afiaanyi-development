@@ -937,6 +937,27 @@ a {
     }
 }
 
+.slick-prev:before,
+.slick-next:before {
+    color: #E6B712 !important;
+    font-size: 30px;
+}
+
+.slick-prev {
+    margin-left: 60px;
+}
+
+.slick-next {
+    margin-right: 60px;
+}
+
+.slick-prev:before {
+    content: '⭅';
+}
+
+.slick-next:before {
+    content: '⭆';
+}
 
 // .slick-dots li.slick-active button:before {
 //     content: "." !important;

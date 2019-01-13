@@ -21,7 +21,6 @@ $(document).ready(function () {
         centerMode: true,
         slidesToShow: 3,
         arrows: true,
-        autoplay: true,
         speed: 500,
         centerPadding: '60px',
         variableWidth: true,
