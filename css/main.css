@@ -599,13 +599,12 @@ body {
   .navbar__link {
     color: #ffffff !important;
     padding: 0 !important;
-    font-size: 14px; }
+    font-size: 12px; }
   .navbar__item {
-    padding: 0 35px;
-    border-right: 1px #ffffff solid; }
+    padding: 0 15px; }
   .navbar__create-account {
-    padding-left: 35px;
-    font-size: 14px; }
+    padding-left: 15px;
+    font-size: 12px; }
     .navbar__create-account-resp {
       margin-right: 8px; }
     .navbar__create-account a {
@@ -783,7 +782,8 @@ body {
     margin: 0 77px; }
   .interest__head {
     text-align: center;
-    margin-bottom: 43px; }
+    margin-bottom: 43px;
+    padding: 0 10px; }
     .interest__head-text {
       font-size: 30px;
       color: #000000;
@@ -1204,7 +1204,8 @@ body {
       top: 0;
       right: 0;
       width: 20%;
-      padding: 11px 11px 16px 16px;
+      text-align: center;
+      padding: 11px 0;
       cursor: pointer; }
 
 .footer {
@@ -1281,12 +1282,8 @@ a:hover {
   border: 3px solid #E6B712 !important;
   border-radius: 50% !important; }
 
-.slick-dots li.slick-active button:before {
-  content: "." !important;
-  font-size: 160px !important;
-  color: rgba(230, 183, 18, 0.5) !important;
-  margin-left: -12px;
-  margin-top: -51px; }
+.slick-dots .slick-active {
+  background: rgba(230, 183, 18, 0.4); }
 
 .slick-dots {
   bottom: -36px !important; }

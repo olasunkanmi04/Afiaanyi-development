@@ -208,6 +208,7 @@
     &__head {
         text-align: center;
         margin-bottom: 43px;
+        padding: 0 10px;
 
         &-text {
             font-size: 30px;
@@ -810,7 +811,8 @@
             top: 0;
             right: 0;
             width: 20%;
-            padding: 11px 11px 16px 16px;
+            text-align: center;
+            padding: 11px 0;
             cursor: pointer;
         }
     }
@@ -925,13 +927,20 @@ a {
     border-radius: 50% !important;
 }
 
-.slick-dots li.slick-active button:before {
-    content: "." !important;
-    font-size: 160px !important;
-    color: rgba(230, 183, 18, 0.5) !important;
-    margin-left: -12px;
-    margin-top: -51px;
+.slick-dots {
+    .slick-active {
+        background: rgba(#E6B712, 0.4);
+    }
 }
+
+
+// .slick-dots li.slick-active button:before {
+//     content: "." !important;
+//     font-size: 160px !important;
+//     color: rgba(230, 183, 18, 0.5) !important;
+//     margin-left: -12px;
+//     margin-top: -51px;
+// }
 
 .slick-dots {
     bottom: -36px !important;
@@ -965,6 +974,10 @@ a {
     opacity: 1 !important;
     margin: auto -40px !important;
 }
+
+// .interest__individual:hover {
+//     transform: scale(1.0);
+// }
 
 @media screen and (max-width: 1024px) {
     .hero__content {
