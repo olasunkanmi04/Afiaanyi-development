@@ -1327,12 +1327,12 @@ a:hover {
 
 @media screen and (max-width: 1348px) and (min-width: 990px) {
   .hero__tab-wrapper img {
-    width: 28px;
+    width: 20px;
     height: 18px; } }
 
 @media screen and (max-width: 945px) and (min-width: 768px) {
   .hero__tab-wrapper img {
-    width: 28px;
+    width: 20px;
     height: 18px; }
   .hero__tab {
     padding: 34px 10px; } }
