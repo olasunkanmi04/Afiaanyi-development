@@ -15,6 +15,7 @@ $(document).ready(function () {
         useTransform: true,
         arrows: false,
         dots: false,
+        centerMode: true,
     });
 
     $('.community__speaks').slick({

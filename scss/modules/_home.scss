@@ -30,7 +30,18 @@
 
         &-img {
             height: 100vh !important;
+
+            &-tab,
+            &-mobile {
+                display: none !important;
+            }
+
+            &-desktop {
+                display: block !important;
+            }
         }
+
+
 
     }
 
@@ -197,6 +208,10 @@
     }
 
 }
+
+// .hero__background-img-wrapper {
+//     height: 100vh !important;
+// }
 
 .interest {
     margin-top: 43px;
@@ -1102,6 +1117,10 @@ a {
     .interest__head-text {
         font-size: 24px;
     }
+
+    .hero__search-fields {
+        padding: 22px 15px;
+    }
 }
 
 @media screen and (max-width: 830px) {
@@ -1130,6 +1149,18 @@ a {
 
     .newsletter__info {
         font-size: 10px;
+    }
+
+    .hero__background-img {
+
+        &-desktop,
+        &-mobile {
+            display: none !important;
+        }
+
+        &-tab {
+            display: block !important;
+        }
     }
 }
 
@@ -1228,6 +1259,18 @@ a {
 @media screen and (max-width: 576px) {
     .newsletter__get-latest {
         padding-left: 0 !important;
+    }
+
+    .hero__background-img {
+
+        &-desktop,
+        &-tab {
+            display: none !important;
+        }
+
+        &-mobile {
+            display: block !important;
+        }
     }
 }
 
@@ -1329,13 +1372,6 @@ a {
             font-size: 18px;
         }
     }
-
-    // .hero__content-logo {
-    //     width: 160px;
-    //     height: 120px;
-    //     margin-top: -29px;
-    //     margin-left: -26px;
-    // }
 }
 
 @media screen and (max-width: 455px) {
@@ -1384,6 +1420,14 @@ a {
             font-size: 16px;
         }
     }
+
+    .hero__content-about {
+        font-size: 16px;
+    }
+
+    .hero__search {
+        margin-top: 11px;
+    }
 }
 
 @media screen and (max-width: 393px) {
@@ -1396,7 +1440,7 @@ a {
     }
 
     .promote__info {
-        width: 120px;
+        width: 151px;
     }
 
     .promote__container {
@@ -1433,7 +1477,7 @@ a {
 
 }
 
-@media screen and (max-width: 277px) {
+@media screen and (max-width: 306px) {
     .promote__image-wrapper {
         display: none !important;
     }

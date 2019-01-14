@@ -666,6 +666,10 @@ body {
     position: relative; }
     .hero__background-img {
       height: 100vh !important; }
+      .hero__background-img-tab, .hero__background-img-mobile {
+        display: none !important; }
+      .hero__background-img-desktop {
+        display: block !important; }
   .hero__content {
     width: 60%;
     position: absolute;
@@ -1389,7 +1393,9 @@ a:hover {
   .hero__content-subhead {
     font-size: 30px; }
   .interest__head-text {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .hero__search-fields {
+    padding: 22px 15px; } }
 
 @media screen and (max-width: 830px) {
   .hero__search-btn {
@@ -1407,7 +1413,11 @@ a:hover {
     width: 10px !important;
     height: 10px !important; }
   .newsletter__info {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .hero__background-img-desktop, .hero__background-img-mobile {
+    display: none !important; }
+  .hero__background-img-tab {
+    display: block !important; } }
 
 @media screen and (max-width: 744px) {
   .hero__search-categories,
@@ -1469,7 +1479,11 @@ a:hover {
 
 @media screen and (max-width: 576px) {
   .newsletter__get-latest {
-    padding-left: 0 !important; } }
+    padding-left: 0 !important; }
+  .hero__background-img-desktop, .hero__background-img-tab {
+    display: none !important; }
+  .hero__background-img-mobile {
+    display: block !important; } }
 
 @media screen and (max-width: 564px) {
   .hero__tab-wrapper img {
@@ -1553,7 +1567,11 @@ a:hover {
     font-size: 16px; }
     .hero__content-heading span,
     .hero__content-subhead span {
-      font-size: 16px; } }
+      font-size: 16px; }
+  .hero__content-about {
+    font-size: 16px; }
+  .hero__search {
+    margin-top: 11px; } }
 
 @media screen and (max-width: 393px) {
   .promote__info-btn {
@@ -1561,7 +1579,7 @@ a:hover {
   .promote__info-text {
     margin-bottom: 10px; }
   .promote__info {
-    width: 120px; }
+    width: 151px; }
   .promote__container {
     width: 100%; } }
 
@@ -1582,7 +1600,7 @@ a:hover {
     margin-top: 12px;
     margin-left: -13px; } }
 
-@media screen and (max-width: 277px) {
+@media screen and (max-width: 306px) {
   .promote__image-wrapper {
     display: none !important; }
   .promote__info {
