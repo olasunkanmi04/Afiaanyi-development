@@ -1542,11 +1542,31 @@ a:hover {
     font-size: 18px; }
     .hero__content-heading span,
     .hero__content-subhead span {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .interest__individual,
+  .interest__third {
+    width: 100vw; } }
 
 @media screen and (max-width: 455px) {
   .promote__info {
     width: 237px; } }
+
+@media screen and (max-width: 440px) {
+  .hero__content-about-seperator {
+    margin: 0 11px; }
+  .hero__content {
+    width: 86%; }
+  .hero__content-heading {
+    font-size: 24px; }
+    .hero__content-heading span {
+      font-size: 20px; }
+  .hero__content-subhead {
+    font-size: 16px;
+    margin-bottom: 15px; }
+  .hero__content-about {
+    font-size: 16px; }
+  .hero__search {
+    margin-top: 11px; } }
 
 @media screen and (max-width: 415px) {
   .hero__tab-wrapper img {
@@ -1556,22 +1576,6 @@ a:hover {
     font-size: 12px; }
   .hero__tab-more span {
     font-size: 12px; } }
-
-@media screen and (max-width: 440px) {
-  .hero__content-about-seperator {
-    margin: 0 11px; }
-  .hero__content {
-    width: 86%; }
-  .hero__content-heading,
-  .hero__content-subhead {
-    font-size: 16px; }
-    .hero__content-heading span,
-    .hero__content-subhead span {
-      font-size: 16px; }
-  .hero__content-about {
-    font-size: 16px; }
-  .hero__search {
-    margin-top: 11px; } }
 
 @media screen and (max-width: 393px) {
   .promote__info-btn {
@@ -1595,8 +1599,8 @@ a:hover {
 
 @media screen and (max-width: 363px) {
   .hero__content-logo {
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     margin-top: 12px;
     margin-left: -13px; } }
 

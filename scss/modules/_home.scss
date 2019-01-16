@@ -209,10 +209,6 @@
 
 }
 
-// .hero__background-img-wrapper {
-//     height: 100vh !important;
-// }
-
 .interest {
     margin-top: 43px;
 
@@ -1372,6 +1368,11 @@ a {
             font-size: 18px;
         }
     }
+
+    .interest__individual,
+    .interest__third {
+        width: 100vw;
+    }
 }
 
 @media screen and (max-width: 455px) {
@@ -1380,6 +1381,39 @@ a {
     }
 }
 
+
+
+
+@media screen and (max-width:440px) {
+    .hero__content-about-seperator {
+        margin: 0 11px;
+    }
+
+    .hero__content {
+        width: 86%;
+    }
+
+    .hero__content-heading {
+        font-size: 24px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .hero__content-subhead {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .hero__content-about {
+        font-size: 16px;
+    }
+
+    .hero__search {
+        margin-top: 11px;
+    }
+}
 
 @media screen and (max-width: 415px) {
     .hero__tab-wrapper {
@@ -1400,33 +1434,6 @@ a {
         span {
             font-size: 12px;
         }
-    }
-}
-
-@media screen and (max-width:440px) {
-    .hero__content-about-seperator {
-        margin: 0 11px;
-    }
-
-    .hero__content {
-        width: 86%;
-    }
-
-    .hero__content-heading,
-    .hero__content-subhead {
-        font-size: 16px;
-
-        span {
-            font-size: 16px;
-        }
-    }
-
-    .hero__content-about {
-        font-size: 16px;
-    }
-
-    .hero__search {
-        margin-top: 11px;
     }
 }
 
@@ -1469,8 +1476,8 @@ a {
 
 @media screen and (max-width:363px) {
     .hero__content-logo {
-        height: 50px;
-        width: 50px;
+        height: 55px;
+        width: 55px;
         margin-top: 12px;
         margin-left: -13px;
     }
