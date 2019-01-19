@@ -1658,3 +1658,149 @@ a:hover {
     width: 100%; }
   .promote {
     height: 130px; } }
+
+.marketplace__topAd {
+  background: #FCFCFC;
+  width: 250px;
+  height: fit-content;
+  padding: 10px; }
+  .marketplace__topAd-info {
+    margin-left: 20px;
+    margin-bottom: 15px; }
+    .marketplace__topAd-info h3 {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #000000;
+      margin-bottom: -5px; }
+    .marketplace__topAd-info a {
+      font-size: 10px;
+      color: #000000; }
+    .marketplace__topAd-info div {
+      display: inline-block;
+      vertical-align: middle; }
+
+.marketplace__section-heading {
+  color: #33333a;
+  font-size: 24px;
+  text-align: center; }
+
+.marketplace__featured-brand {
+  padding: 36px 50px; }
+  .marketplace__featured-brand-wrapper {
+    display: flex; }
+
+.marketplace__featured-individual-brand {
+  width: -webkit-fill-available;
+  height: 300px;
+  border-radius: 4px;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 19px; }
+  .marketplace__featured-individual-brand:last-child {
+    margin-right: 0; }
+  .marketplace__featured-individual-brand-info {
+    text-align: center;
+    margin-top: 80px;
+    padding: 0 14px; }
+    .marketplace__featured-individual-brand-info h3 {
+      font-size: 24px;
+      color: #ffffff;
+      margin-bottom: 11px; }
+    .marketplace__featured-individual-brand-info p {
+      font-size: 13px;
+      color: #ffffff;
+      font-weight: 100; }
+    .marketplace__featured-individual-brand-info-button {
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 10px;
+      padding: 12px 28px;
+      border-radius: 8px;
+      border: none;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      transform: translateX(-50%);
+      right: 0;
+      text-transform: uppercase; }
+      .marketplace__featured-individual-brand-info-button:hover {
+        background-color: #FCFCFC;
+        color: #000000; }
+      .marketplace__featured-individual-brand-info-button:focus {
+        background-color: #FCFCFC;
+        color: #000000; }
+  .marketplace__featured-individual-brand-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 4px; }
+    .marketplace__featured-individual-brand-overlay.four {
+      background-image: linear-gradient(0.53deg, rgba(230, 183, 18, 0.77) 0.29%, rgba(0, 0, 0, 0.5) 99.5%) !important; }
+    .marketplace__featured-individual-brand-overlay.five {
+      background-image: linear-gradient(0.53deg, rgba(106, 177, 117, 0.77) 0.29%, rgba(106, 177, 117, 0) 99.5%) !important; }
+  .marketplace__featured-individual-brand-one {
+    background: url("../images/furniShop.png") no-repeat;
+    background-size: cover; }
+  .marketplace__featured-individual-brand-two {
+    background: url("../images/clairevoy.png") no-repeat;
+    background-size: cover; }
+  .marketplace__featured-individual-brand-three {
+    background: url("../images/chisco.png") no-repeat;
+    background-size: cover; }
+  .marketplace__featured-individual-brand-four {
+    background: url("../images/techmall.png") no-repeat;
+    background-size: cover; }
+  .marketplace__featured-individual-brand-five {
+    background: url("../images/Afiaanyi.com.png") no-repeat;
+    background-size: cover; }
+
+.marketplace__top-deal {
+  padding: 36px 50px;
+  display: flex; }
+  .marketplace__top-deal-banner {
+    width: 179px;
+    height: 179px; }
+
+.marketplace__product {
+  width: 280px;
+  height: 200; }
+  .marketplace__product-image {
+    width: 220px;
+    height: 150px; }
+
+.icon-delivery,
+.icon-offers,
+.icon-sell-on {
+  width: 20px;
+  height: 20px;
+  fill: #000000;
+  margin-right: 8px; }
+
+@media screen and (max-width: 1079px) {
+  .marketplace__featured-individual-brand:last-child {
+    display: none; }
+  .marketplace__featured-individual-brand:nth-child(4) {
+    margin-right: 0; } }
+
+@media screen and (max-width: 884px) {
+  .marketplace__featured-individual-brand:nth-child(4) {
+    display: none; }
+  .marketplace__featured-individual-brand:nth-child(3) {
+    margin-right: 0; } }
+
+@media screen and (max-width: 683px) {
+  .marketplace__featured-individual-brand:nth-child(3) {
+    display: none; }
+  .marketplace__featured-individual-brand:nth-child(2) {
+    margin-right: 0; } }
+
+@media screen and (max-width: 463px) {
+  .marketplace__featured-individual-brand:nth-child(2) {
+    display: none; }
+  .marketplace__featured-individual-brand:nth-child(1) {
+    margin-right: 0; } }

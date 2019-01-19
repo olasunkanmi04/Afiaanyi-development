@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Afiaanyi | Marketplace</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/common.min.css">
+
+    <script src="js/csi.min.js"></script>
+
+    <style>
+        h1 {
+            margin-top: 5px;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .jd-slider {
+            margin: 50px 0;
+        }
+
+        .jd-slider .slide-inner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            border: 1px solid #888;
+        }
+
+        .jd-slider .slide-area>li {
+            border-right: 1px solid #888;
+            border-left: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .jd-slider .slide-area>li:first-child {
+            border-left: 1px solid #888;
+        }
+
+        .jd-slider .slide-area>li>a {
+            display: block;
+            height: 200px;
+            line-height: 200px;
+            font-size: 3em;
+            font-weight: bold;
+            outline: 0;
+        }
+
+        .jd-slider .controller {
+            margin: 10px 0 0;
+        }
+
+        .jd-slider.slider3 .slide-area>li,
+        .jd-slider.slider3-2 .slide-area>li,
+        .jd-slider.slider3-3 .slide-area>li {
+            width: 50%;
+        }
+
+        .jd-slider.slider3 .slide-area>li:nth-child(2),
+        .jd-slider.slider3-2 .slide-area>li:nth-child(2),
+        .jd-slider.slider3-3 .slide-area>li:nth-child(2) {
+            display: block;
+        }
+
+        .jd-slider.slider4 .slide-area>li:first-child {
+            background-color: #a66;
+        }
+
+        .jd-slider.slider4 .slide-area>li:first-child+li {
+            background-color: #6a6;
+        }
+
+        .jd-slider.slider4 .slide-area>li:first-child+li+li {
+            background-color: #66a;
+        }
+
+        .jd-slider.slider4 .slide-area>li:first-child+li+li+li {
+            background-color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-include="svg.html"></div>
+
+
+    <section class="marketplace d-flex">
+        <section class="jd-slider fade marketplace__slider">
+            <h2>Hello</h2>
+            <div class="slide-inner">
+                <ul class="slide-area">
+                    <li>
+                        <a href="#"><img src="images/background-five.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                </ul>
+                <a class="prev" href="#">
+                    <i class="fas fa-angle-left fa-2x"></i>
+                </a>
+                <a class="next" href="#">
+                    <i class="fas fa-angle-right fa-2x"></i>
+                </a>
+            </div>
+            <div class="controller">
+                <a class="auto" href="#">
+                    <i class="fas fa-play fa-xs"></i>
+                    <i class="fas fa-pause fa-xs"></i>
+                </a>
+                <div class="indicate-area"></div>
+            </div>
+        </section>
+        <section>
+            <div class="marketplace__topAd">
+                <div class="marketplace__topAd-info">
+                    <svg class="icon icon-sell-on">
+                        <use xlink:href="#icon-sell-on"></use>
+                    </svg>
+                    <div>
+                        <h3>Sell on Afiaanyi</h3>
+                        <a href="#">Become a Vendor!</a>
+                    </div>
+                </div>
+                <div class="marketplace__topAd-info">
+                    <svg class="icon icon-delivery">
+                        <use xlink:href="#icon-delivery"></use>
+                    </svg>
+                    <div>
+                        <h3>Free returns</h3>
+                        <a href="#">Within 7 days</a>
+                    </div>
+                </div>
+                <div class="marketplace__topAd-info">
+                    <svg class="icon icon-offers">
+                        <use xlink:href="#icon-offers"></use>
+                    </svg>
+                    <div>
+                        <h3>exclusive offers</h3>
+                        <a href="#">Download Afiaanyi App</a>
+                    </div>
+                </div>
+            </div>
+            <div class="marketplace__topAd-banner">
+                <img src="images/top-banner.png" alt="" class="img-fluid">
+            </div>
+        </section>
+    </section>
+
+    <section class="marketplace__featured-brand">
+        <h3 class="marketplace__section-heading">Featured Brands</h3>
+        <div class="marketplace__featured-brand-wrapper">
+            <div class="marketplace__featured-individual-brand marketplace__featured-individual-brand-one">
+                <div class="marketplace__featured-individual-brand-overlay">
+                    <div class="marketplace__featured-individual-brand-info">
+                        <h3>FurniShop</h3>
+                        <p>A better way to shop online for furnitures, home decor & a lot more...</p>
+                        <button class="marketplace__featured-individual-brand-info-button btn btn-primary">Explore our
+                            Catalogue</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marketplace__featured-individual-brand marketplace__featured-individual-brand-two">
+                <div class="marketplace__featured-individual-brand-overlay">
+                    <div class="marketplace__featured-individual-brand-info">
+                        <h3>Clairevoy</h3>
+                        <p>Think Better.. Be Better</p>
+                        <button class="marketplace__featured-individual-brand-info-button btn btn-primary">CONTACT US</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marketplace__featured-individual-brand marketplace__featured-individual-brand-three">
+                <div class="marketplace__featured-individual-brand-overlay">
+                    <div class="marketplace__featured-individual-brand-info">
+                        <h3>Chisco Transport Co.</h3>
+                        <p>Car dealership and repair shop</p>
+                        <button class="marketplace__featured-individual-brand-info-button btn btn-primary">VISIT OUR
+                            SHOWROOM </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marketplace__featured-individual-brand marketplace__featured-individual-brand-four">
+                <div class="marketplace__featured-individual-brand-overlay four">
+                    <div class="marketplace__featured-individual-brand-info">
+                        <h3>Techmall</h3>
+                        <p>Your one-stop-shop for Tech related materials</p>
+                        <button class="marketplace__featured-individual-brand-info-button btn btn-primary">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marketplace__featured-individual-brand marketplace__featured-individual-brand-five">
+                <div class="marketplace__featured-individual-brand-overlay five">
+                    <div class="marketplace__featured-individual-brand-info">
+                        <h3>Afiaanyi.com</h3>
+                        <p>Business Directory & Online Marketplace</p>
+                        <button class="marketplace__featured-individual-brand-info-button btn btn-primary">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="marketplace__banner">
+        <img src="images/banner-one.png" alt="Ad banner" class="img-fluid w-100" style="min-height: 73px;">
+    </section>
+
+    <section class="marketplace__top-deal">
+        <div class="marketplace__top-deal-banner">
+            <img src="images/top-deal-banner.png" alt="Top Deal banner" class="img-fluid">
+        </div>
+        <div class="marketplace__product">
+            <div class="marketplace__product-image">
+                <img src="images/pixel.png" alt="" class="img-fluid">
+            </div>
+            <div class="marketplace__product-details">
+                <small>Google</small>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div data-include="footer.html"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+
+
+    <script src="js/jquery.jdSlider-latest.min.js"></script>
+
+    <!-- <script>
+        window.onload = function () {
+            $('.marketplace__slider').jdSlider({
+                wrap: '.slide-inner',
+                isSliding: false,
+                isAuto: true,
+                isLoop: true,
+                isDrag: false
+            });
+        };
+    </script> -->
+
+</body>
+
+</html>
