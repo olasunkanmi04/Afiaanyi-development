@@ -170,24 +170,179 @@
         display: flex;
 
         &-banner {
-            width: 179px;
-            height: 179px;
+            min-width: 305px;
+            width: 305px;
+            height: 305px;
         }
     }
 
     &__product {
         width: 280px;
-        height: 200;
+        height: 305px;
+        height: fit-content;
+        margin-left: 10px;
+        border-radius: 2px;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+
+            .marketplace__product-quickview {
+                display: block;
+                -webkit-animation: fadeIn 1.5s;
+                animation: fadeIn 1.5s;
+            }
+        }
+
+        &-wrapper {
+            min-width: 0;
+            min-height: 0;
+
+            .slick-next {
+                right: -85px;
+
+                &::before {
+                    content: url(../icon2/arrow-next.svg) !important;
+                }
+            }
+
+            .slick-prev {
+                left: -76px;
+
+                &::before {
+                    content: url(../icon2/arrow-before.svg) !important;
+                }
+            }
+        }
 
         &-image {
-            width: 220px;
             height: 150px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 2px 2px 0 0;
+        }
+
+        &-details {
+            padding: 0 12px 12px 12px;
+            border-radius: 0 0 2px 2px;
+        }
+
+        &-brand {
+            color: #000000;
+            font-size: 8px;
+            font-weight: 300;
+        }
+
+        &-line {
+            border: 2px solid #dedede;
+            border-radius: 2px;
+            margin: 2px 0;
+        }
+
+        &-name {
+            font-size: 14px;
+            color: #000000;
+            line-height: 18px;
+
+            &:hover {
+                color: #33333a;
+            }
+        }
+
+        &-price {
+            display: inline-block;
+            color: #000000;
+            font-size: 14px;
+
+            &-wrapper {
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &-discount {
+            float: right;
+            border: 1px solid #CAAA3B;
+            padding: 3px;
+            font-size: 8px;
+            border-radius: 2px;
+        }
+
+        &-rating {
+            &-stars {
+                width: 11px;
+                height: 11px;
+
+                &:nth-child(5) {
+                    fill: #dddddd;
+                }
+            }
+
+            &-number {
+                float: right;
+                font-size: 10px;
+                color: #000000;
+                line-height: 24px;
+                vertical-align: middle;
+            }
+        }
+
+        &-new {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #F30000;
+            color: #ffffff;
+            font-size: 8px;
+            text-transform: uppercase;
+            padding: 4px 9px;
+            border-radius: 2px;
+
+        }
+
+        &-quickview {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            transform: translateY(-50%);
+            display: none;
+
+            &-btn {
+                transition: 0.5s ease-in;
+                background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+                border: none;
+                border-radius: 2px;
+            }
         }
     }
 
 
 }
 
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 
 .icon-delivery,
