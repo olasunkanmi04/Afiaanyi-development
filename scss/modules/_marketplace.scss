@@ -213,6 +213,7 @@
                     content: url(../icon2/arrow-before.svg) !important;
                 }
             }
+
         }
 
         &-image {
@@ -391,6 +392,24 @@
         }
     }
 
+    &__tab {
+        .slick-next {
+            right: -85px;
+
+            &::before {
+                content: url(../icon2/arrow-next.svg) !important;
+            }
+        }
+
+        .slick-prev {
+            left: -76px;
+
+            &::before {
+                content: url(../icon2/arrow-before.svg) !important;
+            }
+        }
+    }
+
 
 }
 
@@ -414,6 +433,26 @@
         opacity: 1;
     }
 }
+
+
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content>.tab-pane,
+.pill-content>.pill-pane {
+    display: block;
+    /* undo display:none          */
+    height: 0;
+    /* height:0 is also invisible */
+    // overflow: hidden;
+    /* no-overflow                */
+}
+
+.tab-content>.active,
+.pill-content>.active {
+    height: auto;
+    /* let the content decide it  */
+}
+
+/* bootstrap hack end */
 
 
 .icon-delivery,

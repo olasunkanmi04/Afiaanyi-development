@@ -1911,6 +1911,16 @@ a:hover {
       line-height: 18px;
       vertical-align: middle; }
 
+.marketplace__tab .slick-next {
+  right: -85px; }
+  .marketplace__tab .slick-next::before {
+    content: url(../icon2/arrow-next.svg) !important; }
+
+.marketplace__tab .slick-prev {
+  left: -76px; }
+  .marketplace__tab .slick-prev::before {
+    content: url(../icon2/arrow-before.svg) !important; }
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }
@@ -1923,6 +1933,21 @@ a:hover {
   to {
     opacity: 1; } }
 
+/* bootstrap hack: fix content width inside hidden tabs */
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: block;
+  /* undo display:none          */
+  height: 0;
+  /* height:0 is also invisible */
+  /* no-overflow                */ }
+
+.tab-content > .active,
+.pill-content > .active {
+  height: auto;
+  /* let the content decide it  */ }
+
+/* bootstrap hack end */
 .icon-delivery,
 .icon-offers,
 .icon-sell-on {
