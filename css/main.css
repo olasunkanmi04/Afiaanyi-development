@@ -2026,6 +2026,31 @@ a:hover {
 .marketplace__newsletter {
   background: rgba(243, 243, 243, 0.8); }
 
+.quickview__modal {
+  max-width: 70%; }
+  .quickview__modal-content {
+    border-radius: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    border: none; }
+    .quickview__modal-content .modal-header {
+      background: #FFFFFF;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+      margin-bottom: 24px; }
+
+.quickview__title {
+  color: #030303;
+  font-size: 18px; }
+
+.preview {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 30px; }
+
+.full {
+  width: 300px;
+  height: 400px; }
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0; }

@@ -582,6 +582,44 @@
 }
 
 
+.quickview {
+    &__modal {
+        max-width: 70%;
+
+        &-content {
+            border-radius: 0;
+            background: #FFFFFF;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+            border: none;
+
+            .modal-header {
+                background: #FFFFFF;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__title {
+        color: #030303;
+        font-size: 18px;
+    }
+}
+
+
+
+.preview {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 30px;
+}
+
+.full {
+    width: 300px;
+    height: 400px;
+}
+
+
 
 
 @-webkit-keyframes fadeIn {
