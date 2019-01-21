@@ -1951,6 +1951,7 @@ a:hover {
     box-sizing: border-box;
     border-radius: 4px;
     width: 251px;
+    min-width: 251px;
     z-index: 1; }
     .marketplace__stores-explore-top {
       height: 78px;
@@ -1981,9 +1982,11 @@ a:hover {
   .marketplace__stores-banner {
     width: 300px;
     height: 510px;
-    margin-left: 10px; }
+    margin-left: 10px;
+    min-width: 300px; }
   .marketplace__stores-product-slider {
-    width: 381px;
+    min-width: 0;
+    min-height: 0;
     margin-left: 10px; }
     .marketplace__stores-product-slider-wrapper .marketplace__product-details {
       height: 143px; }
