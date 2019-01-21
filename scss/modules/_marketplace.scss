@@ -168,11 +168,13 @@
     &__top-deal {
         padding: 36px 50px;
         display: flex;
+        background: #FCFCFC;
 
         &-banner {
-            min-width: 305px;
-            width: 305px;
-            height: 305px;
+            min-width: 240px;
+            width: 240px;
+            height: 240px;
+            margin-right: 20px;
         }
     }
 
@@ -324,6 +326,8 @@
     &__recommended {
         padding: 36px 50px;
         display: flex;
+        background: #FCFCFC;
+        margin-bottom: 27px;
 
         &-top {
             text-align: center;
@@ -333,8 +337,8 @@
         &-wrapper {
             background: linear-gradient(90deg, #C4C4C4 13.75%, rgba(65, 64, 64, 0.5) 93.43%);
             border-radius: 4px;
-            width: 280px;
-            min-width: 280px;
+            width: 240px;
+            min-width: 240px;
             min-height: 300px;
             height: 300px;
             margin-right: 20px;
@@ -410,8 +414,170 @@
         }
     }
 
+    &__stores {
+        padding: 36px 50px;
+        display: flex;
+        z-index: 1;
+        background: #FCFCFC;
+        margin-bottom: 27px;
+
+        &-wrapper {
+            background: rgba(59, 89, 152, 0.8) !important;
+            height: 510px;
+            margin: 0;
+        }
+
+        &-options {
+            &-wrapper {
+                height: 428px !important;
+                padding-top: 10px;
+            }
+        }
+
+        &-heading {
+            vertical-align: top;
+        }
+
+        &-brand {
+            margin-bottom: 30px;
+
+            &:first-child {
+                margin-bottom: 15px;
+            }
+        }
+
+        &-explore {
+            height: 510px;
+            background: #FFFFFF;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 4px;
+            width: 251px;
+            z-index: 1;
+
+            &-top {
+                height: 78px;
+                background: #FCFCFC;
+                border-bottom: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                border-radius: 4px 4px 0px 0px;
+
+                p {
+                    text-align: center;
+                    line-height: 78px;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+            }
+
+            &-products {
+                padding: 15px 21px;
+
+                &-heading {
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: #000000;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                    margin-top: 15px;
+                }
+
+                &-name {
+                    margin-left: 33px;
+                    font-size: 12px;
+                    color: #000000;
+                    margin-bottom: 5px;
+                }
+
+            }
+        }
+
+        &-banner {
+            width: 300px;
+            height: 510px;
+            margin-left: 10px;
+        }
+
+        &-product {
+            &-slider {
+                width: 381px;
+                margin-left: 10px;
+
+                &-wrapper {
+                    .marketplace__product-details {
+                        height: 143px;
+                    }
+
+                    .marketplace__product-image {
+                        height: 112px;
+                    }
+                }
+
+                .slick-next {
+                    right: -85px;
+
+                    &::before {
+                        content: url(../icon2/arrow-next.svg) !important;
+                    }
+                }
+
+                .slick-prev {
+                    left: -72px;
+
+                    &::before {
+                        content: url(../icon2/arrow-before.svg) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &__home-office {
+        background: #B7B360 !important;
+
+        &-options {
+            height: 435px !important;
+        }
+
+        &-brand {
+            margin-bottom: 20px;
+
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__health-beauty {
+        background: #F300E9 !important;
+
+    }
+
+    &__loading {
+        margin-bottom: 28px;
+
+        svg {
+            width: 32px !important;
+            height: 32px !important;
+        }
+
+        span {
+            font-size: 10px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+    }
+
+    &__newsletter {
+        background: rgba(243, 243, 243, 0.8);
+    }
+
+
 
 }
+
+
 
 
 @-webkit-keyframes fadeIn {
@@ -454,6 +620,10 @@
 
 /* bootstrap hack end */
 
+.icon-phones-tablet {
+    width: 26px !important;
+    height: 30px !important;
+}
 
 .icon-delivery,
 .icon-offers,
