@@ -2072,7 +2072,8 @@ a:hover {
     width: 100%; }
     .quickview__modal-body-details-heading {
       font-size: 24px;
-      color: #030303; }
+      color: #030303;
+      margin-bottom: 10px; }
   .quickview__modal-body-price {
     width: 300px; }
     .quickview__modal-body-price h3 {
@@ -2332,3 +2333,35 @@ a:hover {
     display: none; }
   .marketplace__featured-individual-brand:nth-child(1) {
     margin-right: 0; } }
+
+.breadcrumb {
+  padding: 20px 50px;
+  background-color: #fff; }
+  .breadcrumb__link {
+    font-size: 12px;
+    color: #000000;
+    vertical-align: middle; }
+    .breadcrumb__link:hover {
+      color: #E6B712; }
+  .breadcrumb .icon-separator {
+    height: 8px !important;
+    width: 8px !important;
+    margin: 0 15px; }
+  .breadcrumb span {
+    font-size: 12px;
+    color: #000000;
+    vertical-align: middle; }
+
+.product-page__details {
+  padding: 20px 120px; }
+
+.product-page__customers-also-view {
+  margin-top: 40px; }
+  .product-page__customers-also-view h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #33333A; }
+  .product-page__customers-also-view-product {
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap; }
