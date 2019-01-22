@@ -248,3 +248,12 @@ $(document).ready(function () {
         $('.hero').css("background-color", "rgba(0,0,0,1)");
     });
 });
+
+
+$('.quickview__modal-quantity-increase').on('click', function () {
+    $('.quickview__modal-quantity-figure').get(0).value++;
+})
+
+$('.quickview__modal-quantity-reduce').on('click', function () {
+    $('.quickview__modal-quantity-figure').get(0).value--;
+})

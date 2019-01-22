@@ -18,87 +18,11 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
 
-    <link rel="stylesheet" href="css/common.min.css">
-
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
 
     <script src="js/csi.min.js"></script>
 
-    <style>
-        h1 {
-            margin-top: 5px;
-            font-size: 3rem;
-            text-align: center;
-        }
-
-        .jd-slider {
-            margin: 50px 0;
-        }
-
-        .jd-slider .slide-inner::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 0;
-            border: 1px solid #888;
-        }
-
-        .jd-slider .slide-area>li {
-            border-right: 1px solid #888;
-            border-left: 0;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        .jd-slider .slide-area>li:first-child {
-            border-left: 1px solid #888;
-        }
-
-        .jd-slider .slide-area>li>a {
-            display: block;
-            height: 200px;
-            line-height: 200px;
-            font-size: 3em;
-            font-weight: bold;
-            outline: 0;
-        }
-
-        .jd-slider .controller {
-            margin: 10px 0 0;
-        }
-
-        .jd-slider.slider3 .slide-area>li,
-        .jd-slider.slider3-2 .slide-area>li,
-        .jd-slider.slider3-3 .slide-area>li {
-            width: 50%;
-        }
-
-        .jd-slider.slider3 .slide-area>li:nth-child(2),
-        .jd-slider.slider3-2 .slide-area>li:nth-child(2),
-        .jd-slider.slider3-3 .slide-area>li:nth-child(2) {
-            display: block;
-        }
-
-        .jd-slider.slider4 .slide-area>li:first-child {
-            background-color: #a66;
-        }
-
-        .jd-slider.slider4 .slide-area>li:first-child+li {
-            background-color: #6a6;
-        }
-
-        .jd-slider.slider4 .slide-area>li:first-child+li+li {
-            background-color: #66a;
-        }
-
-        .jd-slider.slider4 .slide-area>li:first-child+li+li+li {
-            background-color: #aaa;
-        }
-    </style>
 </head>
 
 <body>
@@ -3480,25 +3404,24 @@
                                 <div class="quickview__modal-body-price">
                                     <h3><span>₦</span>65,000.00</h3>
                                     <small><span>By:</span>KJK.com.ng</small>
-                                    <hr>
                                 </div>
-                                <div class="ml-auto">
-                                    <svg class="icon icon-star marketplace__product-rating-stars">
+                                <div class="ml-auto quickview__modal-ratings">
+                                    <svg class="icon icon-star">
                                         <use xlink:href="#icon-star"></use>
                                     </svg>
-                                    <svg class="icon icon-star marketplace__product-rating-stars">
+                                    <svg class="icon icon-star">
                                         <use xlink:href="#icon-star"></use>
                                     </svg>
-                                    <svg class="icon icon-star marketplace__product-rating-stars">
+                                    <svg class="icon icon-star">
                                         <use xlink:href="#icon-star"></use>
                                     </svg>
-                                    <svg class="icon icon-star marketplace__product-rating-stars">
+                                    <svg class="icon icon-star">
                                         <use xlink:href="#icon-star"></use>
                                     </svg>
-                                    <svg class="icon icon-star marketplace__product-rating-stars">
+                                    <svg class="icon icon-star">
                                         <use xlink:href="#icon-star"></use>
                                     </svg>
-                                    <span>4.8 <span> of </span>5</span><br>
+                                    <span class="quickview__modal-ratings-figure">4.8 <span> of </span>5</span><br>
                                     <a href="#">Write a review ></a>
                                 </div>
                             </div>
@@ -3511,7 +3434,7 @@
                                 </div>
                                 <div class="marketplace__topAd quickview__modal-security">
                                     <div class="marketplace__topAd-info">
-                                        <svg class="icon icon-secure-payment">
+                                        <svg class="icon icon-secure-payment quickview__modal-security-icons">
                                             <use xlink:href="#icon-secure-payment"></use>
                                         </svg>
                                         <div>
@@ -3519,7 +3442,7 @@
                                         </div>
                                     </div>
                                     <div class="marketplace__topAd-info">
-                                        <svg class="icon icon-days-return">
+                                        <svg class="icon icon-days-return quickview__modal-security-icons">
                                             <use xlink:href="#icon-days-return"></use>
                                         </svg>
                                         <div>
@@ -3527,7 +3450,7 @@
                                         </div>
                                     </div>
                                     <div class="marketplace__topAd-info">
-                                        <svg class="icon icon-geniue-product">
+                                        <svg class="icon icon-geniue-product quickview__modal-security-icons">
                                             <use xlink:href="#icon-geniue-product"></use>
                                         </svg>
                                         <div>
@@ -3536,57 +3459,91 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="quickview__modal-sizing">
-                                <div class="quickview__modal-sizing-wrapper">
+
+                            <div class="quickview__modal-size-and-color">
+                                <div class="quickview__modal-sizing">
+                                    <a href="#">Size Guidelines</a>
                                     <h4>Size</h4>
                                     <div class="quickview__modal-size">
                                         <div class="quickview__modal-size-individual">S</div>
-                                        <div class="quickview__modal-size-individual">M</div>
+                                        <div class="quickview__modal-size-individual selected">M</div>
                                         <div class="quickview__modal-size-individual">L</div>
                                         <div class="quickview__modal-size-individual">XL</div>
                                         <div class="quickview__modal-size-individual">XXL</div>
                                     </div>
-                                    <h4>Colour</h4>
-                                    <div class="quickview__modal-colour">
-                                        <div class="quickview__modal-colour-wrapper">
-                                            <div class="quickview__modal-size-individual"></div>
-                                            <span>Blue</span>
-                                        </div>
-                                        <div class="quickview__modal-colour-wrapper">
-                                            <div class="quickview__modal-size-individual"></div>
-                                            <span>Black</span>
-                                        </div>
-                                        <div class="quickview__modal-colour-wrapper">
-                                            <div class="quickview__modal-size-individual"></div>
-                                            <span>Grey</span>
-                                        </div>
-                                    </div>
                                 </div>
-                                <div class="quickview__modal-info">
-                                    <div>
-                                        <p>Sold By: KJK.com.ng</p>
+                                <div class="quickview__modal-colour d-flex">
+                                    <div class="quickview__modal-colour-wrapper">
+                                        <h4>Colour</h4>
+                                        <div>
+                                            <div class="quickview__modal-colour-individual">
+                                                <div class="quickview__modal-size-individual"></div>
+                                                <span>Blue</span>
+                                            </div>
+                                            <div class="quickview__modal-colour-individual">
+                                                <div class="quickview__modal-size-individual selected"></div>
+                                                <span>Black</span>
+                                            </div>
+                                            <div class="quickview__modal-colour-individual">
+                                                <div class="quickview__modal-size-individual"></div>
+                                                <span>Grey</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p><span>100+</span> Successful Sales</p>
-                                    </div>
-                                    <div>
-                                        <p><span>Delivery:</span> Get it in Lagos by Friday. Allow up to 2 aditional
-                                            days for other cities</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="quickview__modal-button-wrapper">
-                                <div class="quickview__modal-quantity">
-                                    <span>-</span>
-                                    <span>1</span>
-                                    <span>+</span>
-                                </div>
-                                <button class="btn btn-primary marketplace__product-quickview-btn">Buy Now</button>
-                                <button class="btn btn-primary ">Add to Cart</button>
-                            </div>
+                                    <div class="quickview__modal-info">
+                                        <div>
+                                            <p>Sold By: KJK.com.ng</p>
+                                        </div>
+                                        <div>
+                                            <p><span>100+</span> Successful Sales</p>
+                                        </div>
+                                        <div>
+                                            <p><span>Seller Score:</span><span class="quickview__modal-info-seller-score">4.7/5</span></p>
 
+                                        </div>
+                                        <div>
+                                            <p><span>Delivery:</span> Get it in Lagos by Friday. Allow up to 2
+                                                aditional
+                                                days for other cities</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="quickview__modal-button-wrapper">
+                                    <h4>Quantity</h4>
+                                    <div class="quickview__modal-quantity">
+                                        <span class="quickview__modal-quantity-reduce">-</span>
+                                        <input type="text" value="1" class="quickview__modal-quantity-figure">
+                                        <span class="quickview__modal-quantity-increase">+</span>
+                                    </div>
+                                    <button class="btn btn-primary marketplace__product-quickview-btn">Buy Now</button>
+                                    <button class="btn btn-primary quickview__modal-quantity-addtocart">Add to Cart</button>
+                                </div>
+                                <div class="quickview__modal-share">
+                                    <span>Share this product</span>
+                                    <a href="#">
+                                        <svg class="icon icon-whatsapp">
+                                            <use xlink:href="#icon-whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon icon-message">
+                                            <use xlink:href="#icon-message"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon icon-link-share">
+                                            <use xlink:href="#icon-link-share"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="quickview__modal-save">
+                                        <a href="#">Save</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="quickview__modal-viewful text-center">
+                        <button class="btn btn-primary marketplace__product-quickview-btn">View full product details</button>
                     </div>
                 </div>
             </div>

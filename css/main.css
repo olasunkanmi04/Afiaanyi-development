@@ -2061,18 +2061,18 @@ a:hover {
     background: #FFFFFF;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
     border: none; }
+    .quickview__modal-content .modal-body {
+      padding: 24px; }
     .quickview__modal-content .modal-header {
       background: #FFFFFF;
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
-      margin-bottom: 24px; }
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05); }
   .quickview__modal-body-image {
     margin-right: 20px; }
   .quickview__modal-body-details {
     width: 100%; }
     .quickview__modal-body-details-heading {
       font-size: 24px;
-      color: #030303;
-      margin-bottom: 15px; }
+      color: #030303; }
   .quickview__modal-body-price {
     width: 300px; }
     .quickview__modal-body-price h3 {
@@ -2082,6 +2082,180 @@ a:hover {
     .quickview__modal-body-price small {
       font-size: 12px;
       color: #000000; }
+  .quickview__modal-body-description {
+    box-shadow: 0px -2px 0px #F9F8F6;
+    margin-top: 5px;
+    width: 300px;
+    padding-top: 18px;
+    margin-right: auto; }
+    .quickview__modal-body-description h4 {
+      font-size: 14px;
+      color: #000000;
+      margin-bottom: 10px; }
+    .quickview__modal-body-description p {
+      font-size: 14px;
+      text-align: justify;
+      color: #000000;
+      font-weight: 300; }
+      .quickview__modal-body-description p a {
+        color: #CAAA3B;
+        font-size: 12px; }
+  .quickview__modal-ratings {
+    margin-right: 38px; }
+    .quickview__modal-ratings svg {
+      width: 14px !important;
+      height: 14px !important; }
+    .quickview__modal-ratings-figure {
+      font-weight: 300;
+      font-size: 16px;
+      text-align: justify;
+      color: #666666;
+      vertical-align: middle;
+      margin-left: 10px; }
+    .quickview__modal-ratings a {
+      font-size: 12px;
+      color: #F30000; }
+  .quickview__modal-security {
+    background: #FCFCFC;
+    border: 1px solid #C4C4C4;
+    width: fit-content; }
+    .quickview__modal-security h3 {
+      font-size: 12px;
+      color: #000000;
+      text-transform: none !important; }
+    .quickview__modal-security-icons {
+      width: 20px !important;
+      height: 20px !important;
+      fill: #464646; }
+    .quickview__modal-security .marketplace__topAd-info {
+      margin-bottom: 20px;
+      margin-left: 0; }
+  .quickview__modal-sizing h4 {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 11px; }
+  .quickview__modal-sizing a {
+    float: right;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-right: 58px; }
+  .quickview__modal-size-individual {
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    width: 30px;
+    height: 25px;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 3px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    vertical-align: middle; }
+    .quickview__modal-size-individual.selected {
+      background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+      border: 1px solid #DEDEDE;
+      color: #ffffff; }
+  .quickview__modal-size-and-color {
+    box-shadow: 0px -2px 0px #F9F8F6;
+    margin-top: 17px;
+    padding: 10px 0; }
+  .quickview__modal-colour {
+    margin-top: 20px; }
+    .quickview__modal-colour-wrapper h4 {
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #000000;
+      margin-bottom: 10px; }
+    .quickview__modal-colour-individual {
+      margin-bottom: 6px; }
+      .quickview__modal-colour-individual span {
+        vertical-align: middle;
+        text-transform: uppercase;
+        font-size: 11px; }
+  .quickview__modal-info {
+    width: 148px;
+    margin-left: auto; }
+    .quickview__modal-info p {
+      font-size: 11px;
+      line-height: 20px; }
+      .quickview__modal-info p span {
+        font-weight: 700; }
+      .quickview__modal-info p .quickview__modal-info-seller-score {
+        background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+        border-radius: 1px;
+        padding: 3px 8px;
+        margin-left: 7px; }
+  .quickview__modal-button-wrapper {
+    margin-top: 20px; }
+    .quickview__modal-button-wrapper h4 {
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #000000;
+      margin-bottom: 10px; }
+    .quickview__modal-button-wrapper .marketplace__product-quickview-btn {
+      width: 180px;
+      margin-left: 20px;
+      height: 40px; }
+  .quickview__modal-quantity {
+    display: inline-block;
+    width: 120px;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box; }
+    .quickview__modal-quantity-increase {
+      float: right;
+      line-height: 38px;
+      cursor: pointer;
+      padding: 0 5px; }
+    .quickview__modal-quantity-reduce {
+      cursor: pointer;
+      vertical-align: middle;
+      padding: 0 5px; }
+    .quickview__modal-quantity-figure {
+      width: 66%;
+      text-align: center;
+      border: none;
+      line-height: 38px; }
+    .quickview__modal-quantity-addtocart {
+      border: 1px solid #DEDEDE;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #000000;
+      width: 180px;
+      margin-left: 20px;
+      height: 40px; }
+      .quickview__modal-quantity-addtocart:hover {
+        background-color: #E6B712;
+        color: #ffffff;
+        border: none; }
+  .quickview__modal-share {
+    margin-top: 20px; }
+    .quickview__modal-share span {
+      font-size: 14px;
+      color: #666666;
+      font-weight: 300;
+      margin-right: 20px; }
+    .quickview__modal-share a svg {
+      margin-right: 10px;
+      fill: #E6B712 !important; }
+  .quickview__modal-save {
+    float: right;
+    margin-right: 90px;
+    font-size: 12px;
+    text-align: center;
+    color: #F30000;
+    border-bottom: 2px solid #F30000;
+    padding: 0 31px;
+    padding-bottom: 8px; }
+    .quickview__modal-save a {
+      color: #F30000; }
+  .quickview__modal-viewful {
+    margin-top: 20px; }
+    .quickview__modal-viewful button {
+      width: 400px; }
 
 .quickview__title {
   color: #030303;
