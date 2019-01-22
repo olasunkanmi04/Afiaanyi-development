@@ -17,6 +17,18 @@ $(document).ready(function () {
         dots: false,
         centerMode: true,
     });
+    $('.marketplace__top-slider').slick({
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        autoplay: true,
+        fade: true,
+        cssEase: 'ease-out',
+        useTransform: true,
+        arrows: true,
+        dots: true,
+        centerMode: true,
+    });
 
     $('.community__speaks').slick({
         centerMode: true,
