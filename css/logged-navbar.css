@@ -1,5 +1,4 @@
 .row {
-    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -56,6 +55,7 @@ nav {
 }
 
 .header__nav-content {
+    max-width: 90%;
     display: flex;
     align-items: center;
     position: relative;
@@ -121,6 +121,7 @@ nav {
 }
 
 .full-nav {
+    max-width: 90%;
     padding-top: 10px;
     padding-bottom: 14px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
