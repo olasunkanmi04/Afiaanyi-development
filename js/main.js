@@ -244,6 +244,39 @@ $(document).ready(function () {
 
 });
 
+
+// star ratings
+$(".marketplace__product-rating-stars").starRating({
+    initialRating: 4,
+    strokeColor: '#ffffff',
+    strokeWidth: 10,
+    starSize: 15,
+    totalStars: 5,
+    starShape: 'rounded',
+    emptyColor: 'lightgray',
+    hoverColor: '#E6B712',
+    activeColor: '#E6B712',
+    useGradient: false,
+    readOnly: true,
+});
+
+$(".quickview__modal-ratings-stars").starRating({
+    initialRating: 3.5,
+    strokeColor: '#ffffff',
+    strokeWidth: 10,
+    starSize: 20,
+    totalStars: 5,
+    starShape: 'rounded',
+    emptyColor: 'lightgray',
+    hoverColor: '#E6B712',
+    activeColor: '#E6B712',
+    useGradient: false,
+    callback: function (currentRating, $el) {
+        alert('rated ' + currentRating);
+        console.log('DOM element ', $el);
+    }
+});
+
 $(document).ready(function () {
     $(window).on('load', function () {
         $('.hero').css("background-color", "rgba(0,0,0,1)");

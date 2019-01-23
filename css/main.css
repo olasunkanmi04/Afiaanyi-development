@@ -1910,10 +1910,8 @@ a:hover {
       font-size: 8px;
       border-radius: 2px; }
     .marketplace__product-rating-stars {
-      width: 11px;
-      height: 11px; }
-      .marketplace__product-rating-stars:nth-child(5) {
-        fill: #dddddd; }
+      display: inline-block;
+      vertical-align: middle; }
     .marketplace__product-rating-number {
       float: right;
       font-size: 10px;
@@ -2150,9 +2148,9 @@ a:hover {
   .quickview__modal-ratings {
     margin-right: 38px;
     margin-bottom: 15px; }
-    .quickview__modal-ratings svg {
-      width: 14px !important;
-      height: 14px !important; }
+    .quickview__modal-ratings-stars {
+      display: inline-block;
+      vertical-align: middle; }
     .quickview__modal-ratings-figure {
       font-weight: 300;
       font-size: 16px;
@@ -2514,3 +2512,20 @@ a:hover {
       font-size: 20px;
       font-weight: 700;
       margin: 0 9px; }
+
+.business-directory__navbar .navbar__link {
+  color: #353535 !important;
+  font-weight: 500; }
+
+.business-directory__header {
+  background: #ffffff;
+  position: relative; }
+
+.business-directory__hero {
+  background: url("../images/background-one.png") no-repeat;
+  background-size: cover;
+  height: 440px; }
+  .business-directory__hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%; }
