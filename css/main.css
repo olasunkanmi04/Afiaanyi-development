@@ -1702,6 +1702,7 @@ a:hover {
     .marketplace__top-slider .slick-next {
       right: -70px;
       height: fit-content;
+      height: -moz-fit-content;
       background: url("../images/arrow-background-right.svg") no-repeat;
       padding: 30px; }
       .marketplace__top-slider .slick-next::before {
@@ -1712,6 +1713,7 @@ a:hover {
       background: url("../images/arrow-background.svg") no-repeat;
       background-size: contain;
       height: fit-content;
+      height: -moz-fit-content;
       padding: 30px; }
       .marketplace__top-slider .slick-prev::before {
         content: url(../icon2/arrow-before-two.svg) !important; }
@@ -1766,7 +1768,10 @@ a:hover {
     .marketplace__featured-brand-wrapper {
       display: flex; }
   .marketplace__featured-individual-brand {
+    width: 100%;
+    width: -moz-available;
     width: -webkit-fill-available;
+    width: fill-available;
     height: 300px;
     border-radius: 4px;
     position: relative;
