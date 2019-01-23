@@ -1659,9 +1659,41 @@ a:hover {
   .promote {
     height: 130px; } }
 
+@font-face {
+  font-family: 'Coolvetica';
+  src: url("../fonts/coolvetica.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/Segoe UI.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Poppins Light";
+  src: url("../fonts/Poppins-Light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Adobe Gothic";
+  src: url("../fonts/adobegothicstd-bold.otf");
+  font-weight: normal;
+  font-style: normal; }
+
 .marketplace {
   height: 481px;
   padding: 0 50px; }
+  .marketplace__body {
+    font-family: Segoe UI, sans-serif; }
   .marketplace__top-slider {
     position: relative;
     height: 100%;
@@ -1699,15 +1731,20 @@ a:hover {
         font-size: 60px;
         width: 450px;
         color: #FFFFFF;
-        font-weight: 700; }
+        font-family: coolvetica, sans-serif;
+        line-height: 80px; }
+      .marketplace__top-slider-individual-content button {
+        font-family: coolvetica, sans-serif;
+        font-size: 12px;
+        letter-spacing: 2px; }
   .marketplace__topAd {
     background: #FCFCFC;
     width: 250px;
-    height: fit-content;
+    height: 176px;
     padding: 10px; }
     .marketplace__topAd-info {
       margin-left: 20px;
-      margin-bottom: 15px; }
+      margin-bottom: 30px; }
       .marketplace__topAd-info h3 {
         text-transform: uppercase;
         font-size: 12px;
@@ -1722,7 +1759,8 @@ a:hover {
   .marketplace__section-heading {
     color: #33333a;
     font-size: 24px;
-    text-align: center; }
+    text-align: center;
+    font-family: Segoe UI; }
   .marketplace__featured-brand {
     padding: 36px 50px; }
     .marketplace__featured-brand-wrapper {
@@ -1744,11 +1782,13 @@ a:hover {
       .marketplace__featured-individual-brand-info h3 {
         font-size: 24px;
         color: #ffffff;
-        margin-bottom: 11px; }
+        margin-bottom: 11px;
+        font-family: Adobe Gothic; }
       .marketplace__featured-individual-brand-info p {
         font-size: 13px;
         color: #ffffff;
-        font-weight: 100; }
+        font-weight: 300;
+        font-family: Poppins Light; }
       .marketplace__featured-individual-brand-info-button {
         background-color: #ffffff;
         color: #000000;
@@ -2079,7 +2119,8 @@ a:hover {
     .quickview__modal-body-price h3 {
       font-size: 24px;
       color: #000000;
-      font-weight: 300; }
+      font-weight: 300;
+      margin-bottom: 10px; }
     .quickview__modal-body-price small {
       font-size: 12px;
       color: #000000; }
@@ -2122,7 +2163,8 @@ a:hover {
   .quickview__modal-security {
     background: #FCFCFC;
     border: 1px solid #C4C4C4;
-    width: fit-content; }
+    width: fit-content;
+    height: fit-content !important; }
     .quickview__modal-security h3 {
       font-size: 12px;
       color: #000000;
@@ -2219,7 +2261,7 @@ a:hover {
       vertical-align: middle;
       padding: 0 5px; }
     .quickview__modal-quantity-figure {
-      width: 66%;
+      width: 63%;
       text-align: center;
       border: none;
       line-height: 38px; }
@@ -2337,9 +2379,16 @@ a:hover {
   .marketplace__featured-individual-brand:nth-child(1) {
     margin-right: 0; } }
 
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/Segoe UI.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
 .breadcrumb {
   padding: 20px 50px;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-top: 36px; }
   .breadcrumb__link {
     font-size: 12px;
     color: #000000;
@@ -2354,6 +2403,9 @@ a:hover {
     font-size: 12px;
     color: #000000;
     vertical-align: middle; }
+
+.product-page__body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 .product-page__details {
   padding: 20px 120px; }

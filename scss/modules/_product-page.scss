@@ -1,6 +1,14 @@
+@font-face {
+    font-family: "Segoe UI";
+    src: url('../fonts/Segoe UI.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .breadcrumb {
     padding: 20px 50px;
     background-color: #fff;
+    margin-top: 36px;
 
     &__link {
         font-size: 12px;
@@ -26,6 +34,10 @@
 }
 
 .product-page {
+    &__body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
     &__details {
         padding: 20px 120px;
     }

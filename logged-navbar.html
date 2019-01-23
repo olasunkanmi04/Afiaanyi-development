@@ -1,63 +1,111 @@
-<header class="navbar__home logged-navbar fixed-top" id="topnav">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand p-0 navbar__brand" href="#">
-            <img src="images/logo.png" width="76" height="71" alt="">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse responsive__nav-menu" id="navbarSupportedContent">
-            <div class="newsletter__input-wrapper logged-navbar__search">
-                <input type="text" name="" id="" placeholder="Search for products, brands and categories" class="newsletter__input">
-                <div class="newsletter__input-btn">
-                    <svg class="icon icon-search-icon">
-                        <use xlink:href="#icon-search-icon"></use>
-                    </svg>
-                </div>
-            </div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item navbar__item logged-navbar__item">
-                    <a class="nav-link navbar__link" href="#">Directory</a>
-                </li>
-                <li class="nav-item navbar__item logged-navbar__item logged-navbar__item-active ">
-                    <a class="nav-link navbar__link" href="#">Shop</a>
-                </li>
-                <li class="nav-item navbar__item logged-navbar__item mr-4">
-                    <a class="nav-link navbar__link" href="#">Jobs</a>
-                </li>
-                <li class="nav-item navbar__item logged-navbar__create-store mr-5">
-                    <a class="nav-link navbar__link" href="#">Create Store</a>
-                </li>
-
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item navbar__item logged-navbar__item p-0" style="line-height: 48px;">
-                    <span class="logged-navbar__welcome">Welcome, <span>Stephen!</span></span>
-                </li>
-                <li class="nav-item navbar__item dropdown">
-                    <a href="#" class="inset dropdown-toggle navbar__link" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="http://rs775.pbsrc.com/albums/yy35/PhoenyxStar/link-1.jpg~c200">
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item navbar__item logged-navbar__item">
-                    <svg class="icon icon-like">
-                        <use xlink:href="#icon-like"></use>
-                    </svg>
-                    <svg class="icon icon-cart">
-                        <use xlink:href="#icon-cart"></use>
-                    </svg>
-                </li>
-            </ul>
+<nav>
+    <div class="row header__nav-content">
+        <div>
+            <img src="images/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
         </div>
-    </nav>
-</header>
+
+        <form class="header__form">
+            <input type="search" class="header__form-input header__input-nav" placeholder="Search for products, brands and categories">
+            <input type="submit" class="header__submit">
+        </form>
+        <ul class="header__nav-list-container">
+            <li class="header__nav-list">
+                <a href="" class="header__nav-link">Directory</a>
+            </li>
+            <li class="header__nav-list">
+                <a href="" class="header__nav-link">Shop</a>
+            </li>
+            <li class="header__nav-list">
+                <a href="" class="header__nav-link">Jobs</a>
+            </li>
+            <li class="header__nav-list">
+                <a href="" class="header__nav-link header--outlined">Create A Store</a>
+            </li>
+        </ul>
+
+        <div class="header__side-list">
+            Welcome, &nbsp;
+            <span class="header__username"> Stephen!</span>
+            <span>
+                <a href="">
+                    <img src="images/man.png" class="header-nav-icon header__avatar" height="35px" width="35px">
+                </a>
+            </span>
+            <span>
+                <a href="">
+                    <img src="images/gold-favorite.svg" class="header-nav-icon">
+                </a>
+            </span>
+            <span>
+                <a href="">
+                    <img src="images/gold-shop-cart.svg" class="header-nav-icon">
+                </a>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<div class="row full-nav">
+    <ul class="header__full-nav mx-auto">
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Phone & Tablets</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Computing</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Electronics</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Fashion</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Home & Office</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Home & Beauty</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Gaming</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Grocery</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Toys, Kids & Babies</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Home Improvement, Tools</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Sports & Outdoor</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+        <li class="header__full-nav-list">
+            <a href="" class="header__full-nav-link">Other Categories</a>
+            &nbsp;
+            <img src="images/gold-up-arrow.svg">
+        </li>
+    </ul>
+</div>
