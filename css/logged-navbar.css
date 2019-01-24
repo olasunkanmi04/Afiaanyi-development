@@ -1,5 +1,4 @@
 .row {
-    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -61,6 +60,7 @@ nav {
 }
 
 .header__nav-content {
+    max-width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -169,6 +169,7 @@ nav {
 }
 
 .header__full-nav {
+    max-width: 90%;
     list-style: none;
     display: flex;
     height: 50px;

@@ -1741,7 +1741,7 @@ a:hover {
         letter-spacing: 2px; }
   .marketplace__topAd {
     background: #FCFCFC;
-    width: 250px;
+    width: auto;
     height: 176px;
     padding: 10px; }
     .marketplace__topAd-info {
@@ -2357,6 +2357,117 @@ a:hover {
   height: 20px;
   fill: #000000;
   margin-right: 8px; }
+
+.hero-ad-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+
+.hero {
+  position: relative;
+  width: 80.7%; }
+
+.hero--text {
+  font-family: coolvetica, sans-serif;
+  color: #fff;
+  line-height: 6rem;
+  position: absolute;
+  font-size: 5rem;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%); }
+
+.legend__controller {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 115px;
+  height: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  bottom: 5%;
+  border-radius: 4px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px; }
+
+.legend {
+  height: 10px;
+  width: 10px;
+  background: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%; }
+
+.legend--active {
+  background: #fff; }
+
+.slide--market {
+  height: 400px;
+  width: 80%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/market-header.svg);
+  background-size: cover;
+  background-position: center; }
+
+slides {
+  position: relative;
+  width: 78%; }
+
+.slider__container {
+  position: relative;
+  display: flex;
+  width: 500%;
+  left: -100%;
+  overflow: hidden; }
+
+.slider__outer-cont {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.pause,
+.play {
+  display: block;
+  cursor: pointer; }
+
+.hero__slider-nav {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%); }
+
+.hero__slider-nav--left {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%); }
+
+.hero__slider-nav--left,
+.hero__slider-nav {
+  cursor: pointer; }
 
 @media screen and (max-width: 1079px) {
   .marketplace__featured-individual-brand:last-child {
