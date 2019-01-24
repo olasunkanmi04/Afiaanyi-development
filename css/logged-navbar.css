@@ -1,11 +1,15 @@
 .row {
+    max-width: 90%;
     margin: 0 auto;
+}
+
+header {
+    position: relative;
 }
 
 nav {
     height: 100px;
     width: 100%;
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .header__logo {
@@ -13,9 +17,6 @@ nav {
     width: 90px;
 }
 
-.header__form {
-    margin-right: 10px;
-}
 
 .header__form-input {
     padding: 8px;
@@ -44,7 +45,12 @@ nav {
 
 .header__input-nav {
     float: left;
-    margin-left: 80px;
+}
+
+.header__customized-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__form-input::placeholder {
@@ -55,9 +61,9 @@ nav {
 }
 
 .header__nav-content {
-    max-width: 90%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -75,7 +81,8 @@ nav {
 .header__nav-link:visited {
     text-decoration: none;
     color: #000;
-    font-size: 1rem;
+    font-family: Montserrat;
+    font-size: 12px;
     margin-right: inherit;
     font-weight: 500;
 }
@@ -120,46 +127,107 @@ nav {
     margin-left: 12px;
 }
 
-.full-nav {
-    max-width: 90%;
-    padding-top: 10px;
-    padding-bottom: 14px;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
-    max-width: 100%;
-}
-
 .header__username {
     color: red;
+}
+
+.header__greeting {
+    font-family: "Montserrat";
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 12px;
+}
+
+.full--nav {
+    position: relative;
+}
+
+.dropdown__header {
+    padding: 0 15px 26px 15px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+    background: #fff;
+    color: black;
+    display: none;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.header__full-nav-list:hover .dropdown__header,
+.header__full-nav-link:hover .dropdown__header {
+    display: block;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 
 .header__full-nav {
     list-style: none;
     display: flex;
+    height: 50px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__full-nav-list {
-    text-decoration: none;
-    cursor: pointer;
-    margin-right: 5px;
+    padding: 30px 0;
 }
 
 .header__full-nav-link:link,
 .header__full-nav-link:visited {
     text-decoration: none;
     color: #000;
+    padding: 14px 0;
     font-size: 12px;
     font-weight: normal;
-    word-spacing: -1px;
+    word-spacing: -1px
 }
 
-.header__full-nav-link+img {
-    margin-left: -10px;
+.drop-down__content {
+    display: flex;
+    padding: 9px 17px;
+    justify-content: space-around;
 }
 
-.header__full-nav-link {
-    margin-right: 5px;
+.drop-drop__list-title {
+    color: #000;
+    margin: 0;
+    font-weight: 500;
+
+}
+
+.drop-down__content li {
+    list-style: none;
+}
+
+.drop-down__content li a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    white-space: nowrap;
+    line-height: 18px;
+}
+
+.drop-down__content ul {
+    padding-left: 12px;
+}
+
+.drop-down__content h4 {
+    font-size: 12px;
+    padding-top: 7px;
+    line-height: 26px;
+    white-space: nowrap;
+}
+
+
+.drop-down__column {
+    padding: 0px 18px;
 }
