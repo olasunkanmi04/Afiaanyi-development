@@ -1694,6 +1694,9 @@ a:hover {
   padding: 0 50px; }
   .marketplace__body {
     font-family: Segoe UI, sans-serif; }
+  .marketplace__hero {
+    position: relative;
+    width: 80.7%; }
   .marketplace__top-slider {
     position: relative;
     height: 100%;
@@ -2363,10 +2366,6 @@ a:hover {
   justify-content: space-between;
   position: relative; }
 
-.hero {
-  position: relative;
-  width: 80.7%; }
-
 .hero--text {
   font-family: coolvetica, sans-serif;
   color: #fff;
@@ -2689,17 +2688,18 @@ slides {
       height: 300px;
       width: 100%;
       position: relative;
-      border-radius: 4px;
+      border-radius: 4px 4px 0 0;
       overflow: hidden; }
       .business-directory__recommend-individual-image img {
-        border-radius: 4px; }
+        border-radius: 4px 4px 0 0; }
       .business-directory__recommend-individual-image-overlay {
         background: rgba(0, 0, 0, 0.3);
         border-radius: 4px;
         position: absolute;
         top: 0;
         height: 100%;
-        width: 100%; }
+        width: 100%;
+        border-radius: 4px 4px 0 0; }
     .business-directory__recommend-individual-name {
       text-align: center;
       height: 64px; }
@@ -2719,7 +2719,47 @@ slides {
 .business-directory__category {
   padding: 0 70px; }
   .business-directory__category-heading {
-    font-size: 18px;
-    color: #333333;
+    margin-bottom: 30px; }
+    .business-directory__category-heading-text {
+      font-size: 18px;
+      color: #333333;
+      font-weight: 600;
+      font-family: 'Raleway', sans-serif; }
+  .business-directory__category-individual {
+    height: 364px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 26px rgba(202, 170, 59, 0.2);
+    margin-bottom: 30px; }
+
+.business-directory__testimony {
+  background: rgba(202, 170, 59, 0.06);
+  padding-bottom: 80px;
+  margin-top: 40px;
+  padding-top: 40px;
+  margin-bottom: 0; }
+  .business-directory__testimony-heading {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
     font-weight: 600;
-    font-family: 'Raleway', sans-serif; }
+    font-size: 24px;
+    color: #353535; }
+
+.business-directory__promote {
+  background: url("../images/promote-background2.png") no-repeat;
+  height: 200px;
+  width: 100%;
+  background-size: cover; }
+  .business-directory__promote-info {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center; }
+    .business-directory__promote-info h2 {
+      font-weight: 500;
+      font-size: 36px;
+      color: #FFFFFF;
+      margin-right: 60px; }
+  .business-directory__promote-button {
+    padding: 14px 50px;
+    text-transform: uppercase;
+    font-weight: 600; }

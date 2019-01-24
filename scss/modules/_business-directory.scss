@@ -88,11 +88,11 @@
                 height: 300px;
                 width: 100%;
                 position: relative;
-                border-radius: 4px;
+                border-radius: 4px 4px 0 0;
                 overflow: hidden;
 
                 img {
-                    border-radius: 4px;
+                    border-radius: 4px 4px 0 0;
                 }
 
                 &-overlay {
@@ -102,6 +102,8 @@
                     top: 0;
                     height: 100%;
                     width: 100%;
+                    border-radius: 4px 4px 0 0;
+
                 }
             }
 
@@ -133,10 +135,68 @@
         padding: 0 70px;
 
         &-heading {
-            font-size: 18px;
-            color: #333333;
-            font-weight: 600;
+
+            margin-bottom: 30px;
+
+            &-text {
+                font-size: 18px;
+                color: #333333;
+                font-weight: 600;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+
+        &-individual {
+            height: 364px;
+            border-radius: 4px;
+            box-shadow: 0px 4px 26px rgba(202, 170, 59, 0.2);
+            margin-bottom: 30px;
+        }
+
+
+    }
+
+    &__testimony {
+        background: rgba(202, 170, 59, 0.06);
+        padding-bottom: 80px;
+        margin-top: 40px;
+        padding-top: 40px;
+        margin-bottom: 0;
+
+        &-heading {
             font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            color: #353535;
+
+        }
+    }
+
+    &__promote {
+        background: url("../images/promote-background2.png") no-repeat;
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+
+        &-info {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-weight: 500;
+                font-size: 36px;
+                color: #FFFFFF;
+                margin-right: 60px;
+            }
+        }
+
+        &-button {
+            padding: 14px 50px;
+            text-transform: uppercase;
+            font-weight: 600;
         }
     }
 }
