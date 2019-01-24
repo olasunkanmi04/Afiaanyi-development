@@ -2636,7 +2636,7 @@ slides {
   background-size: cover;
   height: 440px; }
   .business-directory__hero-overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(3, 3, 3, 0.24);
     width: 100%;
     height: 100%;
     position: relative; }
@@ -2763,3 +2763,83 @@ slides {
     padding: 14px 50px;
     text-transform: uppercase;
     font-weight: 600; }
+
+.all-services__hero {
+  background: url("../images/all-services.jpg") no-repeat;
+  background-size: cover; }
+  .all-services__hero-text {
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 630px;
+    line-height: 36px; }
+    .all-services__hero-text-wrapper {
+      display: -webkit-box;
+      -webkit-box-pack: center;
+      -webkit-box-align: center; }
+  .all-services__hero-tab {
+    background: transparent; }
+    .all-services__hero-tab-hire {
+      padding: 25px 20px; }
+    .all-services__hero-tab-compare {
+      padding: 13px 20px; }
+    .all-services__hero-tab-icon {
+      width: 30px !important;
+      height: 30px !important;
+      margin-right: 18px; }
+    .all-services__hero-tab-text {
+      vertical-align: middle;
+      display: inline-block;
+      color: #FFFFFF;
+      line-height: 24px; }
+      .all-services__hero-tab-text p:nth-child(2) {
+        font-weight: 100;
+        font-size: 14px; }
+      .all-services__hero-tab-text p:first-child {
+        font-weight: 700; }
+    .all-services__hero-tab-wrapper {
+      background: rgba(0, 0, 0, 0.5); }
+
+.all-services__wrapper {
+  padding: 70px; }
+
+.all-services__individual {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  height: 287px; }
+  .all-services__individual-image {
+    height: 190px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    position: relative; }
+    .all-services__individual-image img {
+      border-radius: 8px 8px 0 0; }
+    .all-services__individual-image-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      top: 0;
+      border-radius: 8px 8px 0 0; }
+  .all-services__individual-info {
+    position: relative;
+    height: 97px; }
+    .all-services__individual-info .interest__individual-cover-img {
+      width: 70px;
+      height: 70px !important; }
+    .all-services__individual-info p {
+      font-weight: 600;
+      line-height: 97px;
+      font-size: 18px;
+      color: #333333;
+      text-align: center; }
+  .all-services__individual-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+    margin-left: auto;
+    margin-right: auto; }
