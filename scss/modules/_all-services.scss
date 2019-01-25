@@ -117,4 +117,30 @@
             margin-right: auto;
         }
     }
+
+    &__info {
+        padding: 0px 70px;
+        margin-bottom: 20px;
+
+        h4 {
+            line-height: 32px;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        p {
+            line-height: 32px;
+            font-size: 16px;
+            color: #333333;
+            text-align: justify;
+        }
+    }
+
+    &__promote {
+        background: url("../images/promote-background3.jpg") no-repeat !important;
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+    }
 }

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Afiaanyi | Marketplace</title>
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
+        crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/logged-navbar.css">
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/star-rating-svg.css">
+
+    <script src="js/csi.min.js"></script>
+
+</head>
+
+
+<body class="marketplace__body">
+    <div data-include="svg.html"></div>
+
+    <div data-include="logged-navbar.html"></div>
+
+    <section class="cart">
+        <div class="cart__update">
+            <p>Your Cart has been updated</p>
+        </div>
+
+        <div class="cart__item-count">
+            <p>Cart (<span>1</span> Item)</p>
+            <a href="#">Free Shipping Criteria</a>
+        </div>
+
+
+        <ul class="cart__item-heading">
+            <li>Item</li>
+            <li>Quantity</li>
+            <li>Unit Price</li>
+            <li>Subtotal</li>
+        </ul>
+
+        <div class="cart__item-wrapper">
+            <div class="cart__item-details">
+                <div class="cart__item-details-image">
+                    <img src="images/LG-phone.jpg" alt="Product Image" class="img-fluid" width="92" height="92">
+                </div>
+                <div class="cart__item-details-info">
+                    <small>Seller: <span>Intel Telcom</span></small>
+                    <p class="cart__item-details-info-name">ALCATEL 7-1, 4GB RAM, 64GB INTERNAL MEMORY</p>
+                    <div class="cart__item-details-info-action">
+                        <a href="#">
+                            <svg class="icon icon-like">
+                                <use xlink:href="#icon-like"></use>
+                            </svg>
+                            <span>ADD TO SAVED ITEMS</span>
+                        </a>
+                        <a href="#">
+                            <svg class="icon icon-delete">
+                                <use xlink:href="#icon-delete"></use>
+                            </svg>
+                            <span>REMOVE</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cart__item-quantity">
+                <select name="quantity" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="cart__item-price">
+                <p><span>₦</span>34,000</p>
+            </div>
+            <div class="cart__item-subtotal">
+                <p><span>₦</span>34,000</p>
+            </div>
+        </div>
+
+
+
+        <div class="cart__summary">
+            <div class="cart__total">
+                <p class="cart__total-title">Total:</p>
+                <p class="cart__total-price"><span>₦</span>34,000</p>
+            </div>
+            <div class="cart__free-shipping">
+                <a href="#" class="btn btn-primary cart__free-shipping-btn">Free Shipping Eligibility Status</a>
+            </div>
+            <div class="cart__button">
+                <a href="#" class="cart__button-continue">Continue Shopping</a>
+                <a href="#" class="cart__button-checkout">Checkout</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="newsletter marketplace__newsletter">
+        <div class="row m-0">
+            <div class="col-lg-5 col-md-5 col-sm-6 col-12 mb-4 pl-0">
+                <div class="row m-0">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                        <h4 class="newsletter__head">PHONE SUPPORT</h4>
+                        <svg class="icon icon-phone newsletter__icon">
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>
+                        <span class=" newsletter__info">+234 803 400 0000</span>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                        <h4 class="newsletter__head">EMAIL SUPPORT</h4>
+                        <svg class="icon icon-email newsletter__icon">
+                            <use xlink:href="#icon-email"></use>
+                        </svg>
+                        <span class=" newsletter__info">info@afiaanyi.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-6 col-12 newsletter__get-latest">
+                <div class="row m-0">
+                    <div class="col-lg-6 col-md-12 mb-3">
+                        <h4 class="newsletter__head">GET LATEST DEALS & UPDATES</h4>
+                        <p class="newsletter__info newsletter__info-getupdate">Stay in the loop on all upcoming
+                            promotions, discounts and latest
+                            updates.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 pr-0">
+                        <div class="newsletter__input-wrapper">
+                            <input type="text" name="" id="" placeholder="Enter e-mail" class="newsletter__input">
+                            <div class="newsletter__input-btn">
+                                <svg class="icon icon-go">
+                                    <use xlink:href="#icon-go"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div data-include="footer.html"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
