@@ -2337,7 +2337,6 @@ a:hover {
 /* bootstrap hack: fix content width inside hidden tabs */
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
-  display: block;
   /* undo display:none          */
   height: 0;
   /* height:0 is also invisible */
