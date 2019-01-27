@@ -9,11 +9,13 @@
             color: #FFFFFF;
             width: 630px;
             line-height: 36px;
+            text-align: center;
 
             &-wrapper {
-                display: -webkit-box;
-                -webkit-box-pack: center;
-                -webkit-box-align: center;
+                height: 100%;
+                padding-top: 180px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
         }
 
@@ -138,9 +140,9 @@
     }
 
     &__promote {
-        background: url("../images/promote-background3.jpg") no-repeat !important;
+        background: url("../images/promote-background3.jpg") no-repeat;
         height: 200px;
         width: 100%;
-        background-size: cover;
+        background-size: 100% 100%;
     }
 }

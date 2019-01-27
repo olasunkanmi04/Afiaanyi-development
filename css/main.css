@@ -2785,11 +2785,13 @@ slides {
     font-size: 24px;
     color: #FFFFFF;
     width: 630px;
-    line-height: 36px; }
+    line-height: 36px;
+    text-align: center; }
     .all-services__hero-text-wrapper {
-      display: -webkit-box;
-      -webkit-box-pack: center;
-      -webkit-box-align: center; }
+      height: 100%;
+      padding-top: 180px;
+      padding-left: 20px;
+      padding-right: 20px; }
   .all-services__hero-tab {
     background: transparent; }
     .all-services__hero-tab-hire {
@@ -2872,10 +2874,10 @@ slides {
     text-align: justify; }
 
 .all-services__promote {
-  background: url("../images/promote-background3.jpg") no-repeat !important;
+  background: url("../images/promote-background3.jpg") no-repeat;
   height: 200px;
   width: 100%;
-  background-size: cover; }
+  background-size: 100% 100%; }
 
 .cart {
   padding: 0 100px;
