@@ -1,0 +1,110 @@
+.footer {
+    height: fit-content;
+    background-color: #414040;
+    padding: 40px 73px;
+    position: relative;
+    overflow: hidden;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: 5%;
+
+        &-download {
+            margin-left: auto;
+            margin-right: 5%;
+        }
+    }
+
+    &__heading {
+        color: #E6B712;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 14px;
+    }
+
+    &__app-store {
+        display: inline-block !important;
+        width: 120px;
+    }
+
+    a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    &__social {
+        svg {
+            width: 26px !important;
+            height: 26px !important;
+        }
+
+        span {
+            font-size: 12px;
+            font-weight: 500;
+            color: #ffffff;
+            margin-right: 20px;
+        }
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    &__states {
+        margin-left: 15px;
+    }
+
+    &__copyright {
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    &__design {
+        position: absolute;
+        bottom: -60px;
+        right: -50px;
+        height: 227px;
+        width: 279px;
+        opacity: 0.4;
+    }
+
+    &__poweredby {
+        margin-top: 56px;
+
+        span {
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
+@media screen and (max-width: 1132px) {
+    .footer__item-download {
+        margin-left: 0;
+    }
+
+    .footer__item {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        padding: 40px 18px;
+    }
+}
