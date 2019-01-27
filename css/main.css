@@ -830,8 +830,10 @@ body {
     .hero__search-fields {
       height: 68px;
       background: rgba(255, 255, 255, 0.8);
-      padding: 22px 38px;
-      display: inline-block; }
+      padding: 20px !important;
+      padding-right: 10px !important;
+      display: inline-block;
+      margin-right: 3px; }
       .hero__search-fields:focus {
         border: 1px #E6B712 solid !important; }
     .hero__search-companies {
@@ -2333,8 +2335,9 @@ a:hover {
   margin-bottom: 30px; }
 
 .full {
-  width: 300px;
   height: 400px; }
+  .full img {
+    max-height: 400px; }
 
 @-webkit-keyframes fadeIn {
   from {
@@ -2681,11 +2684,11 @@ slides {
       font-weight: 500;
       font-family: 'Raleway', sans-serif; }
     .business-directory__recommend-heading-seeall {
-      font-weight: 600;
+      font-weight: 300;
       line-height: normal;
-      font-size: 16px;
+      font-size: 12px;
       text-transform: capitalize;
-      color: #353535;
+      color: #E6B712;
       margin-left: auto;
       font-family: 'Raleway', sans-serif; }
       .business-directory__recommend-heading-seeall:hover {
@@ -2737,7 +2740,8 @@ slides {
       font-size: 18px;
       color: #333333;
       font-weight: 600;
-      font-family: 'Raleway', sans-serif; }
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase; }
   .business-directory__category-individual {
     height: 364px;
     border-radius: 4px;
@@ -3028,9 +3032,10 @@ select:not([multiple]) {
   background-position: right 50%;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1"><path d="M4 8L0 4h8z"/></svg>');
+  background-image: url("../icon2/dropdown-icon.svg");
   padding: .5em;
-  padding-right: 1.5em; }
+  padding-right: .5em;
+  background-origin: content-box; }
 
 .signup__hero {
   width: 100%;

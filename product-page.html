@@ -52,7 +52,7 @@
 
     <section class="product-page__details">
         <div class="quickview__modal-body d-flex">
-            <div class="quickview__modal-body-image">
+            <div class="quickview__modal-body-image w-50">
                 <div class="gallery clearfix">
                     <div class="pics clearfix d-flex">
                         <div class="thumbs mr-3">
@@ -77,14 +77,14 @@
                                 </a>
                             </div>
                         </div>
-                        <a href="images/product-one.png" class="full" title="Spring 2013 | Luna + Hill">
+                        <a href="images/product-one.png" class="full w-100" title="Spring 2013 | Luna + Hill">
                             <!-- first image is viewable to start -->
-                            <img src="images/product-one.png" class="img-fluid">
+                            <img src="images/product-one.png" class="img-fluid w-auto mx-auto d-block">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="quickview__modal-body-details">
+            <div class="quickview__modal-body-details w-50">
                 <h2 class="quickview__modal-body-details-heading">The Sideswept Dhoti + Bottom Line Grey
                     (Slik)</h2>
                 <div class="quickview__modal-body-price-wrapper d-flex">
@@ -185,13 +185,17 @@
                     </div>
                     <div class="quickview__modal-button-wrapper">
                         <h4>Quantity</h4>
-                        <div class="quickview__modal-quantity">
-                            <span class="quickview__modal-quantity-reduce">-</span>
-                            <input type="text" value="1" class="quickview__modal-quantity-figure">
-                            <span class="quickview__modal-quantity-increase">+</span>
+                        <div class="d-flex">
+                            <div class="quickview__modal-quantity d-block mr-2">
+                                <span class="quickview__modal-quantity-reduce">-</span>
+                                <input type="text" value="1" class="quickview__modal-quantity-figure">
+                                <span class="quickview__modal-quantity-increase">+</span>
+                            </div>
+                            <button class="btn btn-primary marketplace__product-quickview-btn d-block ml-auto mr-2">Buy
+                                Now</button>
+                            <button class="btn btn-primary quickview__modal-quantity-addtocart d-block ml-auto">Add to
+                                Cart</button>
                         </div>
-                        <button class="btn btn-primary marketplace__product-quickview-btn">Buy Now</button>
-                        <button class="btn btn-primary quickview__modal-quantity-addtocart">Add to Cart</button>
                     </div>
                     <div class="quickview__modal-share">
                         <span>Share this product</span>

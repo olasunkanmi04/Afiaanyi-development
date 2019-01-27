@@ -63,11 +63,11 @@
             }
 
             &-seeall {
-                font-weight: 600;
+                font-weight: 300;
                 line-height: normal;
-                font-size: 16px;
+                font-size: 12px;
                 text-transform: capitalize;
-                color: #353535;
+                color: #E6B712;
                 margin-left: auto;
                 font-family: 'Raleway', sans-serif;
 
@@ -136,7 +136,6 @@
         padding: 0 70px;
 
         &-heading {
-
             margin-bottom: 30px;
 
             &-text {
@@ -144,6 +143,7 @@
                 color: #333333;
                 font-weight: 600;
                 font-family: 'Raleway', sans-serif;
+                text-transform: uppercase;
             }
         }
 

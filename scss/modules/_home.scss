@@ -101,8 +101,10 @@
         &-fields {
             height: 68px;
             background: rgba(255, 255, 255, 0.8);
-            padding: 22px 38px;
+            padding: 20px !important;
+            padding-right: 10px !important;
             display: inline-block;
+            margin-right: 3px;
 
             &:focus {
                 border: 1px #E6B712 solid !important;
