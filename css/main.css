@@ -1961,7 +1961,8 @@ a:hover {
         transition: 0.5s ease-in;
         background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
         border: none;
-        border-radius: 2px; }
+        border-radius: 2px;
+        font-size: 12px; }
   .marketplace__recommended {
     padding: 36px 50px;
     display: flex;
@@ -2129,9 +2130,10 @@ a:hover {
       background: #FFFFFF;
       box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05); }
   .quickview__modal-body-image {
-    margin-right: 20px; }
+    margin-right: 20px;
+    width: 40%; }
   .quickview__modal-body-details {
-    width: 100%; }
+    width: 60%; }
     .quickview__modal-body-details-heading {
       font-size: 24px;
       color: #030303;
@@ -2884,8 +2886,10 @@ slides {
   background-size: 100% 100%; }
 
 .cart {
-  padding: 0 100px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
   .cart__update {
     border: 1px solid #E6B712;
     padding: 5px 22px;
