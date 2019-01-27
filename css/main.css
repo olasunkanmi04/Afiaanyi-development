@@ -3073,3 +3073,37 @@ select:not([multiple]) {
   width: 50%;
   margin: auto;
   z-index: 1; }
+
+.top-brand__hero {
+  height: 512px; }
+
+.top-brand__filter {
+  border: 1px solid #DEDEDE;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 165px; }
+  .top-brand__filter-wrapper {
+    padding: 30px 70px;
+    padding-bottom: 0; }
+
+.top-brand__details {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.top-brand__name {
+  font-weight: 600;
+  line-height: normal !important;
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 8px; }
+
+.top-brand__category {
+  font-size: 12px;
+  color: #979797; }
+  .top-brand__category:hover {
+    color: #979797; }
