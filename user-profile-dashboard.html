@@ -8,8 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="css/logged-navbar.css">
@@ -128,10 +128,81 @@
                 <div class="user-profile__overview-heading">
                     <h3>Overview</h3>
                 </div>
+                <div class="user-profile__details">
+                    <table class="w-100 user-profile__details-table">
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Name:</td>
+                            <td class="user-profile__details-answer">John Doe</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Business Name:</td>
+                            <td class="user-profile__details-answer">John Doe Enterprises</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Email:</td>
+                            <td class="user-profile__details-answer">johndoe@gmail.com</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Business Hours:</td>
+                            <td class="user-profile__details-answer">07:00 AM - 08:00 PM (Weekday)</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td></td>
+                            <td class="user-profile__details-answer">10:00 AM - 05:00 PM (Weekend)</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Address:</td>
+                            <td class="user-profile__details-answer">5, John Doe Street, John Doe,
+                                Nigeria</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Tel:</td>
+                            <td class="user-profile__details-answer">08030000000</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Website:</td>
+                            <td class="user-profile__details-answer">johndoeenterprise.com</td>
+                        </tr>
+                        <tr>
+                            <td class="user-profile__details-key">Gallery:</td>
+                        </tr>
 
+                    </table>
+                    <div class="d-flex mb-5">
+                        <div><img src="images/background-six.png" alt="" class="img-fluid mr-3" width="52" height="47"></div>
+                        <div><img src="images/background-six.png" alt="" class="img-fluid mr-3" width="52" height="47"></div>
+                        <div><img src="images/background-six.png" alt="" class="img-fluid mr-3" width="52" height="47"></div>
+                        <div><img src="images/background-six.png" alt="" class="img-fluid mr-3" width="52" height="47"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-profile__business">
+                <div class="user-profile__status">
+                    <h3 class="user-profile__status-heading">Your profile is <span>40%</span> complete</h3>
+                    <div id="progressbar"></div>
+                    <a href="#" class="user-profile__edit">Edit Profile</a>
+                </div>
             </div>
         </div>
     </section>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#progressbar").progressbar({
+                value: 40
+            });
+        });
+    </script>
 </body>
 
 </html>

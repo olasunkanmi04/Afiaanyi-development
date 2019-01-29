@@ -3,7 +3,7 @@
     width: 184px;
     background: url('../images/background-one.png') no-repeat;
     background-size: cover;
-    position: absolute;
+    position: fixed;
     left: 0;
     background-position-x: -650px;
 
@@ -60,6 +60,106 @@
 
     &__top {
         width: 70%;
+        margin-bottom: 30px;
     }
 
+    &__heading {
+        font-weight: 500;
+        line-height: 22px;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    &__overview {
+        width: 55%;
+        border: 1px solid #DEDEDE;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-right: 10px;
+
+        &-heading {
+            padding: 19px 26px;
+            border-bottom: 1px solid #DEDEDE;
+            box-sizing: border-box;
+            border-radius: 4px 4px 0px 0px;
+
+            h3 {
+                font-weight: 600;
+                line-height: 22px;
+                font-size: 16px;
+                color: #000000;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__details {
+        padding: 26px;
+        // padding-left: 0 !important;
+
+        &-table {
+            border-collapse: separate;
+            border-spacing: 0px 15px;
+        }
+
+        &-key,
+        &-answer {
+            font-weight: 500;
+            line-height: 22px;
+            font-size: 14px;
+            color: #000000;
+        }
+
+        &-answer {
+            padding-left: 80px;
+        }
+    }
+
+    &__business {
+        width: 40%;
+        margin-left: auto;
+    }
+
+    &__status {
+        border: 1px solid #DEDEDE;
+        box-sizing: border-box;
+        border-radius: 4px;
+        height: 92px;
+        padding: 12px 16px;
+
+        &-heading {
+            font-weight: 600;
+            line-height: 22px;
+            font-size: 12px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__edit {
+        font-weight: 600;
+        line-height: 22px;
+        font-size: 8px;
+        color: #F30000;
+        float: right;
+
+        &:hover {
+            color: #E6B712;
+        }
+    }
+}
+
+
+#progressbar {
+    height: 11px;
+    border-radius: 4px !important;
+    border: 1px solid #E6B712;
+    margin-bottom: 10px;
+}
+
+.ui-progressbar .ui-progressbar-value {
+    margin: 0 !important;
+    background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+    border-radius: 4px;
+    border: none;
 }
