@@ -170,6 +170,7 @@
         </div>
     </section>
 
+
     <section class="interest">
         <div class="interest__head">
             <h3 class="interest__head-text">What are you interested in?</h3>
@@ -888,6 +889,256 @@
     <div data-include="footer.html"></div>
 
 
+
+
+
+
+
+
+    <!-- sign up modals -->
+
+    <!-- signup modal -->
+    <div class="modal fade" id="signup-one" tabindex="-1" role="dialog" aria-labelledby="signuponelabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img src="images/signup-background.png" alt="" class="signup__background">
+                <div class="modal-body signup">
+                    <div class="signup__heading">
+                        <div class="signup__logo">
+                            <img src="images/market-logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="signup__heading-text">Create an Account</h3>
+                        <p class="signup__heading-subtext">Get access to thousands of buisnesses</p>
+                    </div>
+
+                    <div class="signup__form">
+                        <form action="sign up">
+                            <input type="text" name="Full name" class="signup__form-input form-control" placeholder="Full Name">
+                            <input type="text" name="" class="signup__form-input form-control" placeholder="Business Name">
+                            <input type="email" name="" class="signup__form-input form-control" placeholder="Business Email">
+                            <input type="password" name="" class="signup__form-input form-control" placeholder="Password">
+                            <button class="btn btn-primary signup__form-button" href="#signup-two" data-toggle="modal"
+                                data-dismiss="modal">Next</button>
+                        </form>
+                        <!-- <p class="signup__form-already-in">Already Registered? <a href="#">Sign in</a></p> -->
+                    </div>
+
+                    <img src="icons/afiaanyi icon.svg" alt="" class="interest__individual-cover-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="signup-two" tabindex="-1" role="dialog" aria-labelledby="signuptwolabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                <img src="images/signup-background.png" alt="" class="signup__background">
+
+                <div class="modal-body signup">
+
+                    <div class="signup__heading mb-4">
+                        <a href="#signup-one" data-toggle="modal" data-dismiss="modal">
+                            <svg class="icon icon-arrow-left">
+                                <use xlink:href="#icon-arrow-left"></use>
+                            </svg>
+                        </a>
+                        <div class="signup__logo d-inline-block">
+                            <img src="images/market-logo.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="signup__form">
+                        <form action="sign up">
+                            <input type="address" name="Full name" class="signup__form-input form-control" placeholder="Business Address Line 1">
+                            <input type="address" name="" class="signup__form-input form-control" placeholder="Business Address Line 2">
+                            <select name="State" id="" class="signup__form-input form-control" required>
+                                <option value="State" hidden>State</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Kogi">Kogi</option>
+                            </select>
+                            <select name="LGA" id="" class="signup__form-input form-control" required>
+                                <option value="LGA" hidden>LGA</option>
+                                <option value="Lagos">Kosofe</option>
+                                <option value="Kogi">Ikeja</option>
+                            </select>
+                            <button class="btn btn-primary signup__form-button" href="#signup-three" data-toggle="modal"
+                                data-dismiss="modal">Next</button>
+                        </form>
+                        <!-- <p class="signup__form-already-in">Already Registered? <a href="#">Sign in</a></p> -->
+                    </div>
+
+                    <img src="icons/afiaanyi icon.svg" alt="" class="interest__individual-cover-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signup-three" tabindex="-1" role="dialog" aria-labelledby="signupthreelabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img src="images/signup-background.png" alt="" class="signup__background">
+
+                <div class="modal-body signup">
+
+                    <div class="signup__heading mb-4">
+                        <a href="#signup-two" data-toggle="modal" data-dismiss="modal">
+                            <svg class="icon icon-arrow-left">
+                                <use xlink:href="#icon-arrow-left"></use>
+                            </svg>
+                        </a>
+                        <div class="signup__logo d-inline-block">
+                            <img src="images/market-logo.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="signup__form">
+                        <form action="sign up">
+                            <textarea name="What do you do" id="" class="signup__form-input form-control signup__form-textarea"
+                                placeholder="What do you do?"></textarea>
+                            <select name="Customers from" id="" class="signup__form-input form-control" required>
+                                <option value="" hidden>Where do you want customers from?</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Kogi">Kogi</option>
+                            </select>
+                            <select name="Business days" id="" class="signup__form-input form-control" required>
+                                <option value="" hidden>Business days</option>
+                                <option value="Lagos">Monday</option>
+                                <option value="Kogi">Tuesday</option>
+                            </select>
+
+                            <div class="multiselect">
+                                <div class="selectBox" onclick="showCheckboxes()">
+                                    <select class="signup__form-input form-control mb-0">
+                                        <option>Business days</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                </div>
+                                <div id="checkboxes">
+                                    <label for="one">
+                                        <input type="checkbox" id="one">Monday</label>
+                                    <label for="two">
+                                        <input type="checkbox" id="two">Tuesday</label>
+                                    <label for="three">
+                                        <input type="checkbox" id="three">Wednesday</label>
+                                    <label for="four">
+                                        <input type="checkbox" id="one">Thurday</label>
+                                    <label for="five">
+                                        <input type="checkbox" id="two">Friday</label>
+                                    <label for="six">
+                                        <input type="checkbox" id="three">Saturday</label>
+                                    <label for="seven">
+                                        <input type="checkbox" id="three">Sunday</label>
+                                </div>
+                            </div>
+
+                            <div class="multiselect">
+                                <div class="selectBox" onclick="showCheckboxes()">
+                                    <select class="signup__form-input form-control mb-0">
+                                        <option>Business hours</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                </div>
+                                <div id="checkboxes">
+                                    <label for="one">
+                                        <input type="checkbox" id="one">Monday</label>
+                                    <label for="two">
+                                        <input type="checkbox" id="two">Tuesday</label>
+                                    <label for="three">
+                                        <input type="checkbox" id="three">Wednesday</label>
+                                    <label for="four">
+                                        <input type="checkbox" id="one">Thurday</label>
+                                    <label for="five">
+                                        <input type="checkbox" id="two">Friday</label>
+                                    <label for="six">
+                                        <input type="checkbox" id="three">Saturday</label>
+                                    <label for="seven">
+                                        <input type="checkbox" id="three">Sunday</label>
+                                </div>
+                            </div>
+
+                            <input type="checkbox" name="subscribe" class="signup__form-input-check">
+                            <span class="signup__form-subscribe">I want to receive Afiaanyi’s newsletter with best
+                                deals and offers</span>
+                            <p class="signup__form-terms">By clicking on register, you accept Afiaanyi’s <a href="#">Terms
+                                    & Conditions</a></p>
+                            <button class="btn btn-primary signup__form-button">Register</button>
+                        </form>
+                        <p class="signup__form-already-in">Already Registered? <a href="#login" data-dismiss="modal"
+                                data-toggle="modal">Sign in</a></p>
+                    </div>
+
+                    <img src="icons/afiaanyi icon.svg" alt="" class="interest__individual-cover-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- login modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="signuponelabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img src="images/signup-background.png" alt="" class="signup__background">
+                <div class="modal-body signup">
+                    <div class="signup__heading">
+                        <div class="signup__logo">
+                            <img src="images/market-logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="signup__heading-text">Welcome Back!</h3>
+                        <p class="signup__heading-subtext">Login to continue</p>
+                    </div>
+
+                    <div class="signup__form">
+                        <form action="sign up">
+                            <input type="email" name="" class="signup__form-input form-control" placeholder="Email">
+                            <input type="password" name="" class="signup__form-input form-control" placeholder="Password">
+                            <input type="checkbox" name="subscribe" class="signup__form-input-check">
+                            <span class="signup__form-subscribe">Remember me</span>
+                            <span class="login__forgot-password"><a href="#">Forgot Password?</a></span>
+                            <a href="#" class="btn btn-primary signup__form-button mt-4">Login</a>
+                        </form>
+
+                        <div class="login__social-wrapper">
+                            <p>Social Media Login</p>
+                            <div class="login__social-button-wrapper">
+                                <div class="login__social-button facebook">
+                                    <svg class="icon icon-facebook-login">
+                                        <use xlink:href="#icon-facebook-login"></use>
+                                    </svg>
+                                    <span>Connect with Facebook</span>
+                                </div>
+                                <div class="login__social-button linkedin">
+                                    <svg class="icon icon-linkedin-login">
+                                        <use xlink:href="#icon-linkedin-login"></use>
+                                    </svg>
+                                    <span>Connect with Linkedin</span>
+                                </div>
+                                <div class="login__social-button google">
+                                    <svg class="icon icon-google-plus-login">
+                                        <use xlink:href="#icon-google-plus-login"></use>
+                                    </svg>
+                                    <span>Connect with Google</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="signup__form-already-in">No Account Yet? <a href="#signup-one" data-toggle="modal"
+                                data-dismiss="modal">Create One</a></p>
+                    </div>
+
+                    <img src="icons/afiaanyi icon.svg" alt="" class="interest__individual-cover-img">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/jquery.min.js"></script>

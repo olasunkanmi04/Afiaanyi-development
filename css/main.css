@@ -2947,59 +2947,49 @@ select:not([multiple]) {
   padding-right: .5em;
   background-origin: content-box; }
 
-.signup__hero {
-  width: 100%;
-  height: 123px;
-  background: url("../images/signup_hero.png") no-repeat;
-  background-size: cover;
+.signup {
+  padding: 20px 50px;
   position: relative; }
-  .signup__hero-icon {
-    width: 70px;
-    height: 70px;
-    position: absolute; }
-  .signup__hero-overlay {
-    background: rgba(0, 0, 0, 0.2);
+  .signup__background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 100%; }
-  .signup__hero-heading {
-    text-align: center;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 36px;
-    color: #FFFFFF;
-    line-height: 123px; }
-
-.signup__form {
-  padding: 34px 120px; }
-  .signup__form-tab {
-    width: 50%; }
-    .signup__form-tab-link {
-      font-weight: 100;
-      font-size: 16px;
+  .signup__heading {
+    text-align: center; }
+    .signup__heading-text {
+      font-weight: 500;
+      line-height: normal;
+      font-size: 18px;
       color: #000000;
-      text-align: center;
-      background: rgba(196, 196, 196, 0.1); }
-      .signup__form-tab-link:hover {
-        color: #000000; }
-      .signup__form-tab-link.active {
-        background: transparent !important;
-        border-radius: 0;
-        border-bottom: 5px solid #CAAA3B;
-        border-right: 5px solid #CAAA3B;
-        font-weight: 700;
-        color: #000000 !important; }
-    .signup__form-tab-content {
-      margin-top: 50px;
-      padding: 0 30px; }
+      margin-bottom: 2px; }
+    .signup__heading-subtext {
+      color: #E6B712;
+      font-weight: 500;
+      line-height: normal;
+      font-size: 12px;
+      margin-bottom: 30px; }
+    .signup__heading svg {
+      float: left;
+      margin-top: 40px;
+      fill: #000000 !important; }
+  .signup__logo {
+    width: 60px;
+    height: 54px;
+    margin: 7px auto; }
+  .signup__form-textarea {
+    height: 111px !important; }
   .signup__form-input {
     height: 50px;
     width: 100%;
     background: #FFFFFF;
     border-radius: 4px;
     border: 1px solid rgba(65, 64, 64, 0.5);
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     color: #000000;
     font-size: 14px;
-    padding: 16px 20px; }
+    padding: 16px 20px !important; }
     .signup__form-input::placeholder {
       color: #C4C4C4;
       font-weight: 300; }
@@ -3029,50 +3019,100 @@ select:not([multiple]) {
     font-weight: 600;
     line-height: normal;
     font-size: 20px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    margin-bottom: 40px; }
   .signup__form-already-in {
     font-size: 12px;
-    text-align: center;
-    margin-top: 30px; }
+    text-align: center; }
     .signup__form-already-in a {
       color: #E6B712; }
       .signup__form-already-in a:hover {
         color: #E6B712; }
-  .signup__form-or {
-    font-size: 18px;
-    color: #000000;
-    margin-top: 104px; }
 
-.signup__fb, .signup__in, .signup__gl {
+.fade {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.modal {
+  overflow-y: auto; }
+
+select:invalid {
+  color: #C4C4C4 !important; }
+
+.multiselect {
   width: 100%;
-  height: 50px;
+  margin-bottom: 27px; }
+
+.selectBox {
+  position: relative; }
+
+.selectBox select {
+  width: 100%;
+  font-weight: 300; }
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+#checkboxes {
+  display: none;
+  border: 1px solid rgba(65, 64, 64, 0.5);
+  padding: 16px 20px !important;
+  border-radius: 4px; }
+
+#checkboxes label {
+  display: block;
+  margin-bottom: 10px; }
+
+#checkboxes label input {
+  margin-right: 10px; }
+
+#checkboxes label:hover {
+  color: #E6B712;
+  cursor: pointer; }
+
+.login__forgot-password a {
+  color: #E6B712;
+  font-size: 10px;
+  float: right; }
+
+.login__social-wrapper {
+  margin-bottom: 31px; }
+  .login__social-wrapper p {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 18px; }
+
+.login__social-button {
+  width: 31%;
+  height: 60px;
   border-radius: 4px;
-  margin-bottom: 40px;
-  text-align: center; }
-  .signup__fb svg, .signup__in svg, .signup__gl svg {
-    height: 20px !important;
-    width: 20px !important; }
-  .signup__fb span, .signup__in span, .signup__gl span {
-    font-size: 12px;
-    color: #FFFFFF;
+  margin-left: auto;
+  margin-right: 3px;
+  padding: 22px 10px;
+  position: relative;
+  cursor: pointer; }
+  .login__social-button svg {
+    height: 32px !important;
+    width: 34px !important;
+    position: absolute;
+    bottom: 15px; }
+  .login__social-button.facebook {
+    background: #3B5998; }
+  .login__social-button.linkedin {
+    background: #0077B5; }
+  .login__social-button.google {
+    background: #DB4437; }
+  .login__social-button span {
     font-weight: 500;
-    vertical-align: middle;
-    line-height: 50px;
-    margin-left: 11px; }
-
-.signup__fb {
-  background: #3B5998; }
-
-.signup__in {
-  background: #0077B5; }
-
-.signup__gl {
-  background: #DB4437; }
-
-.signup__business-wrapper {
-  width: 50%;
-  margin: auto;
-  z-index: 1; }
+    line-height: normal;
+    font-size: 8px;
+    color: #FFFFFF;
+    text-align: center; }
+  .login__social-button-wrapper {
+    display: flex; }
 
 .top-brand__hero {
   height: 512px; }

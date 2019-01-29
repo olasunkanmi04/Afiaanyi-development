@@ -1,64 +1,53 @@
 .signup {
-    &__hero {
+    padding: 20px 50px;
+    position: relative;
+
+    &__background {
+        position: absolute;
+        // z-index: -1;
+        left: 0;
+        top: 0;
         width: 100%;
-        height: 123px;
-        background: url('../images/signup_hero.png') no-repeat;
-        background-size: cover;
-        position: relative;
+        height: 100%;
 
-        &-icon {
-            width: 70px;
-            height: 70px;
-            position: absolute;
-        }
+    }
 
-        &-overlay {
-            background: rgba(0, 0, 0, 0.2);
-            height: 100%;
-        }
+    &__heading {
+        text-align: center;
 
-        &-heading {
-            text-align: center;
+        &-text {
             font-weight: 500;
             line-height: normal;
-            font-size: 36px;
-            color: #FFFFFF;
-            line-height: 123px;
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 2px;
+        }
+
+        &-subtext {
+            color: #E6B712;
+            font-weight: 500;
+            line-height: normal;
+            font-size: 12px;
+            margin-bottom: 30px
+        }
+
+        svg {
+            float: left;
+            margin-top: 40px;
+            fill: #000000 !important;
         }
     }
 
+    &__logo {
+        width: 60px;
+        height: 54px;
+        margin: 7px auto;
+    }
+
     &__form {
-        padding: 34px 120px;
 
-        &-tab {
-            width: 50%;
-
-            &-link {
-                font-weight: 100;
-                font-size: 16px;
-                color: #000000;
-                text-align: center;
-                background: rgba(196, 196, 196, 0.1);
-
-                &:hover {
-                    color: #000000;
-                }
-
-
-                &.active {
-                    background: transparent !important;
-                    border-radius: 0;
-                    border-bottom: 5px solid #CAAA3B;
-                    border-right: 5px solid #CAAA3B;
-                    font-weight: 700;
-                    color: #000000 !important;
-                }
-            }
-
-            &-content {
-                margin-top: 50px;
-                padding: 0 30px;
-            }
+        &-textarea {
+            height: 111px !important;
         }
 
         &-input {
@@ -67,10 +56,10 @@
             background: #FFFFFF;
             border-radius: 4px;
             border: 1px solid rgba(65, 64, 64, 0.5);
-            margin-bottom: 30px;
+            margin-bottom: 27px;
             color: #000000;
             font-size: 14px;
-            padding: 16px 20px;
+            padding: 16px 20px !important;
 
             &::placeholder {
                 color: #C4C4C4;
@@ -116,12 +105,12 @@
             line-height: normal;
             font-size: 20px;
             color: #FFFFFF;
+            margin-bottom: 40px;
         }
 
         &-already-in {
             font-size: 12px;
             text-align: center;
-            margin-top: 30px;
 
             a {
                 color: #E6B712;
@@ -131,54 +120,124 @@
                 }
             }
         }
+    }
+}
 
-        &-or {
-            font-size: 18px;
-            color: #000000;
-            margin-top: 104px;
+.fade {
+    background-color: rgba(#000000, 0.6);
+}
+
+.modal {
+    overflow-y: auto;
+}
+
+select:invalid {
+    color: #C4C4C4 !important;
+}
+
+.multiselect {
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: 300;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    display: none;
+    border: 1px solid rgba(65, 64, 64, 0.5);
+    padding: 16px 20px !important;
+    border-radius: 4px;
+}
+
+#checkboxes label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#checkboxes label input {
+    margin-right: 10px;
+}
+
+#checkboxes label:hover {
+    color: #E6B712;
+    cursor: pointer;
+}
+
+.login {
+    &__forgot-password a {
+        color: #E6B712;
+        font-size: 10px;
+        float: right;
+    }
+
+    &__social {
+        &-wrapper {
+            margin-bottom: 31px;
+
+            p {
+                font-size: 14px;
+                color: #000000;
+                margin-bottom: 18px;
+            }
+        }
+
+        &-button {
+            width: 31%;
+            height: 60px;
+            border-radius: 4px;
+            margin-left: auto;
+            margin-right: 3px;
+            padding: 22px 10px;
+            position: relative;
+            cursor: pointer;
+
+            svg {
+                height: 32px !important;
+                width: 34px !important;
+                position: absolute;
+                bottom: 15px;
+            }
+
+            &.facebook {
+                background: #3B5998;
+            }
+
+            &.linkedin {
+                background: #0077B5;
+            }
+
+            &.google {
+                background: #DB4437;
+            }
+
+            span {
+                font-weight: 500;
+                line-height: normal;
+                font-size: 8px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+
+
+            &-wrapper {
+                display: flex;
+            }
         }
     }
-
-    &__fb,
-    &__in,
-    &__gl {
-        width: 100%;
-        height: 50px;
-        border-radius: 4px;
-        margin-bottom: 40px;
-        text-align: center;
-
-        svg {
-            height: 20px !important;
-            width: 20px !important;
-        }
-
-        span {
-            font-size: 12px;
-            color: #FFFFFF;
-            font-weight: 500;
-            vertical-align: middle;
-            line-height: 50px;
-            margin-left: 11px;
-        }
-    }
-
-    &__fb {
-        background: #3B5998;
-    }
-
-    &__in {
-        background: #0077B5;
-    }
-
-    &__gl {
-        background: #DB4437;
-    }
-
-    &__business-wrapper {
-        width: 50%;
-        margin: auto;
-        z-index: 1;
-    }
-
 }
