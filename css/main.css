@@ -2798,11 +2798,12 @@ slides {
   margin-right: auto; }
   .cart__update {
     border: 1px solid #E6B712;
-    padding: 5px 22px;
+    padding: 20px;
     margin-bottom: 32px; }
     .cart__update p {
-      font-size: 10px;
-      color: #000000; }
+      font-size: 14px;
+      color: #000000;
+      font-weight: 600; }
   .cart__item-count {
     margin-bottom: 27px; }
     .cart__item-count p {
@@ -2814,7 +2815,7 @@ slides {
       color: #F30000; }
   .cart__item-heading {
     width: 100%;
-    margin-bottom: 5px; }
+    margin-bottom: 30px; }
     .cart__item-heading li {
       display: inline-block;
       width: 15%;
@@ -3147,3 +3148,47 @@ select:invalid {
   color: #979797; }
   .top-brand__category:hover {
     color: #979797; }
+
+.user-sidebar {
+  height: 100vh;
+  width: 184px;
+  background: url("../images/background-one.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  background-position-x: -650px; }
+  .user-sidebar__overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    padding-top: 30px; }
+  .user-sidebar__logo {
+    width: 86px;
+    height: 81px;
+    margin: auto; }
+  .user-sidebar__item {
+    margin-top: 50px; }
+  .user-sidebar__link {
+    padding: 20px;
+    padding-right: 10px !important; }
+    .user-sidebar__link a svg {
+      width: 18px !important;
+      height: 18px !important; }
+    .user-sidebar__link a span {
+      font-weight: 500;
+      line-height: normal;
+      font-size: 14px;
+      color: #FFFFFF;
+      vertical-align: middle;
+      margin-left: 5px; }
+    .user-sidebar__link:hover, .user-sidebar__link-active {
+      border-left: 1px solid #E6B712;
+      background: rgba(0, 0, 0, 0.5); }
+
+.user-profile {
+  background: #FCFCFC;
+  margin-left: 214px;
+  margin-right: 30px;
+  padding: 50px; }
+  .user-profile__top {
+    width: 70%; }

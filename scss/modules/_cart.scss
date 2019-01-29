@@ -8,12 +8,13 @@
 
     &__update {
         border: 1px solid #E6B712;
-        padding: 5px 22px;
+        padding: 20px;
         margin-bottom: 32px;
 
         p {
-            font-size: 10px;
+            font-size: 14px;
             color: #000000;
+            font-weight: 600;
         }
     }
 
@@ -36,7 +37,7 @@
 
         &-heading {
             width: 100%;
-            margin-bottom: 5px;
+            margin-bottom: 30px;
 
             li {
                 display: inline-block;

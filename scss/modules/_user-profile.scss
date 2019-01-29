@@ -1,0 +1,65 @@
+.user-sidebar {
+    height: 100vh;
+    width: 184px;
+    background: url('../images/background-one.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    background-position-x: -650px;
+
+    &__overlay {
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        padding-top: 30px;
+    }
+
+    &__logo {
+        width: 86px;
+        height: 81px;
+        margin: auto;
+    }
+
+    &__item {
+        margin-top: 50px;
+    }
+
+    &__link {
+        padding: 20px;
+        padding-right: 10px !important;
+
+        a {
+            svg {
+                width: 18px !important;
+                height: 18px !important;
+            }
+
+            span {
+                font-weight: 500;
+                line-height: normal;
+                font-size: 14px;
+                color: #FFFFFF;
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+        }
+
+        &:hover,
+        &-active {
+            border-left: 1px solid #E6B712;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+.user-profile {
+    background: #FCFCFC;
+    margin-left: 214px;
+    margin-right: 30px;
+    padding: 50px;
+
+    &__top {
+        width: 70%;
+    }
+
+}
