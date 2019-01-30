@@ -4,7 +4,6 @@
 
     &__background {
         position: absolute;
-        // z-index: -1;
         left: 0;
         top: 0;
         width: 100%;
@@ -123,12 +122,9 @@
     }
 }
 
-.fade {
-    background-color: rgba(#000000, 0.6);
-}
-
 .modal {
     overflow-y: auto;
+    background-color: rgba(#000000, 0.2);
 }
 
 select:invalid {

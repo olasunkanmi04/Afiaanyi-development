@@ -2343,11 +2343,11 @@ a:hover {
 .slide--market {
   height: 400px;
   width: 80%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/market-header.svg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/market-header.svg);
   background-size: cover;
   background-position: center; }
 
-slides {
+.slides {
   position: relative;
   width: 78%; }
 
@@ -2728,7 +2728,8 @@ slides {
       background: rgba(0, 0, 0, 0.5); }
 
 .all-services__wrapper {
-  padding: 70px; }
+  padding: 70px;
+  padding-bottom: 30px !important; }
 
 .all-services__individual {
   background: #FFFFFF;
@@ -3030,11 +3031,9 @@ select:not([multiple]) {
       .signup__form-already-in a:hover {
         color: #E6B712; }
 
-.fade {
-  background-color: rgba(0, 0, 0, 0.6); }
-
 .modal {
-  overflow-y: auto; }
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.2); }
 
 select:invalid {
   color: #C4C4C4 !important; }
