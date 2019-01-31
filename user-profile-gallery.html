@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/logged-navbar.css">
+
+    <script src="js/csi.min.js"></script>
+
+    <title>Afiaanyi | User Profile</title>
+</head>
+
+<body>
+    <div data-include="svg.html"></div>
+    <aside class="user-sidebar">
+        <div class="user-sidebar__overlay">
+            <div class="user-sidebar__logo">
+                <img src="images/logo.png" alt="" class="img-fluid">
+            </div>
+            <ul class="user-sidebar__item">
+                <li class="user-sidebar__link">
+                    <a href="user-profile-dashboard.html">
+                        <svg class="icon icon-dashboard">
+                            <use xlink:href="#icon-dashboard"></use>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link">
+                    <a href="user-profile-personal-info.html">
+                        <svg class="icon icon-person-profile">
+                            <use xlink:href="#icon-person-profile"></use>
+                        </svg>
+                        <span>My personal Info</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link user-sidebar__link-active">
+                    <a href="user-profile-gallery.html">
+                        <svg class="icon icon-gallary">
+                            <use xlink:href="#icon-gallary"></use>
+                        </svg>
+                        <span>Gallery</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link">
+                    <a href="#">
+                        <svg class="icon icon-review">
+                            <use xlink:href="#icon-review"></use>
+                        </svg>
+                        <span>Reviews</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link">
+                    <a href="#">
+                        <svg class="icon icon-credit-card-payment">
+                            <use xlink:href="#icon-credit-card-payment"></use>
+                        </svg>
+                        <span>Notification</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link">
+                    <a href="#">
+                        <svg class="icon icon-logout">
+                            <use xlink:href="#icon-logout"></use>
+                        </svg>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <nav>
+        <div class="row header__nav-content">
+            <div style="visibility:hidden;">
+                <img src="images/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
+            </div>
+            <div>
+                <input type="search" class="header__form-input header__input-nav" placeholder="Search for products, brands and categories">
+                <input type="submit" class="header__submit">
+            </div>
+
+            <div>
+                <ul class="header__nav-list-container">
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-link">Directory</a>
+                    </li>
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-link">Shop</a>
+                    </li>
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-link">Jobs</a>
+                    </li>
+                    <li class="header__nav-list">
+                        <a href="" class="header__nav-link header--outlined">Create A Store</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="header__customized-items">
+                <p class="header__greeting">Welcome <span class="header__username">Stephen!</span></p>
+
+                <a href="">
+                    <img src="images/man.png" class="header-nav-icon header__avatar" height="35px" width="35px">
+                </a>
+
+
+            </div>
+        </div>
+    </nav>
+    <section class="user-personal">
+        <div class="user-personal__top">
+            <p class="user-personal__heading">Gallery</p>
+            <hr class="user-personal__heading-divider">
+        </div>
+        <div class="user-personal__wrapper">
+            <div class="user-personal__edit-profile-wrapper">
+                <button class="btn btn-primary user-personal__delete">Delete Image</button>
+                <button class="btn btn-primary user-personal__edit-profile">Upload Image</button>
+            </div>
+
+            <div class="user-gallery">
+                <div class="user-gallery__image">
+                    <img src="images/background-six.png" alt="" class="img-fluid">
+                </div>
+                <div class="user-gallery__image">
+                    <img src="images/background-six.png" alt="" class="img-fluid">
+                </div>
+                <div class="user-gallery__image">
+                    <img src="images/background-six.png" alt="" class="img-fluid">
+                </div>
+                <div class="user-gallery__image">
+                    <img src="images/background-six.png" alt="" class="img-fluid">
+                </div>
+                <div class="user-gallery__image">
+                    <img src="images/background-six.png" alt="" class="img-fluid">
+                </div>
+                <div class="user-gallery__image">
+                    <img src="images/background-six.png" alt="" class="img-fluid">
+                </div>
+                <div class="user-gallery__image">
+                    <img src="images/background-six.png" alt="" class="img-fluid">
+                </div>
+                <div class="user-gallery__image">
+                    <img src="images/background-six.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#progressbar").progressbar({
+                value: 40
+            });
+        });
+    </script>
+</body>
+
+</html>

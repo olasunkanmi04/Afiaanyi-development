@@ -57,6 +57,7 @@
     margin-left: 214px;
     margin-right: 30px;
     padding: 50px;
+    margin-bottom: 30px;
 
     &__top {
         width: 70%;
@@ -118,6 +119,62 @@
     &__business {
         width: 40%;
         margin-left: auto;
+
+        &-known {
+            border: 1px solid #DEDEDE;
+            margin-top: 20px;
+        }
+
+        &-individual {
+            padding: 20px 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        &-image {
+            height: 31px;
+            width: 31px;
+            overflow: hidden;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: auto;
+        }
+
+        &-details {
+            margin-left: 8px;
+            vertical-align: middle;
+            margin-right: auto;
+        }
+
+        &-delete {
+            margin-left: auto;
+            color: #F30000;
+            cursor: pointer;
+            font-size: 26px;
+        }
+
+        &-name {
+            font-weight: 600;
+            line-height: 22px;
+            font-size: 12px;
+            color: #000000;
+        }
+
+        &-follower {
+            font-weight: normal;
+            line-height: 22px;
+            font-size: 12px;
+            color: #000000;
+        }
+
+        &-follow-btn {
+            background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+            border: 1px solid #DEDEDE;
+            box-sizing: border-box;
+            border-radius: 2px;
+            padding: 4px 16px;
+            margin-left: 8px;
+        }
     }
 
     &__status {
@@ -146,6 +203,98 @@
         &:hover {
             color: #E6B712;
         }
+    }
+}
+
+.user-personal {
+    background: #FCFCFC;
+    margin-left: 214px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &__heading {
+        font-weight: 600;
+        line-height: 22px;
+        font-size: 16px;
+        color: #000000;
+        margin-left: 20px;
+        text-transform: uppercase;
+
+        &-divider {
+            background: #DEDEDE;
+            border: 1px solid #DEDEDE;
+            box-sizing: border-box;
+            border-radius: 4px 4px 0px 0px;
+            margin-bottom: 0;
+            margin-top: 4px;
+        }
+    }
+
+    &__wrapper {
+        padding: 50px;
+    }
+
+    &__top {
+        padding-top: 80px;
+    }
+
+    &__contact {
+        border: 1px solid #DEDEDE;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__opening {
+        font-weight: 600;
+        line-height: 22px;
+        font-size: 14px;
+        color: #000000;
+    }
+
+    &__edit-profile {
+        border-radius: 2px;
+        color: #ffffff;
+        font-weight: 500;
+        line-height: 22px;
+        font-size: 14px;
+        padding: 9px 26px;
+        margin-left: auto;
+        border: none;
+        background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+        border-radius: 4px;
+
+        &-wrapper {
+            padding-bottom: 30px;
+            padding-right: 30px;
+            text-align: right;
+        }
+    }
+
+    &__delete {
+        border: 1px solid #E6B712;
+        border-radius: 4px;
+        color: #000000;
+        padding: 9px 26px;
+        background: transparent;
+
+        &:hover {
+            color: #FFFFFF;
+            background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+            border: none;
+        }
+    }
+}
+
+.user-gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__image {
+        width: 20%;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 }
 

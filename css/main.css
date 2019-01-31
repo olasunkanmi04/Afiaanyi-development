@@ -3188,7 +3188,8 @@ select:invalid {
   background: #FCFCFC;
   margin-left: 214px;
   margin-right: 30px;
-  padding: 50px; }
+  padding: 50px;
+  margin-bottom: 30px; }
   .user-profile__top {
     width: 70%;
     margin-bottom: 30px; }
@@ -3229,6 +3230,46 @@ select:invalid {
   .user-profile__business {
     width: 40%;
     margin-left: auto; }
+    .user-profile__business-known {
+      border: 1px solid #DEDEDE;
+      margin-top: 20px; }
+    .user-profile__business-individual {
+      padding: 20px 15px;
+      display: flex;
+      align-items: center; }
+    .user-profile__business-image {
+      height: 31px;
+      width: 31px;
+      overflow: hidden;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: auto; }
+    .user-profile__business-details {
+      margin-left: 8px;
+      vertical-align: middle;
+      margin-right: auto; }
+    .user-profile__business-delete {
+      margin-left: auto;
+      color: #F30000;
+      cursor: pointer;
+      font-size: 26px; }
+    .user-profile__business-name {
+      font-weight: 600;
+      line-height: 22px;
+      font-size: 12px;
+      color: #000000; }
+    .user-profile__business-follower {
+      font-weight: normal;
+      line-height: 22px;
+      font-size: 12px;
+      color: #000000; }
+    .user-profile__business-follow-btn {
+      background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+      border: 1px solid #DEDEDE;
+      box-sizing: border-box;
+      border-radius: 2px;
+      padding: 4px 16px;
+      margin-left: 8px; }
   .user-profile__status {
     border: 1px solid #DEDEDE;
     box-sizing: border-box;
@@ -3249,6 +3290,74 @@ select:invalid {
     float: right; }
     .user-profile__edit:hover {
       color: #E6B712; }
+
+.user-personal {
+  background: #FCFCFC;
+  margin-left: 214px;
+  margin-right: 30px;
+  margin-bottom: 30px; }
+  .user-personal__heading {
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 20px;
+    text-transform: uppercase; }
+    .user-personal__heading-divider {
+      background: #DEDEDE;
+      border: 1px solid #DEDEDE;
+      box-sizing: border-box;
+      border-radius: 4px 4px 0px 0px;
+      margin-bottom: 0;
+      margin-top: 4px; }
+  .user-personal__wrapper {
+    padding: 50px; }
+  .user-personal__top {
+    padding-top: 80px; }
+  .user-personal__contact {
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+  .user-personal__opening {
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 14px;
+    color: #000000; }
+  .user-personal__edit-profile {
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+    padding: 9px 26px;
+    margin-left: auto;
+    border: none;
+    background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+    border-radius: 4px; }
+    .user-personal__edit-profile-wrapper {
+      padding-bottom: 30px;
+      padding-right: 30px;
+      text-align: right; }
+  .user-personal__delete {
+    border: 1px solid #E6B712;
+    border-radius: 4px;
+    color: #000000;
+    padding: 9px 26px;
+    background: transparent; }
+    .user-personal__delete:hover {
+      color: #FFFFFF;
+      background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+      border: none; }
+
+.user-gallery {
+  display: flex;
+  flex-wrap: wrap; }
+  .user-gallery__image {
+    width: 20%;
+    margin-right: 20px;
+    margin-bottom: 20px; }
 
 #progressbar {
   height: 11px;
