@@ -2240,12 +2240,12 @@ a:hover {
 .preview {
   width: 68px;
   height: 68px;
-  margin-bottom: 30px; }
+  margin-bottom: 20px;
+  overflow: hidden; }
 
 .full {
-  height: 400px; }
-  .full img {
-    max-height: 400px; }
+  height: 600px;
+  overflow: hidden; }
 
 @-webkit-keyframes fadeIn {
   from {
@@ -2445,7 +2445,7 @@ a:hover {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
 .product-page__details {
-  padding: 20px 120px; }
+  padding: 20px 50px; }
 
 .product-page__customers-also-view {
   margin-top: 40px; }
@@ -3345,7 +3345,11 @@ select:invalid {
     border-radius: 4px;
     color: #000000;
     padding: 9px 26px;
-    background: transparent; }
+    background: transparent;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+    margin-right: 20px; }
     .user-personal__delete:hover {
       color: #FFFFFF;
       background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);

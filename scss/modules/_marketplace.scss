@@ -1038,15 +1038,13 @@
 .preview {
     width: 68px;
     height: 68px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .full {
-    height: 400px;
-
-    img {
-        max-height: 400px;
-    }
+    height: 600px;
+    overflow: hidden;
 }
 
 
