@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="css/star-rating-svg.css">
     <link rel="stylesheet" href="css/logged-navbar.css">
 
     <script src="js/csi.min.js"></script>
@@ -43,7 +44,7 @@
                         <span>My personal Info</span>
                     </a>
                 </li>
-                <li class="user-sidebar__link user-sidebar__link-active">
+                <li class="user-sidebar__link">
                     <a href="user-profile-gallery.html">
                         <svg class="icon icon-gallary">
                             <use xlink:href="#icon-gallary"></use>
@@ -59,8 +60,8 @@
                         <span>Reviews</span>
                     </a>
                 </li>
-                <li class="user-sidebar__link">
-                    <a href="user-notification.html">
+                <li class="user-sidebar__link user-sidebar__link-active">
+                    <a href="user-profile-notification.html">
                         <svg class="icon icon-credit-card-payment">
                             <use xlink:href="#icon-credit-card-payment"></use>
                         </svg>
@@ -119,42 +120,34 @@
     </nav>
     <section class="user-personal">
         <div class="user-personal__top">
-            <p class="user-personal__heading">Gallery</p>
+            <p class="user-personal__heading">Notification</p>
             <hr class="user-personal__heading-divider">
         </div>
         <div class="user-personal__wrapper">
-            <div class="user-personal__edit-profile-wrapper" style="margin-right:-50px;">
-                <button class="btn btn-primary user-personal__delete">Delete Image</button>
-                <button class="btn btn-primary user-personal__edit-profile">Upload Image</button>
-            </div>
+            <div class="user-review">
+                <h3 class="user-notification__heading">Email Notifications</h3>
 
-            <div class="user-gallery">
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
-                </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
-                </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
-                </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
-                </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
-                </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
-                </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
-                </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
+                <div>
+                    <p class="user-notification__subheading">Send me an email when:</p>
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower" checked>
+                        <span class="user-notification__label-text">I have a new follower</span>
+                        <span class="user-notification__checkbox"></span>
+                    </label>
+
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower" checked>
+                        <span class="user-notification__label-text">Someone I follow write a review of rate a business</span>
+                        <span class="user-notification__checkbox"></span>
+                    </label>
+
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="Newsletter" checked>
+                        <span class="user-notification__label-text">A Newsletter is available</span>
+                        <span class="user-notification__checkbox"></span>
+                    </label>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -164,17 +157,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#progressbar").progressbar({
-                value: 40
-            });
-        });
-    </script>
+
 </body>
 
 </html>

@@ -119,71 +119,79 @@
     </nav>
     <section class="user-personal">
         <div class="user-personal__top">
-            <p class="user-personal__heading">personal Information</p>
+            <p class="user-personal__heading">Profile settings</p>
             <hr class="user-personal__heading-divider">
         </div>
         <div class="user-personal__wrapper d-flex">
             <div class="user-profile__content mr-auto w-50">
                 <div class="user-personal__contact">
                     <div class="user-profile__overview-heading">
-                        <h3>Contact Info</h3>
+                        <h3>Edit profile</h3>
                     </div>
                     <div class="user-profile__details">
                         <table class="w-100 user-profile__details-table">
                             <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Name:</td>
-                                <td class="user-profile__details-answer">John Doe</td>
+                                <td class="user-profile__details-key">First Name:</td>
+                                <td class="user-profile__details-answer">
+                                    <input type="text" value="John">
+                                </td>
+                            </tr>
+                            <tr class="user-profile__details-row">
+                                <td class="user-profile__details-key">Last Name:</td>
+                                <td class="user-profile__details-answer">
+                                    <input type="text" value="Deo">
+                                </td>
                             </tr>
                             <tr class="user-profile__details-row">
                                 <td class="user-profile__details-key">Business Name:</td>
-                                <td class="user-profile__details-answer">John Doe Enterprises</td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Email:</td>
-                                <td class="user-profile__details-answer">johndoe@gmail.com</td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Password:</td>
-                                <td class="user-profile__details-answer">******************</td>
+                                <td class="user-profile__details-answer">
+                                    <input type="text" value="John & Doe Enterprises">
+                                </td>
                             </tr>
                             <tr class="user-profile__details-row">
                                 <td class="user-profile__details-key">Tel:</td>
-                                <td class="user-profile__details-answer">08030000000</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="user-personal__contact">
-                    <div class="user-profile__overview-heading">
-                        <h3>Opening/Closing Hours</h3>
-                    </div>
-                    <div class="user-profile__details">
-                        <table class="w-100 user-profile__details-table">
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key user-personal__opening">Weekdays (Mon-Fri):</td>
+                                <td class="user-profile__details-answer">
+                                    <input type="text" value="08030000000">
+                                </td>
                             </tr>
                             <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Opening:</td>
-                                <td class="user-profile__details-answer">07:00 AM</td>
+                                <td class="user-profile__details-key">Business Hours:</td>
+                            </tr>
+                            <tr class="user-profile__details-row ml-3">
+                                <td class="user-profile__details-key user-profile__edit-key">Weekdays:</td>
+                                <td class="user-profile__details-answer user-profile__edit-answer">
+                                    <select name="time" class="user-profile__edit-time">
+                                        <option value="07:00 AM">07:00 AM</option>
+                                        <option value="08:00 AM">08:00 AM</option>
+                                    </select>
+                                    to
+                                    <select name="time" class="user-profile__edit-time">
+                                        <option value="07:00 PM">07:00 PM</option>
+                                        <option value="08:00 PM">08:00 PM</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr class="user-profile__details-row ml-3">
+                                <td class="user-profile__details-key user-profile__edit-key">Weekends:</td>
+                                <td class="user-profile__details-answer user-profile__edit-answer">
+                                    <select name="time" class="user-profile__edit-time">
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                    </select>
+                                    to
+                                    <select name="time" class="user-profile__edit-time">
+                                        <option value="07:00 PM">07:00 PM</option>
+                                        <option value="08:00 PM">08:00 PM</option>
+                                    </select>
+                                </td>
                             </tr>
                             <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Closing:</td>
-                                <td class="user-profile__details-answer">08:00 PM</td>
-                            </tr>
-                        </table>
-
-                        <table class="w-100 user-profile__details-table">
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key user-personal__opening">Weekends (Saturday):</td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Opening:</td>
-                                <td class="user-profile__details-answer">10:00 AM</td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Closing:</td>
-                                <td class="user-profile__details-answer">05:00 PM</td>
+                                <td class="user-profile__details-key user-profile__address">
+                                    <div style="width:100px">Address:</div>
+                                </td>
+                                <td class="user-profile__details-answer user-profile__edit-textarea">
+                                    <textarea name="" id="" cols="30" rows="7"></textarea>
+                                </td>
                             </tr>
                         </table>
                     </div>
@@ -192,25 +200,34 @@
             <div class="user-profile__content w-50">
                 <div class="user-personal__contact">
                     <div class="user-profile__overview-heading">
-                        <h3>Address</h3>
+                        <h3>Password Settings</h3>
                     </div>
                     <div class="user-profile__details">
-                        <table class="w-100 user-profile__details-table">
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Address:</td>
-                                <td class="user-profile__details-answer">5, John Doe Street, John Doe, Nigeria</td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Website:</td>
-                                <td class="user-profile__details-answer">johndoeenterprises.com</td>
-                            </tr>
-                        </table>
+                        <input type="password" placeholder="Password" class="user-profile__edit-password">
+                        <input type="password" placeholder="New Password" class="user-profile__edit-password">
+
+                    </div>
+                </div>
+
+                <div class="user-personal__contact">
+                    <div class="user-profile__overview-heading">
+                        <h3>Profile Picture</h3>
+                    </div>
+                    <div class="user-profile__details">
+                        <div class="user-profile__edit-add-picture-preview">
+                            <p>Preview</p>
+                        </div>
+                        <label class="user-profile__edit-add-picture">
+                            <input type="file" class="user-profile__edit-add-picture-input">
+                            Browse
+                        </label>
+
                     </div>
                 </div>
             </div>
         </div>
         <div class="user-personal__edit-profile-wrapper">
-            <a href="user-profile-settings.html" class="btn btn-primary user-personal__edit-profile">Edit Profile</a>
+            <button class="btn btn-primary user-personal__edit-profile">Save Changes</button>
         </div>
     </section>
 

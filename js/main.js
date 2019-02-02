@@ -314,6 +314,22 @@ $(".quickview__modal-ratings-stars").starRating({
     }
 });
 
+$(".user-review-stars").starRating({
+    initialRating: 4,
+    strokeColor: '#E6B712',
+    strokeWidth: 10,
+    starSize: 18,
+    totalStars: 5,
+    starShape: 'rounded',
+    emptyColor: 'transparent',
+    hoverColor: '#E6B712',
+    activeColor: '#E6B712',
+    useGradient: false,
+    readOnly: true,
+});
+
+
+
 $(document).ready(function () {
     $(window).on('load', function () {
         $('.hero').css("background-color", "rgba(0,0,0,1)");

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="css/star-rating-svg.css">
     <link rel="stylesheet" href="css/logged-navbar.css">
 
     <script src="js/csi.min.js"></script>
@@ -43,7 +44,7 @@
                         <span>My personal Info</span>
                     </a>
                 </li>
-                <li class="user-sidebar__link user-sidebar__link-active">
+                <li class="user-sidebar__link">
                     <a href="user-profile-gallery.html">
                         <svg class="icon icon-gallary">
                             <use xlink:href="#icon-gallary"></use>
@@ -51,7 +52,7 @@
                         <span>Gallery</span>
                     </a>
                 </li>
-                <li class="user-sidebar__link">
+                <li class="user-sidebar__link user-sidebar__link-active">
                     <a href="user-profile-review.html">
                         <svg class="icon icon-review">
                             <use xlink:href="#icon-review"></use>
@@ -60,7 +61,7 @@
                     </a>
                 </li>
                 <li class="user-sidebar__link">
-                    <a href="user-notification.html">
+                    <a href="user-profile-notification.html">
                         <svg class="icon icon-credit-card-payment">
                             <use xlink:href="#icon-credit-card-payment"></use>
                         </svg>
@@ -119,42 +120,95 @@
     </nav>
     <section class="user-personal">
         <div class="user-personal__top">
-            <p class="user-personal__heading">Gallery</p>
+            <p class="user-personal__heading">REVIEWS/RATINGS</p>
             <hr class="user-personal__heading-divider">
         </div>
         <div class="user-personal__wrapper">
             <div class="user-personal__edit-profile-wrapper" style="margin-right:-50px;">
-                <button class="btn btn-primary user-personal__delete">Delete Image</button>
-                <button class="btn btn-primary user-personal__edit-profile">Upload Image</button>
+                <span class="user-review__filter-label">Filter:</span>
+                <select class="user-review__filter">
+                    <option value="Year">Year</option>
+                    <option value="Year">Month</option>
+                    <option value="Year">Best Rated</option>
+                    <option value="Year">Least Rated</option>
+                </select>
             </div>
 
-            <div class="user-gallery">
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
+            <div class="user-review">
+                <div class="user-review__individual">
+                    <div class="user-review__details">
+                        <h3 class="user-review__name">Lade Enterprise</h3>
+                        <div class="user-review-stars"></div>
+                        <p class="user-review__text">"<span>Quote 1 Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry has
+                                been the industry’s standard dummy text ever since the 1500s</span>"</p>
+                    </div>
+                    <div class="user-review__image">
+                        <img src="images/background-six.png" alt="" class="img-fluid">
+                    </div>
                 </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
+
+                <div class="user-review__individual">
+                    <div class="user-review__details">
+                        <h3 class="user-review__name">Lade Enterprise</h3>
+                        <div class="user-review-stars"></div>
+                        <p class="user-review__text">"<span>Quote 1 Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry has
+                                been the industry’s standard dummy text ever since the 1500s</span>"</p>
+                    </div>
+                    <div class="user-review__image">
+                        <img src="images/background-six.png" alt="" class="img-fluid">
+                    </div>
                 </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
+
+                <div class="user-review__individual">
+                    <div class="user-review__details">
+                        <h3 class="user-review__name">Lade Enterprise</h3>
+                        <div class="user-review-stars"></div>
+                        <p class="user-review__text">"<span>Quote 1 Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry has
+                                been the industry’s standard dummy text ever since the 1500s</span>"</p>
+                    </div>
+                    <div class="user-review__image">
+                        <img src="images/background-six.png" alt="" class="img-fluid">
+                    </div>
                 </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
+
+                <div class="user-review__individual">
+                    <div class="user-review__details">
+                        <h3 class="user-review__name">Lade Enterprise</h3>
+                        <div class="user-review-stars"></div>
+                        <p class="user-review__text">"<span>Quote 1 Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry has
+                                been the industry’s standard dummy text ever since the 1500s</span>"</p>
+                    </div>
+                    <div class="user-review__image">
+                        <img src="images/background-six.png" alt="" class="img-fluid">
+                    </div>
                 </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
+
+
+            </div>
+            <div class="product-page__customer-review-paging">
+                <div class="product-page__customer-review-paging-individual">
+                    1
                 </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
+                <div class="product-page__customer-review-paging-individual current">
+                    2
                 </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
+                <div class="product-page__customer-review-paging-individual">
+                    3
                 </div>
-                <div class="user-gallery__image">
-                    <img src="images/background-six.png" alt="" class="img-fluid">
+                <span>...</span>
+                <div class="product-page__customer-review-paging-individual">
+                    30
+                </div>
+                <div class="product-page__customer-review-paging-individual">
+                    <svg class="icon icon-next-page">
+                        <use xlink:href="#icon-next-page"></use>
+                    </svg>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -164,7 +218,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
     <script src="js/main.js"></script>
 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -175,6 +229,8 @@
             });
         });
     </script>
+
+
 </body>
 
 </html>
