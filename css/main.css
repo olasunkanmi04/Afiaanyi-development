@@ -3548,3 +3548,112 @@ select:invalid {
   background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
   border-radius: 4px;
   border: none; }
+
+.payment__banner {
+  background: url("../images/background-one.png") no-repeat;
+  height: 75vh;
+  background-size: cover; }
+  .payment__banner-info {
+    margin-left: 120px;
+    padding-top: 170px; }
+    .payment__banner-info-heading {
+      font-weight: 600;
+      line-height: normal;
+      font-size: 34px;
+      color: #FFFFFF;
+      margin-bottom: 15px; }
+    .payment__banner-info-subtext {
+      font-weight: 500;
+      line-height: normal;
+      font-size: 24px;
+      color: #FFFFFF; }
+
+.payment__categories {
+  margin-top: -180px; }
+  .payment__categories-wrapper {
+    padding: 0 120px;
+    display: flex;
+    flex-wrap: wrap; }
+  .payment__categories-individual {
+    width: 30%;
+    height: 503px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 40px 20px;
+    margin: auto;
+    position: relative; }
+    .payment__categories-individual-title {
+      font-weight: 500;
+      font-size: 24px;
+      text-align: center;
+      color: #000000; }
+    .payment__categories-individual-price {
+      font-weight: 600;
+      line-height: normal;
+      font-size: 36px;
+      text-align: center;
+      color: #000000;
+      margin: 35px 0; }
+    .payment__categories-individual-todo {
+      margin-left: 20px; }
+      .payment__categories-individual-todo li {
+        font-weight: 600;
+        line-height: normal;
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 11px; }
+        .payment__categories-individual-todo li div {
+          margin-right: 11px;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%); }
+    .payment__categories-individual-button {
+      padding: 14px 52px;
+      background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-weight: 600;
+      line-height: normal;
+      font-size: 18px;
+      text-transform: uppercase; }
+      .payment__categories-individual-button-wrapper {
+        text-align: center;
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+        left: 0; }
+
+.payment__startnow {
+  margin: 80px 0;
+  text-align: center;
+  height: 100px;
+  background: #333333;
+  width: 100%;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 20px; }
+
+.payment__other-businesses {
+  width: 100%;
+  background: #FCFCFC;
+  padding: 46px 120px; }
+  .payment__other-businesses-heading {
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000; }
+  .payment__other-businesses-wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+  .payment__other-businesses-individual {
+    height: 140px;
+    width: 120px;
+    overflow: hidden;
+    margin: 20px auto; }
