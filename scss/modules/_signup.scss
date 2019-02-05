@@ -33,7 +33,6 @@
 
         svg {
             float: left;
-            margin-top: 40px;
             fill: #000000 !important;
         }
     }
@@ -119,6 +118,37 @@
                     color: #E6B712;
                 }
             }
+        }
+    }
+
+    &__verify {
+        font-weight: 500;
+        line-height: normal;
+        font-size: 24px;
+        color: #000000;
+        text-align: center;
+
+        &-message {
+            font-weight: 500;
+            line-height: normal;
+            font-size: 18px;
+            text-align: center;
+            color: #000000;
+
+            &:nth-child(2) {
+                margin-top: 67px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-notify {
+            font-weight: 600;
+            line-height: normal;
+            font-size: 14px;
+            text-align: center;
+            color: #F30000;
+            margin-top: 62px;
+            margin-bottom: 100px;
         }
     }
 }

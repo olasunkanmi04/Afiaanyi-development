@@ -2812,7 +2812,7 @@ a:hover {
 
 .all-services__info {
   padding: 0px 70px;
-  margin-bottom: 20px; }
+  margin-bottom: 60px; }
   .all-services__info h4 {
     line-height: 32px;
     font-size: 18px;
@@ -3012,7 +3012,6 @@ select:not([multiple]) {
       margin-bottom: 30px; }
     .signup__heading svg {
       float: left;
-      margin-top: 40px;
       fill: #000000 !important; }
   .signup__logo {
     width: 60px;
@@ -3068,6 +3067,29 @@ select:not([multiple]) {
       color: #E6B712; }
       .signup__form-already-in a:hover {
         color: #E6B712; }
+  .signup__verify {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 24px;
+    color: #000000;
+    text-align: center; }
+    .signup__verify-message {
+      font-weight: 500;
+      line-height: normal;
+      font-size: 18px;
+      text-align: center;
+      color: #000000; }
+      .signup__verify-message:nth-child(2) {
+        margin-top: 67px;
+        margin-bottom: 20px; }
+    .signup__verify-notify {
+      font-weight: 600;
+      line-height: normal;
+      font-size: 14px;
+      text-align: center;
+      color: #F30000;
+      margin-top: 62px;
+      margin-bottom: 100px; }
 
 .modal {
   overflow-y: auto;
@@ -3705,3 +3727,26 @@ select:invalid {
     width: 120px;
     overflow: hidden;
     margin: 20px auto; }
+
+.list-business__progress {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #C4C4C4;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: -9px;
+  position: relative; }
+  .list-business__progress:nth-child(1) {
+    background-color: #fc0000; }
+  .list-business__progress.second__progress {
+    background-color: #fc0000 !important; }
+  .list-business__progress-line {
+    display: inline-block;
+    vertical-align: middle;
+    border: 4px solid #C4C4C4;
+    width: 71px;
+    border-radius: 10px;
+    margin-right: -9px; }
+    .list-business__progress-line.second__progress {
+      border-color: #fc0000 !important; }

@@ -348,7 +348,18 @@ $('.quickview__modal-quantity-reduce').on('click', function () {
 
 var expanded = false;
 
-function showCheckboxes() {
+function showCheckboxesDays() {
+    var checkboxes = document.getElementById("checkboxes");
+    if (!expanded) {
+        checkboxes.style.display = "block";
+        expanded = true;
+    } else {
+        checkboxes.style.display = "none";
+        expanded = false;
+    }
+}
+
+function showCheckboxesHours() {
     var checkboxes = document.getElementById("checkboxes");
     if (!expanded) {
         checkboxes.style.display = "block";
