@@ -3038,7 +3038,7 @@ select:not([multiple]) {
   .signup__form-subscribe {
     font-size: 10px;
     color: #000000;
-    margin-left: 11px; }
+    margin-left: 37px; }
   .signup__form-terms {
     margin-top: 33px;
     margin-bottom: 20px;
@@ -3727,6 +3727,67 @@ select:invalid {
     width: 120px;
     overflow: hidden;
     margin: 20px auto; }
+
+.payment__confirmation-header {
+  width: 100%;
+  height: 127px;
+  background: url("../images/background-one.png") no-repeat;
+  background-size: cover;
+  background-position-y: -250px; }
+  .payment__confirmation-header-text {
+    text-align: center;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 127px; }
+
+.payment__confirmation-wrapper {
+  padding: 50px 20px; }
+  .payment__confirmation-wrapper img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px; }
+
+.payment__confirmation-info-header {
+  font-weight: 600;
+  line-height: normal;
+  font-size: 36px;
+  color: #000000;
+  text-align: center;
+  margin-top: 10px; }
+
+.payment__confirmation-info-receipt {
+  font-weight: 600;
+  line-height: normal;
+  font-size: 18px;
+  color: #000000;
+  margin-top: 30px;
+  text-align: center; }
+  .payment__confirmation-info-receipt-number {
+    font-weight: 600;
+    line-height: normal;
+    font-size: 18px;
+    color: #000000;
+    margin-top: 30px;
+    text-align: center; }
+
+.payment__confirmation-info-button {
+  height: 40px;
+  width: 200px;
+  border: none;
+  background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 14px;
+  display: block;
+  margin: auto;
+  margin-top: 80px; }
 
 .list-business__progress {
   display: inline-block;
