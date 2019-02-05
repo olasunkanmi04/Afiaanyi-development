@@ -220,8 +220,8 @@
 
     &__head {
         text-align: center;
-        margin-bottom: 43px;
         padding: 0 10px;
+        margin-bottom: 20px;
 
         &-text {
             font-size: 30px;
@@ -529,34 +529,9 @@
         height: fit-content;
         opacity: 0.5;
         // box-shadow: -4px 4px 8px rgba(196, 196, 196, 0.5), 4px -4px 8px rgba(196, 196, 196, 0.5);
-        box-shadow: 0 0px 9px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0px 64px rgba(0, 0, 0, 0.08);
         vertical-align: middle;
         margin: 25.5px 5px;
-
-        // &:nth-child(odd) {
-        //     height: 180px;
-        //     opacity: 0.2;
-        //     margin-top: 63px;
-
-        //     .community__individual {
-
-        //         &-image {
-        //             height: 53px;
-        //             width: 53px;
-        //         }
-
-        //         &-message {
-        //             line-height: 14px;
-        //             font-size: 10px;
-        //         }
-
-        //         &-name {
-        //             font-weight: 500;
-        //             line-height: 27px;
-        //             font-size: 10px;
-        //         }
-        //     }
-        // }
 
         &-image {
             height: 73px;
@@ -607,142 +582,6 @@
             width: 375px;
             vertical-align: middle;
         }
-
-        // &-first {
-        //     width: 231px;
-        //     height: 184.8px;
-        //     opacity: 0.1;
-        //     margin-right: -89px;
-        //     vertical-align: middle;
-
-        //     &-image {
-        //         width: 53px;
-        //         height: 53px;
-        //         border-radius: 50%;
-        //         background-color: #000000;
-        //         margin: 0 auto;
-        //         overflow: hidden;
-
-        //         img {
-        //             height: 53px !important;
-        //         }
-        //     }
-
-        //     svg {
-        //         width: 38px !important;
-        //         height: 62px !important;
-        //         left: 97px;
-        //         bottom: 40px;
-        //     }
-
-        //     p,
-        //     h5 {
-        //         font-size: 10px;
-        //         line-height: 14px;
-        //     }
-        // }
-
-        // &-second {
-        //     width: 315px;
-        //     height: 252px;
-        //     opacity: 0.5;
-        //     margin-right: -89px;
-        //     vertical-align: middle;
-
-        //     &-image {
-        //         width: 73px;
-        //         height: 73px;
-        //         border-radius: 50%;
-        //         background-color: #000000;
-        //         margin: 0 auto;
-        //         overflow: hidden;
-
-        //         img {
-        //             height: 73px !important;
-        //         }
-        //     }
-
-        //     svg {
-        //         width: 38px !important;
-        //         height: 62px !important;
-        //         left: 97px;
-        //         bottom: 40px;
-        //     }
-
-        //     p,
-        //     h5 {
-        //         font-size: 14px;
-        //         line-height: 27px;
-        //     }
-        // }
-
-        // &-fourth {
-        //     width: 231px;
-        //     height: 184.8px;
-        //     opacity: 0.1;
-        //     margin-left: -89px;
-        //     vertical-align: middle;
-
-        //     &-image {
-        //         width: 53px;
-        //         height: 53px;
-        //         border-radius: 50%;
-        //         background-color: #000000;
-        //         margin: 0 auto;
-        //         overflow: hidden;
-
-        //         img {
-        //             height: 53px !important;
-        //         }
-        //     }
-
-        //     svg {
-        //         width: 38px !important;
-        //         height: 62px !important;
-        //         left: 97px;
-        //         bottom: 40px;
-        //     }
-
-        //     p,
-        //     h5 {
-        //         font-size: 10px;
-        //         line-height: 14px;
-        //     }
-        // }
-
-        // &-third {
-        //     width: 315px;
-        //     height: 252px;
-        //     opacity: 0.5;
-        //     margin-left: -89px;
-        //     vertical-align: middle;
-
-        //     &-image {
-        //         width: 73px;
-        //         height: 73px;
-        //         border-radius: 50%;
-        //         background-color: #000000;
-        //         margin: 0 auto;
-        //         overflow: hidden;
-
-        //         img {
-        //             height: 73px !important;
-        //         }
-        //     }
-
-        //     svg {
-        //         width: 38px !important;
-        //         height: 62px !important;
-        //         left: 97px;
-        //         bottom: 40px;
-        //     }
-
-        //     p,
-        //     h5 {
-        //         font-size: 14px;
-        //         line-height: 27px;
-        //     }
-        // }
     }
 }
 

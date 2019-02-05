@@ -248,6 +248,10 @@
             margin-bottom: 30px;
             padding: 9px 29px;
 
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
             &::placeholder {
                 color: #000000;
                 font-weight: 500;
@@ -322,11 +326,11 @@
     }
 
     &__wrapper {
-        padding: 50px;
+        padding: 30px 50px;
     }
 
     &__top {
-        padding-top: 80px;
+        padding-top: 30px;
     }
 
     &__contact {
@@ -372,7 +376,7 @@
         font-weight: 500;
         line-height: 22px;
         font-size: 14px;
-        margin-right: 20px;
+        margin-left: 20px;
 
         &:hover {
             color: #FFFFFF;
@@ -435,6 +439,7 @@
         font-size: 14px;
         color: #4A4A4A;
         margin-top: 4px;
+        font-family: Segoe UI;
     }
 
     &__name {

@@ -6,7 +6,7 @@
 
         &-info {
             margin-left: 120px;
-            padding-top: 170px;
+            padding-top: 100px;
 
             &-heading {
                 font-weight: 600;
@@ -26,7 +26,7 @@
     }
 
     &__categories {
-        margin-top: -180px;
+        margin-top: -250px;
 
         &-wrapper {
             padding: 0 120px;
@@ -36,7 +36,7 @@
 
         &-individual {
             width: 30%;
-            height: 503px;
+            height: 403px;
             background: #FFFFFF;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
             border-radius: 4px;
@@ -57,7 +57,7 @@
                 font-size: 36px;
                 text-align: center;
                 color: #000000;
-                margin: 35px 0;
+                margin: 20px 0;
             }
 
             &-todo {
@@ -105,7 +105,7 @@
     }
 
     &__startnow {
-        margin: 80px 0;
+        margin: 30px 0;
         text-align: center;
         height: 100px;
         background: #333333;
@@ -120,8 +120,8 @@
 
     &__other-businesses {
         width: 100%;
-        background: #FCFCFC;
-        padding: 46px 120px;
+        background: #FFFFFF;
+        padding: 10px 120px;
 
         &-heading {
             font-weight: 500;
@@ -135,7 +135,7 @@
         }
 
         &-individual {
-            height: 140px;
+            // height: 140px;
             width: 120px;
             overflow: hidden;
             margin: 20px auto;

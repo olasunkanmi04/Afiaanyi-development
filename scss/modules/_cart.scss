@@ -8,8 +8,8 @@
 
     &__update {
         border: 1px solid #E6B712;
-        padding: 20px;
-        margin-bottom: 32px;
+        padding: 10px;
+        margin-bottom: 15px;
 
         p {
             font-size: 14px;
@@ -21,7 +21,7 @@
     &__item {
 
         &-count {
-            margin-bottom: 27px;
+            margin-bottom: 17px;
 
             p {
                 font-size: 18px;
@@ -37,7 +37,7 @@
 
         &-heading {
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
 
             li {
                 display: inline-block;
@@ -55,19 +55,17 @@
 
         &-wrapper {
             width: 100%;
-            height: 130px;
+            height: 100px;
             background: #FFFFFF;
             box-shadow: -4px 4px 40px rgba(0, 0, 0, 0.05), 4px -4px 40px rgba(0, 0, 0, 0.05);
             border-radius: 2px;
-            margin-bottom: 50px;
-
-
+            margin-bottom: 20px;
         }
 
         &-details {
             width: 53%;
             height: 100%;
-            padding: 15px 15px;
+            padding: 10px 15px;
             display: inline-block;
             border-right: 1px solid #DEDEDE;
 
@@ -78,8 +76,6 @@
             }
 
             &-image {
-                width: 92px;
-                height: 92px;
                 margin-right: 20px;
             }
 
@@ -92,14 +88,14 @@
                 }
 
                 &-name {
-                    line-height: 30px;
+                    line-height: 20px;
                     font-size: 14px;
                     color: #030303;
-                    margin-top: 20px;
+                    margin-top: 8px;
                 }
 
                 &-action {
-                    margin-top: 10px;
+                    margin-top: 5px;
 
                     a {
                         &:first-child {
@@ -137,7 +133,7 @@
         }
 
         &-quantity {
-            line-height: 130px;
+            line-height: 100px;
 
             select {
                 border-radius: none;
@@ -149,7 +145,7 @@
 
         &-price,
         &-subtotal {
-            line-height: 130px;
+            line-height: 100px;
             font-size: 14px;
             color: #030303;
         }
@@ -165,7 +161,7 @@
     }
 
     &__total {
-        margin-bottom: 27px;
+        margin-bottom: 17px;
 
         &-title,
         &-price {
@@ -186,7 +182,7 @@
     }
 
     &__free-shipping {
-        margin-bottom: 30px;
+        margin-bottom: 17px;
 
         &-btn {
             border: 1px solid #DEDEDE;

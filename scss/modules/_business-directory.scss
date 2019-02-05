@@ -49,27 +49,36 @@
 
     &__recommend {
         padding: 0 70px;
-        padding-top: 80px !important;
+        padding-top: 40px !important;
 
         &-heading {
             display: flex;
             margin-bottom: 30px;
+
+            img {
+                width: auto;
+                height: 20px;
+                margin-left: 8px;
+            }
 
             &-text {
                 font-size: 18px;
                 color: #333333;
                 font-weight: 500;
                 font-family: 'Raleway', sans-serif;
+                font-weight: 600;
+                text-transform: uppercase;
             }
 
             &-seeall {
-                font-weight: 300;
+                font-weight: 600;
                 line-height: normal;
                 font-size: 12px;
                 text-transform: capitalize;
-                color: #E6B712;
+                color: #fc0000;
                 margin-left: auto;
                 font-family: 'Raleway', sans-serif;
+                font-style: italic;
 
                 &:hover {
                     color: #E6B712;
@@ -159,7 +168,7 @@
 
     &__testimony {
         background: rgba(202, 170, 59, 0.06);
-        padding-bottom: 80px;
+        padding-bottom: 20px;
         margin-top: 40px;
         padding-top: 40px;
         margin-bottom: 0;
