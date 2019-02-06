@@ -268,3 +268,13 @@ select:invalid {
         }
     }
 }
+
+@media screen and (max-width:575px) {
+    .signup {
+        padding: 20px 20px;
+    }
+
+    .modal-dialog {
+        margin: 30px;
+    }
+}

@@ -15,20 +15,23 @@
         font-family: Segoe UI;
         font-size: 12px;
         color: #000000;
-
-        &:hover,
-        &-active {
-            color: #ffffff;
-            background-color: #E6B712;
-        }
+        height: 30px;
 
         &-wrapper {
-            padding: 30px 70px;
+            padding: 30px 85px;
             padding-bottom: 0;
+            display: flex;
 
             span {
                 font-family: Segoe UI !important;
+                font-size: 12px;
+                color: #000000;
             }
+        }
+
+        &-individual {
+            // display: inline-block;
+            margin-right: auto;
         }
 
     }

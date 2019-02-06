@@ -2647,7 +2647,6 @@ a:hover {
     margin-bottom: 30px;
     margin-right: 22px; }
     .business-directory__recommend-individual-image {
-      height: 300px;
       width: 100%;
       position: relative;
       border-radius: 4px 4px 0 0;
@@ -2659,12 +2658,10 @@ a:hover {
         border-radius: 4px;
         position: absolute;
         top: 0;
-        height: 100%;
         width: 100%;
         border-radius: 4px 4px 0 0; }
     .business-directory__recommend-individual-name {
-      text-align: center;
-      height: 64px; }
+      text-align: center; }
       .business-directory__recommend-individual-name-text {
         line-height: 64px;
         font-size: 16px;
@@ -2672,11 +2669,10 @@ a:hover {
         .business-directory__recommend-individual-name-text:hover {
           color: #E6B712; }
 
-.business-directory__line {
-  border: 2px solid rgba(202, 170, 59, 0.25);
-  margin-top: 20px;
-  margin-bottom: 40px;
-  width: 80%; }
+.business-directory__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 11px; }
 
 .business-directory__category {
   padding: 0 70px; }
@@ -2689,7 +2685,6 @@ a:hover {
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase; }
   .business-directory__category-individual {
-    height: 364px;
     border-radius: 4px;
     box-shadow: 0px 4px 26px rgba(202, 170, 59, 0.2);
     margin-bottom: 30px; }
@@ -2726,6 +2721,32 @@ a:hover {
     padding: 14px 50px;
     text-transform: uppercase;
     font-weight: 600; }
+
+@media screen and (max-width: 1024px) {
+  .business-directory__category,
+  .business-directory__recommend {
+    padding: 0 40px; } }
+
+@media screen and (max-width: 834px) {
+  .business-directory__category,
+  .business-directory__recommend {
+    padding: 0 28px; }
+  .business-directory__wrapper {
+    grid-template-columns: repeat(3, 1fr); }
+  .business-directory__category-individual:last-child {
+    display: none; } }
+
+@media screen and (max-width: 658px) {
+  .business-directory__wrapper {
+    grid-template-columns: repeat(2, 1fr); }
+  .business-directory__category-individual:nth-child(3) {
+    display: none; } }
+
+@media screen and (max-width: 441px) {
+  .business-directory__wrapper {
+    grid-template-columns: repeat(1, 1fr); }
+  .business-directory__category-individual:nth-child(2) {
+    display: none; } }
 
 .all-services__hero {
   background: url("../images/all-services.jpg") no-repeat;
@@ -3174,6 +3195,12 @@ select:invalid {
   .login__social-button-wrapper {
     display: flex; }
 
+@media screen and (max-width: 575px) {
+  .signup {
+    padding: 20px 20px; }
+  .modal-dialog {
+    margin: 30px; } }
+
 .top-brand {
   padding-top: 30px; }
   .top-brand__hero {
@@ -3187,15 +3214,18 @@ select:invalid {
     cursor: pointer;
     font-family: Segoe UI;
     font-size: 12px;
-    color: #000000; }
-    .top-brand__filter:hover, .top-brand__filter-active {
-      color: #ffffff;
-      background-color: #E6B712; }
+    color: #000000;
+    height: 30px; }
     .top-brand__filter-wrapper {
-      padding: 30px 70px;
-      padding-bottom: 0; }
+      padding: 30px 85px;
+      padding-bottom: 0;
+      display: flex; }
       .top-brand__filter-wrapper span {
-        font-family: Segoe UI !important; }
+        font-family: Segoe UI !important;
+        font-size: 12px;
+        color: #000000; }
+    .top-brand__filter-individual {
+      margin-right: auto; }
   .top-brand__details {
     text-align: center;
     position: relative;

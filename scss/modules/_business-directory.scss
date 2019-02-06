@@ -95,7 +95,7 @@
             margin-right: 22px;
 
             &-image {
-                height: 300px;
+                // height: 300px;
                 width: 100%;
                 position: relative;
                 border-radius: 4px 4px 0 0;
@@ -110,7 +110,7 @@
                     border-radius: 4px;
                     position: absolute;
                     top: 0;
-                    height: 100%;
+                    // height: 100%;
                     width: 100%;
                     border-radius: 4px 4px 0 0;
 
@@ -119,7 +119,7 @@
 
             &-name {
                 text-align: center;
-                height: 64px;
+                // height: 64px;
 
                 &-text {
                     line-height: 64px;
@@ -134,11 +134,10 @@
         }
     }
 
-    &__line {
-        border: 2px solid rgba(202, 170, 59, 0.25);
-        margin-top: 20px;
-        margin-bottom: 40px;
-        width: 80%;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 11px;
     }
 
     &__category {
@@ -157,7 +156,7 @@
         }
 
         &-individual {
-            height: 364px;
+            // height: 364px;
             border-radius: 4px;
             box-shadow: 0px 4px 26px rgba(202, 170, 59, 0.2);
             margin-bottom: 30px;
@@ -208,5 +207,49 @@
             text-transform: uppercase;
             font-weight: 600;
         }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .business-directory__category,
+    .business-directory__recommend {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 834px) {
+
+    .business-directory__category,
+    .business-directory__recommend {
+        padding: 0 28px;
+    }
+
+    .business-directory__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .business-directory__category-individual:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 658px) {
+    .business-directory__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .business-directory__category-individual:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 441px) {
+    .business-directory__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .business-directory__category-individual:nth-child(2) {
+        display: none;
     }
 }
