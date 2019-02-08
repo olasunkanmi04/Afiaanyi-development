@@ -1,0 +1,207 @@
+.contact-us {
+    &__hero {
+        background: url('../images/contact-us-hero.png') no-repeat;
+        width: 100%;
+        height: 100vh;
+
+        &-text {
+            padding-top: 180px;
+            padding-left: 92px;
+
+            h3 {
+                font-weight: 600;
+                line-height: 48px;
+                font-size: 48px;
+                color: #FFFFFF;
+            }
+
+            p {
+                font-weight: 600;
+                line-height: 48px;
+                font-size: 24px;
+                color: #FFFFFF;
+            }
+
+        }
+    }
+
+    &__form {
+        padding: 30px;
+        width: 50%;
+
+        &-wrapper {
+            background: #FFFFFF;
+            box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            margin: -300px 70px 0 70px;
+            display: flex;
+            margin-bottom: 65px;
+
+        }
+
+        &-label {
+            font-weight: 500;
+            line-height: normal;
+            font-size: 12px;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        &-input {
+            width: 100% !important;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 4px;
+            height: 40px;
+
+            &-wrapper {
+                width: 48%;
+
+                &:first-child {
+                    margin-right: auto;
+                }
+            }
+        }
+
+        &-textarea {
+            background: #FFFFFF;
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 4px;
+            width: 100%;
+            height: 228px !important;
+        }
+
+        &-button {
+            background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+            border-radius: 4px;
+            height: 40px;
+            width: 120px;
+            text-align: center;
+            padding: 10px 0;
+            float: right;
+            cursor: pointer;
+
+            svg {
+                width: 20px !important;
+                height: 20px !important;
+            }
+        }
+    }
+
+    &__map {
+        background: url('../images/map.png') no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+
+        &-wrapper {
+            background: #FFFFFF;
+            box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 0px 4px 4px 0px;
+            padding: 30px;
+            width: 50%;
+        }
+
+        &-overlay {
+            background: rgba(0, 0, 0, 0.3);
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        &-address {
+            position: absolute;
+            height: 110px;
+            width: 180px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            left: 100px;
+            bottom: 60px;
+
+            h3 {
+                line-height: 18px;
+                font-size: 11px;
+                color: #000000;
+                font-weight: 600;
+            }
+
+            p {
+                line-height: 18px;
+                font-size: 11px;
+                color: #000000;
+            }
+        }
+    }
+
+    &__details {
+        padding: 0 70px;
+        margin-bottom: 65px;
+
+        &-wrapper {
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 0px 4px 4px 0px;
+            padding: 30px;
+            display: flex;
+        }
+
+        &-one {
+            margin-right: auto;
+
+            svg {
+                width: 50px !important;
+                height: 46px !important;
+                vertical-align: top;
+                margin-right: 10px;
+            }
+
+            &-experience {
+                display: inline-block;
+                // vertical-align: middle;
+
+                h3 {
+                    font-weight: 600;
+                    line-height: normal;
+                    font-size: 16px;
+                    color: #000000;
+                    margin-bottom: 13px;
+                }
+
+                p {
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 13px;
+                    color: #000000;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &-two {
+            margin-right: auto;
+            margin-left: 10px;
+
+            svg {
+                width: 36px !important;
+                height: 50px !important;
+                vertical-align: top;
+                margin-right: 10px;
+            }
+        }
+
+        &-three {
+            margin-left: 10px;
+
+            svg {
+                width: 50px !important;
+                height: 48px !important;
+                vertical-align: top;
+                margin-right: 10px;
+            }
+        }
+    }
+
+}

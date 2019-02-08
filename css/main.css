@@ -3216,6 +3216,8 @@ select:invalid {
     font-size: 12px;
     color: #000000;
     height: 30px; }
+    .top-brand__filter option:hover {
+      background: red; }
     .top-brand__filter-wrapper {
       padding: 30px 85px;
       padding-bottom: 0;
@@ -3223,9 +3225,10 @@ select:invalid {
       .top-brand__filter-wrapper span {
         font-family: Segoe UI !important;
         font-size: 12px;
-        color: #000000; }
+        color: #000000;
+        font-weight: 600; }
     .top-brand__filter-individual {
-      margin-right: auto; }
+      margin-right: 30px; }
   .top-brand__details {
     text-align: center;
     position: relative;
@@ -3841,3 +3844,149 @@ select:invalid {
     margin-right: -9px; }
     .list-business__progress-line.second__progress {
       border-color: #fc0000 !important; }
+
+.contact-us__hero {
+  background: url("../images/contact-us-hero.png") no-repeat;
+  width: 100%;
+  height: 100vh; }
+  .contact-us__hero-text {
+    padding-top: 180px;
+    padding-left: 92px; }
+    .contact-us__hero-text h3 {
+      font-weight: 600;
+      line-height: 48px;
+      font-size: 48px;
+      color: #FFFFFF; }
+    .contact-us__hero-text p {
+      font-weight: 600;
+      line-height: 48px;
+      font-size: 24px;
+      color: #FFFFFF; }
+
+.contact-us__form {
+  padding: 30px;
+  width: 50%; }
+  .contact-us__form-wrapper {
+    background: #FFFFFF;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: -300px 70px 0 70px;
+    display: flex;
+    margin-bottom: 65px; }
+  .contact-us__form-label {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 8px; }
+  .contact-us__form-input {
+    width: 100% !important;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px; }
+    .contact-us__form-input-wrapper {
+      width: 48%; }
+      .contact-us__form-input-wrapper:first-child {
+        margin-right: auto; }
+  .contact-us__form-textarea {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 228px !important; }
+  .contact-us__form-button {
+    background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+    border-radius: 4px;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    padding: 10px 0;
+    float: right;
+    cursor: pointer; }
+    .contact-us__form-button svg {
+      width: 20px !important;
+      height: 20px !important; }
+
+.contact-us__map {
+  background: url("../images/map.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+  .contact-us__map-wrapper {
+    background: #FFFFFF;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 4px 4px 0px;
+    padding: 30px;
+    width: 50%; }
+  .contact-us__map-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: relative; }
+  .contact-us__map-address {
+    position: absolute;
+    height: 110px;
+    width: 180px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    left: 100px;
+    bottom: 60px; }
+    .contact-us__map-address h3 {
+      line-height: 18px;
+      font-size: 11px;
+      color: #000000;
+      font-weight: 600; }
+    .contact-us__map-address p {
+      line-height: 18px;
+      font-size: 11px;
+      color: #000000; }
+
+.contact-us__details {
+  padding: 0 70px;
+  margin-bottom: 65px; }
+  .contact-us__details-wrapper {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 4px 4px 0px;
+    padding: 30px;
+    display: flex; }
+  .contact-us__details-one {
+    margin-right: auto; }
+    .contact-us__details-one svg {
+      width: 50px !important;
+      height: 46px !important;
+      vertical-align: top;
+      margin-right: 10px; }
+    .contact-us__details-one-experience {
+      display: inline-block; }
+      .contact-us__details-one-experience h3 {
+        font-weight: 600;
+        line-height: normal;
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: 13px; }
+      .contact-us__details-one-experience p {
+        font-weight: normal;
+        line-height: normal;
+        font-size: 13px;
+        color: #000000;
+        margin-bottom: 10px; }
+  .contact-us__details-two {
+    margin-right: auto;
+    margin-left: 10px; }
+    .contact-us__details-two svg {
+      width: 36px !important;
+      height: 50px !important;
+      vertical-align: top;
+      margin-right: 10px; }
+  .contact-us__details-three {
+    margin-left: 10px; }
+    .contact-us__details-three svg {
+      width: 50px !important;
+      height: 48px !important;
+      vertical-align: top;
+      margin-right: 10px; }
