@@ -477,6 +477,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        width: fit-content;
 
         &:hover input~.user-notification__checkbox {
             background: #eeeeee;

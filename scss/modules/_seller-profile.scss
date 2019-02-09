@@ -1,0 +1,252 @@
+.seller-profile {
+    margin-left: 200px;
+    margin-right: 30px;
+    padding: 50px;
+    margin-bottom: 30px;
+
+    &__started {
+        padding: 10px 50px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+
+        &-heading {
+            text-align: center;
+            width: 547px;
+            margin: auto;
+            margin-bottom: 30px;
+
+            h3 {
+                font-weight: 600;
+                line-height: normal;
+                font-size: 24px;
+                color: #000000;
+                text-transform: uppercase;
+                margin-bottom: 18px;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                line-height: 20px;
+                font-size: 14px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+
+        &-tab {
+            margin-right: auto;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &-active,
+            &.active {
+                svg {
+                    fill: #E6B712 !important;
+                }
+
+                p {
+                    color: #E6B712 !important;
+                    border-bottom: 2px solid #E6B712 !important;
+                }
+            }
+
+            svg {
+                width: 39px !important;
+                height: 39px !important;
+                fill: #AAAAAA;
+                display: block;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 14px;
+                color: #AAAAAA;
+            }
+        }
+
+        &-content {
+            background: #FFFFFF;
+            border: 1px solid #DEDEDE;
+            box-sizing: border-box;
+            box-shadow: 5px -5px 20px rgba(222, 222, 222, 0.1);
+            width: 100%;
+            height: 412px;
+            margin: 18px 0;
+            padding: 24px;
+            overflow-y: scroll;
+
+            &-works {
+                background: #FFFFFF;
+                border: 1px solid #DEDEDE;
+                box-sizing: border-box;
+                box-shadow: 5px -5px 20px rgba(222, 222, 222, 0.1);
+                width: 100%;
+                height: 366px;
+                margin: 18px 0;
+                text-align: center;
+                padding: 0 120px;
+
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 16px;
+                    color: #000000;
+                }
+
+                &-button {
+                    background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+                    border-radius: 4px;
+                    color: #FFFFFF;
+                    padding: 12px 48px;
+                    cursor: pointer;
+                    border: none;
+                    font-weight: 500;
+                    line-height: normal;
+                    font-size: 20px;
+                    color: #FFFFFF;
+                    margin-bottom: 43px;
+                    margin-top: 80px;
+                }
+
+                h3 {
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 20px;
+                    color: #000000;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #DEDEDE;
+                border: 1px solid #DEDEDE;
+                box-sizing: border-box;
+                box-shadow: 5px -5px 20px rgba(222, 222, 222, 0.1);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #E6B712;
+                box-shadow: 5px -5px 20px rgba(222, 222, 222, 0.1);
+                border-radius: 10px;
+            }
+
+            h3 {
+                font-weight: 600;
+                line-height: normal;
+                font-size: 18px;
+                color: #000000;
+                text-align: center;
+            }
+
+            p {
+                text-align: justify !important;
+                font-size: 13px !important;
+                line-height: normal !important;
+                margin-top: 10px !important;
+            }
+
+            &-wrapper {
+                p {
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: normal;
+                    font-size: 20px;
+                    color: #000000;
+                    text-align: center;
+                }
+
+                .signup__form-subscribe {
+                    margin-left: 20px !important;
+                }
+            }
+        }
+
+        &-button {
+            padding: 11px 47px;
+            background-color: transparent;
+            border: 1px solid #E6B712;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            font-size: 14px;
+            color: #000000;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        &-ids {
+            display: flex;
+            margin: auto;
+
+            li {
+                list-style-type: disc;
+                margin-right: auto;
+                color: #E6B712;
+                font-weight: normal;
+                line-height: normal;
+                font-size: 16px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:first-child {
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.seller-sidebar {
+    &__profile {
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 90px;
+        position: absolute;
+        bottom: 0;
+
+        svg {
+            width: 35px !important;
+            height: 35px !important;
+            margin-right: 10px;
+        }
+
+        &-wrapper {
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+            padding: 27.5px 0;
+        }
+
+        &-details {
+            display: inline-block;
+            vertical-align: middle;
+
+            p {
+                font-weight: 500;
+                line-height: normal;
+                font-size: 12px;
+                color: #FFFFFF;
+
+                &:last-child {
+                    font-size: 10px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}
