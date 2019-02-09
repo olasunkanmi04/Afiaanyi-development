@@ -4,6 +4,8 @@
         width: 100%;
         height: 100vh;
 
+        background-size: cover;
+
         &-text {
             padding-top: 180px;
             padding-left: 92px;
@@ -33,9 +35,15 @@
             background: #FFFFFF;
             box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
             border-radius: 4px;
-            margin: -300px 70px 0 70px;
+            margin: auto;
             display: flex;
-            margin-bottom: 65px;
+            position: absolute;
+            width: 90%;
+            height: 80vh;
+            bottom: -80px;
+            top: 400px;
+            left: 50%;
+            margin-left: -45%;
 
         }
 
@@ -138,6 +146,7 @@
     &__details {
         padding: 0 70px;
         margin-bottom: 65px;
+        margin-top: 200px;
 
         &-wrapper {
             width: 100%;
@@ -206,3 +215,34 @@
     }
 
 }
+
+// @media screen and (max-width:1400px) {
+//     .contact-us__hero-text {
+//         padding-top: 300px;
+//     }
+
+//     .contact-us__form-wrapper {
+//         margin-top: -500px;
+//         height: 30vh;
+//     }
+
+//     .contact-us__form-textarea {
+//         height: 228px !important;
+//     }
+// }
+
+
+// @media screen and (max-width:1920px) {
+//     .contact-us__hero-text {
+//         padding-top: 300px;
+//     }
+
+//     .contact-us__form-wrapper {
+//         margin-top: -500px;
+//         height: 60vh;
+//     }
+
+//     .contact-us__form-textarea {
+//         height: 400px !important;
+//     }
+// }
