@@ -515,7 +515,7 @@
         }
 
         &-wrapper {
-            margin-top: 61px;
+            margin-top: 30px;
             padding: 10px 24px;
         }
 
@@ -874,6 +874,7 @@
                     margin-left: 6px;
                     width: 40px;
                     border-radius: 2px;
+                    padding: 6px 0;
 
                     svg {
                         width: 16px !important;
@@ -901,6 +902,7 @@
                 width: 40px;
                 border-radius: 0px 2px 2px 0px;
                 border: 1px solid #DEDEDE;
+                padding: 6px 0;
 
                 svg {
                     width: 16px !important;
@@ -1011,7 +1013,7 @@
 
                     &:nth-child(2) {
                         width: 50%;
-                        padding-left: 35px;
+                        padding-left: 24px;
 
                         p {
                             text-align: left !important;
@@ -1062,6 +1064,83 @@
             font-size: 10px;
             padding: 5px 12px;
             padding-top: 0;
+        }
+    }
+}
+
+
+.seller-product {
+    &__content {
+        &-table {
+            &-head {
+                background: #FCFCFC;
+                border: 1px solid #DEDEDE;
+
+                &:first-child {
+                    width: 28%;
+                    padding-left: 24px;
+
+                    p {
+                        text-align: left;
+                    }
+                }
+
+                &:nth-child(2) {
+                    width: 7%;
+                }
+
+                &:nth-child(3) {
+                    width: 7%;
+                }
+
+                &:nth-child(4) {
+                    width: 8%;
+                }
+
+                &:nth-child(5) {
+                    width: 8%;
+                }
+
+                &:nth-child(6) {
+                    width: 18%;
+                }
+
+                &:nth-child(7) {
+                    width: 8%;
+                }
+
+                &:nth-child(8) {
+                    width: 8%;
+                }
+
+                &:nth-child(9) {
+                    width: 8%;
+                }
+
+                p {
+                    font-weight: 500;
+                    line-height: normal;
+                    font-size: 10px;
+                    color: #000000;
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+                &-wrapper {
+                    height: 40px;
+                    display: flex;
+                    background: #FCFCFC;
+                }
+            }
+
+            &-rows {
+                height: 50px;
+                margin-top: 13px;
+
+                p {
+                    line-height: 50px !important;
+                }
+            }
         }
     }
 }

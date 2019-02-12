@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dropzone.css">
+
+    <link rel="stylesheet" href="css/logged-navbar.css">
+
+    <script src="js/csi.min.js"></script>
+
+    <title>Afiaanyi | Add Product</title>
+</head>
+
+<body>
+    <div data-include="svg.html"></div>
+    <aside class="user-sidebar">
+        <div class="user-sidebar__overlay">
+            <div class="user-sidebar__logo">
+                <img src="images/logo.png" alt="" class="img-fluid">
+            </div>
+            <ul class="user-sidebar__item">
+                <li class="user-sidebar__link">
+                    <a href="seller-dashboard.html">
+                        <svg class="icon icon-dashboard">
+                            <use xlink:href="#icon-dashboard"></use>
+                        </svg>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link">
+                    <a href="seller-orders.html">
+                        <svg class="icon icon-person-profile">
+                            <use xlink:href="#icon-person-profile"></use>
+                        </svg>
+                        <span>Orders</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link user-sidebar__link-active">
+                    <a href="seller-products.html">
+                        <svg class="icon icon-gallary">
+                            <use xlink:href="#icon-gallary"></use>
+                        </svg>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link">
+                    <a href="#">
+                        <svg class="icon icon-review">
+                            <use xlink:href="#icon-review"></use>
+                        </svg>
+                        <span>Warehouse</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link">
+                    <a href="#">
+                        <svg class="icon icon-credit-card-payment">
+                            <use xlink:href="#icon-credit-card-payment"></use>
+                        </svg>
+                        <span>Transaction</span>
+                    </a>
+                </li>
+                <li class="user-sidebar__link">
+                    <a href="#">
+                        <svg class="icon icon-wallet">
+                            <use xlink:href="#icon-wallet"></use>
+                        </svg>
+                        <span>Wallet</span>
+                    </a>
+                </li>
+                <li class="seller-sidebar__profile">
+                    <div class="seller-sidebar__profile-wrapper">
+                        <svg class="icon icon-user">
+                            <use xlink:href="#icon-user"></use>
+                        </svg>
+                        <div class="seller-sidebar__profile-details">
+                            <p>Stephen</p>
+                            <p>KJK.Africa</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="seller-profile">
+        <div class="seller__dashboard-pop-message">
+            <span id="close-pop-message">&times;</span>
+            <p>Create products or send your product creation requests to seller-support@afiaanyi.com to make your shop
+                visible</p>
+        </div>
+        <div class="seller-profile__started seller__dashboard-wrapper">
+            <div class="user-personal__top">
+                <nav class="h-auto">
+                    <div class="nav seller__dashboard-chart-tab-wrapper" id="nav-tab" role="tablist">
+
+                        <a class="nav-item seller__dashboard-chart-tab text-capitalize active" href="seller-add-product.html"><span
+                                class="volume-chart-tab">Add
+                                a Product</span>
+                            <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
+                        </a>
+                    </div>
+                    <hr class="user-personal__heading-divider">
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        $('#close-pop-message').click(function () {
+            $('.seller__dashboard-pop-message').addClass('d-none');
+        })
+    </script>
+</body>
+
+</html>

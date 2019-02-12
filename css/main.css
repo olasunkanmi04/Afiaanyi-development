@@ -4378,7 +4378,7 @@ select:invalid {
     cursor: pointer; }
 
 .seller__dashboard-wrapper {
-  margin-top: 61px;
+  margin-top: 30px;
   padding: 10px 24px; }
 
 .seller__dashboard-content {
@@ -4621,7 +4621,8 @@ select:invalid {
         position: relative;
         margin-left: 6px;
         width: 40px;
-        border-radius: 2px; }
+        border-radius: 2px;
+        padding: 6px 0; }
         .seller-order__content-actions-print-button svg {
           width: 16px !important; }
     .seller-order__content-actions-button {
@@ -4641,7 +4642,8 @@ select:invalid {
       margin-left: 6px;
       width: 40px;
       border-radius: 0px 2px 2px 0px;
-      border: 1px solid #DEDEDE; }
+      border: 1px solid #DEDEDE;
+      padding: 6px 0; }
       .seller-order__content-actions-search svg {
         width: 16px !important; }
   .seller-order__content-table-head {
@@ -4705,7 +4707,7 @@ select:invalid {
         width: 6%; }
       .seller-order__content-export-table-head:nth-child(2) {
         width: 50%;
-        padding-left: 35px; }
+        padding-left: 24px; }
         .seller-order__content-export-table-head:nth-child(2) p {
           text-align: left !important; }
       .seller-order__content-export-table-head:nth-child(3) {
@@ -4737,3 +4739,45 @@ select:invalid {
     font-size: 10px;
     padding: 5px 12px;
     padding-top: 0; }
+
+.seller-product__content-table-head {
+  background: #FCFCFC;
+  border: 1px solid #DEDEDE; }
+  .seller-product__content-table-head:first-child {
+    width: 28%;
+    padding-left: 24px; }
+    .seller-product__content-table-head:first-child p {
+      text-align: left; }
+  .seller-product__content-table-head:nth-child(2) {
+    width: 7%; }
+  .seller-product__content-table-head:nth-child(3) {
+    width: 7%; }
+  .seller-product__content-table-head:nth-child(4) {
+    width: 8%; }
+  .seller-product__content-table-head:nth-child(5) {
+    width: 8%; }
+  .seller-product__content-table-head:nth-child(6) {
+    width: 18%; }
+  .seller-product__content-table-head:nth-child(7) {
+    width: 8%; }
+  .seller-product__content-table-head:nth-child(8) {
+    width: 8%; }
+  .seller-product__content-table-head:nth-child(9) {
+    width: 8%; }
+  .seller-product__content-table-head p {
+    font-weight: 500;
+    line-height: normal;
+    font-size: 10px;
+    color: #000000;
+    line-height: 40px;
+    text-align: center; }
+  .seller-product__content-table-head-wrapper {
+    height: 40px;
+    display: flex;
+    background: #FCFCFC; }
+
+.seller-product__content-table-rows {
+  height: 50px;
+  margin-top: 13px; }
+  .seller-product__content-table-rows p {
+    line-height: 50px !important; }
