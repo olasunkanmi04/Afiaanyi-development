@@ -99,6 +99,11 @@
         <div class="seller-profile__started seller__dashboard-wrapper">
             <div class="user-personal__top">
                 <nav class="h-auto">
+                    <a class="nav-item seller__dashboard-chart-tab ml-auto btn btn-primary user-personal__edit-profile"
+                        href="seller-add-product.html" style="display: block;
+                        width: 200px;">Add
+                        a
+                        Product</a>
                     <div class="nav seller__dashboard-chart-tab-wrapper" id="nav-tab" role="tablist">
                         <a class="nav-item seller__dashboard-chart-tab mr-5 text-capitalize active" id="nav-manage-products-tab"
                             data-toggle="tab" href="#nav-manage-products" role="tab" aria-controls="nav-manage-products"
@@ -111,10 +116,7 @@
                             aria-selected="false"><span class="your-payment-tab">Manage Images</span>
                             <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
                         </a>
-                        <a class="nav-item seller__dashboard-chart-tab ml-auto text-capitalize active" href="seller-add-product.html"><span
-                                class="volume-chart-tab">Add a Product</span>
-                            <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
-                        </a>
+
                     </div>
                     <hr class="user-personal__heading-divider">
                 </nav>
@@ -1661,28 +1663,9 @@
                                     <div class="tab-pane fade show active seller-order__content" id="nav-all-product-image"
                                         role="tabpanel" aria-labelledby="nav-all-product-image-tab">
                                         <div class="seller-order__content-actions">
-                                            <label class="user-notification__label mr-4">
-                                                <input type="checkbox" name="new follower">
-                                                <span class="user-notification__checkbox" style="border: 1px solid #C4C4C4; border-radius:0;"></span>
-                                            </label>
-
-                                            <div class="seller-order__content-actions-print">
-                                                <select name="print document" class="seller-order__content-actions-print-input">
-                                                    <option value="Restore shop version">Restore shop version</option>
-                                                    <option value="Set to inactive">Set to inactive</option>
-                                                    <option value="Delete Products">Delete Products</option>
-                                                    <option value="Set stock to zero">Set stock to zero</option>
-                                                    <option value="Set special price">Set special price</option>
-                                                </select>
-                                            </div>
-                                            <div class="newsletter__input-btn seller-order__content-actions-print-button">
-                                                <svg class="icon icon-go">
-                                                    <use xlink:href="#icon-go"></use>
-                                                </svg>
-                                            </div>
-
                                             <button class="seller-order__content-actions-button ml-auto">Export</button>
                                             <button class="seller-order__content-actions-button ml-3">+ Add</button>
+                                            <button class="seller-order__content-actions-button ml-3">- Delete</button>
 
                                             <div class="seller-order__content-actions-print ml-3">
                                                 <input type="text" name="" id="" placeholder="Order Number, Custotmer & Other Criteria"
@@ -1696,66 +1679,34 @@
                                         </div>
 
                                         <div class="seller-order__content-table-head-wrapper">
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p>Name</p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p>SKU</p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p>Created</p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p>Price</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Sale Price</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Recommended Price</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Available</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Visible Active</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Actions</p>
                                             </div>
                                         </div>
 
                                         <div class="seller-order__content-table-head-wrapper seller-order__content-table-rows">
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p></p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p></p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p></p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p></p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
+
                                         </div>
 
                                         <div class="seller__dashboard-content-navigate">
@@ -1824,101 +1775,50 @@
                                     <div class="tab-pane fade seller-order__content" id="nav-missing-images" role="tabpanel"
                                         aria-labelledby="nav-missing-images-tab">
                                         <div class="seller-order__content-actions">
-                                            <label class="user-notification__label mr-4">
-                                                <input type="checkbox" name="new follower">
-                                                <span class="user-notification__checkbox" style="border: 1px solid #C4C4C4; border-radius:0;"></span>
-                                            </label>
-
-                                            <div class="seller-order__content-actions-print">
-                                                <select name="print document" class="seller-order__content-actions-print-input">
-                                                    <option value="Restore shop version">Restore version</option>
-                                                    <option value="Set to inactive">Set to inactive</option>
-                                                    <option value="Delete Products">Delete Products</option>
-                                                    <option value="Set stock to zero">Set stock to zero</option>
-                                                    <option value="Set special price">Set special price</option>
-                                                </select>
-                                            </div>
-                                            <div class="newsletter__input-btn seller-order__content-actions-print-button">
-                                                <svg class="icon icon-go">
-                                                    <use xlink:href="#icon-go"></use>
-                                                </svg>
-                                            </div>
-
                                             <button class="seller-order__content-actions-button ml-auto">Export</button>
                                             <button class="seller-order__content-actions-button ml-3">+ Add</button>
+                                            <button class="seller-order__content-actions-button ml-3">- Delete</button>
 
                                             <div class="seller-order__content-actions-print ml-3">
                                                 <input type="text" name="" id="" placeholder="Order Number, Custotmer & Other Criteria"
                                                     class="seller-order__content-actions-print-input">
                                             </div>
                                             <div class="newsletter__input-btn seller-order__content-actions-search ml-0">
-                                                <svg class="icon iicon-search-icon">
+                                                <svg class="icon icon-search-icon">
                                                     <use xlink:href="#icon-search-icon"></use>
                                                 </svg>
                                             </div>
                                         </div>
 
                                         <div class="seller-order__content-table-head-wrapper">
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p>Name</p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p>SKU</p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p>Created</p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p>Price</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Sale Price</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Recommended Price</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Available</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Visible Active</p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p>Actions</p>
                                             </div>
                                         </div>
 
                                         <div class="seller-order__content-table-head-wrapper seller-order__content-table-rows">
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p></p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p></p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p></p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
+                                            <div class="seller-product__manage-image">
                                                 <p></p>
                                             </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
-                                            <div class="seller-product__content-table-head">
-                                                <p></p>
-                                            </div>
+
                                         </div>
 
                                         <div class="seller__dashboard-content-navigate">
