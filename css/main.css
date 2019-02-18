@@ -4782,6 +4782,31 @@ select:invalid {
   .seller-product__content-table-rows p {
     line-height: 50px !important; }
 
+.seller-product__images {
+  width: 80%; }
+  .seller-product__images h3 {
+    line-height: 28px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 700;
+    font-family: Segoe UI; }
+  .seller-product__images p {
+    line-height: 28px;
+    font-size: 14px;
+    color: #000000;
+    font-family: Segoe UI; }
+  .seller-product__images-dropzone {
+    width: 100% !important;
+    margin: auto;
+    border: 2px dashed #000000 !important;
+    border-radius: 4px;
+    margin-top: 30px;
+    display: table; }
+    .seller-product__images-dropzone .dz-message {
+      margin: 0 !important;
+      display: table-cell;
+      vertical-align: middle; }
+
 .seller-add-product__wrapper {
   background: #FFFFFF;
   border: 1px solid #DEDEDE;

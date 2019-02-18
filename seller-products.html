@@ -110,13 +110,11 @@
                             aria-selected="true"><span class="sales-summary-tab">Manage Products</span>
                             <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
                         </a>
-
                         <a class="nav-item seller__dashboard-chart-tab mr-5 text-capitalize" id="nav-manage-images-tab"
                             data-toggle="tab" href="#nav-manage-images" role="tab" aria-controls="nav-manage-images"
                             aria-selected="false"><span class="your-payment-tab">Manage Images</span>
                             <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
                         </a>
-
                     </div>
                     <hr class="user-personal__heading-divider">
                 </nav>
@@ -1664,7 +1662,8 @@
                                         role="tabpanel" aria-labelledby="nav-all-product-image-tab">
                                         <div class="seller-order__content-actions">
                                             <button class="seller-order__content-actions-button ml-auto">Export</button>
-                                            <button class="seller-order__content-actions-button ml-3">+ Add</button>
+                                            <button class="seller-order__content-actions-button ml-3" data-toggle="modal"
+                                                data-target="#exampleModal">+ Add</button>
                                             <button class="seller-order__content-actions-button ml-3">- Delete</button>
 
                                             <div class="seller-order__content-actions-print ml-3">
@@ -1776,7 +1775,8 @@
                                         aria-labelledby="nav-missing-images-tab">
                                         <div class="seller-order__content-actions">
                                             <button class="seller-order__content-actions-button ml-auto">Export</button>
-                                            <button class="seller-order__content-actions-button ml-3">+ Add</button>
+                                            <button class="seller-order__content-actions-button ml-3" data-toggle="modal"
+                                                data-target="#exampleModal">+ Add</button>
                                             <button class="seller-order__content-actions-button ml-3">- Delete</button>
 
                                             <div class="seller-order__content-actions-print ml-3">
@@ -1907,14 +1907,38 @@
             </div>
 
 
-
-
-
-
-
-
         </div>
     </section>
+
+
+    <!-- add image modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog quickview__modal" role="document">
+            <div class="modal-content quickview__modal-content">
+                <div class="modal-body">
+                    <div class="seller-product__images">
+                        <h3>Instructions</h3>
+                        <p>Please use the following naming template for the mass image upload: SKU_ImageNumber
+                            Where:
+                            SKU is the SKU of the product you would like to upload image(s) for.
+                            ImageNumber is a number which determines how the uploaded images will be sorted.
+                            ImageNumber has to be a numeric value. It is possible to have up to eight images per SKU.</p>
+                    </div>
+                    <form action="/file-upload" class="seller-product__images-dropzone dropzone">
+                        <p class="dz-message">Drop Image Here or <span>Select Image</span></p>
+                        <div class="fallback">
+                            <input name="file" type="file" multiple>
+                        </div>
+                    </form>
+
+                    <a href="seller-add-product-information.html" class="seller-add-product__categories-button" class="close"
+                        data-dismiss="modal" aria-label="Close">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="js/jquery.min.js"></script>
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
@@ -1922,6 +1946,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/dropzone.js"></script>
 
     <script src="js/main.js"></script>
 
