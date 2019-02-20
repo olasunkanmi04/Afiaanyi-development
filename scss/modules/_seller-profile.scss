@@ -495,6 +495,7 @@
             background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
             height: 64px;
             // text-align: center;
+            margin-bottom: 20px;
 
             p {
                 line-height: 64px;
@@ -515,13 +516,13 @@
         }
 
         &-wrapper {
-            margin-top: 30px;
+            margin-top: 10px;
             padding: 10px 24px;
         }
 
         &-content {
             display: flex;
-            margin-top: 48px;
+            margin-top: 20px;
 
             &-individual {
                 padding: 25px 11px;
@@ -1673,6 +1674,145 @@
                 height: 40px;
                 display: flex;
                 background: #FCFCFC;
+            }
+        }
+    }
+}
+
+.seller-transaction {
+    &__overview {
+        margin-top: 17px;
+
+        &-one {
+            width: 30%;
+
+            .icon-calendar {
+                fill: #000000;
+                width: 15px;
+                height: 15px;
+            }
+
+            span {
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                font-size: 13px;
+                color: #000000;
+                vertical-align: middle;
+            }
+
+            &-detail {
+                background: #FFFFFF;
+                border: 1px solid #DEDEDE;
+                box-sizing: border-box;
+                box-shadow: 5px -5px 20px rgba(222, 222, 222, 0.1);
+                border-radius: 2px 2px 0 0;
+                margin-top: 7px;
+                padding: 12px;
+
+                &.bottom__row {
+                    border-radius: 0 0 2px 2px;
+
+                    .last__col {
+                        p {
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            font-size: 13px;
+                            color: #000000;
+                        }
+                    }
+                }
+
+                &-table {
+                    display: table;
+                    width: 100%;
+
+                    &-row {
+                        display: table-row;
+
+                        &-col {
+                            display: table-cell;
+                            padding-bottom: 24px;
+
+                            &.last__col {
+                                padding-bottom: 0px;
+                            }
+
+                        }
+                    }
+                }
+
+                &-item {
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    font-size: 13px;
+                    color: #000000;
+                }
+
+                &-price {
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    font-size: 13px;
+                    color: #000000;
+                    text-align: right;
+                }
+            }
+        }
+
+        &-two {
+            width: 70%;
+            margin-left: 13px;
+
+            &-heading {
+                display: table;
+                width: 100%;
+
+                &-row {
+                    display: table-row;
+
+                    &-col {
+                        display: table-cell;
+
+                        &:first-child {
+                            width: 65%;
+                        }
+                    }
+                }
+
+                &-text {
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    font-size: 13px;
+                    color: #000000;
+                }
+            }
+
+            &-table {
+                display: table;
+                width: 100%;
+                margin-top: 7px;
+
+                &-row {
+                    display: table-row;
+                    height: 33px;
+
+
+                    &-col {
+                        display: table-cell;
+                        border: 1px solid #DEDEDE;
+
+                        padding: 10px;
+
+                        &:first-child {
+                            width: 65%;
+                        }
+                    }
+                }
+
             }
         }
     }

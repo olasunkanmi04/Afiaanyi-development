@@ -4362,7 +4362,8 @@ select:invalid {
 
 .seller__dashboard-pop-message {
   background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
-  height: 64px; }
+  height: 64px;
+  margin-bottom: 20px; }
   .seller__dashboard-pop-message p {
     line-height: 64px;
     font-weight: 500;
@@ -4378,12 +4379,12 @@ select:invalid {
     cursor: pointer; }
 
 .seller__dashboard-wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 10px 24px; }
 
 .seller__dashboard-content {
   display: flex;
-  margin-top: 48px; }
+  margin-top: 20px; }
   .seller__dashboard-content-individual {
     padding: 25px 11px;
     background: #FFFFFF;
@@ -5157,6 +5158,92 @@ select:invalid {
     height: 40px;
     display: flex;
     background: #FCFCFC; }
+
+.seller-transaction__overview {
+  margin-top: 17px; }
+  .seller-transaction__overview-one {
+    width: 30%; }
+    .seller-transaction__overview-one .icon-calendar {
+      fill: #000000;
+      width: 15px;
+      height: 15px; }
+    .seller-transaction__overview-one span {
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      font-size: 13px;
+      color: #000000;
+      vertical-align: middle; }
+    .seller-transaction__overview-one-detail {
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      box-sizing: border-box;
+      box-shadow: 5px -5px 20px rgba(222, 222, 222, 0.1);
+      border-radius: 2px 2px 0 0;
+      margin-top: 7px;
+      padding: 12px; }
+      .seller-transaction__overview-one-detail.bottom__row {
+        border-radius: 0 0 2px 2px; }
+        .seller-transaction__overview-one-detail.bottom__row .last__col p {
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          font-size: 13px;
+          color: #000000; }
+      .seller-transaction__overview-one-detail-table {
+        display: table;
+        width: 100%; }
+        .seller-transaction__overview-one-detail-table-row {
+          display: table-row; }
+          .seller-transaction__overview-one-detail-table-row-col {
+            display: table-cell;
+            padding-bottom: 24px; }
+            .seller-transaction__overview-one-detail-table-row-col.last__col {
+              padding-bottom: 0px; }
+      .seller-transaction__overview-one-detail-item {
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 13px;
+        color: #000000; }
+      .seller-transaction__overview-one-detail-price {
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 13px;
+        color: #000000;
+        text-align: right; }
+  .seller-transaction__overview-two {
+    width: 70%;
+    margin-left: 13px; }
+    .seller-transaction__overview-two-heading {
+      display: table;
+      width: 100%; }
+      .seller-transaction__overview-two-heading-row {
+        display: table-row; }
+        .seller-transaction__overview-two-heading-row-col {
+          display: table-cell; }
+          .seller-transaction__overview-two-heading-row-col:first-child {
+            width: 65%; }
+      .seller-transaction__overview-two-heading-text {
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 13px;
+        color: #000000; }
+    .seller-transaction__overview-two-table {
+      display: table;
+      width: 100%;
+      margin-top: 7px; }
+      .seller-transaction__overview-two-table-row {
+        display: table-row;
+        height: 33px; }
+        .seller-transaction__overview-two-table-row-col {
+          display: table-cell;
+          border: 1px solid #DEDEDE;
+          padding: 10px; }
+          .seller-transaction__overview-two-table-row-col:first-child {
+            width: 65%; }
 
 #product-details {
   margin-top: 10px; }
