@@ -223,16 +223,29 @@
                         <h3>Valid ID can be a scanned copy of either</h3>
                         <ul class="seller-profile__started-ids">
                             <li>
-                                <p>Driver's License</p>
+                                <form>
+                                    <input id="driver-license" type="file">
+                                    <label for="driver-license">Driver's License</label>
+                                </form>
                             </li>
                             <li>
-                                <p>National ID</p>
+                                <form>
+                                    <input id="national-id" type="file">
+                                    <label for="national-id">National ID</label>
+                                </form>
                             </li>
                             <li>
-                                <p>International Passport</p>
+                                <form>
+                                    <input id="international-passport" type="file">
+                                    <label for="international-passport">International Passport</label>
+                                </form>
                             </li>
                             <li>
-                                <p>Other valid means of ID</p>
+                                <form>
+                                    <input id="other-id" type="file">
+                                    <label for="other-id">Other valid means of ID</label>
+                                </form>
+                                <p></p>
                             </li>
                         </ul>
                         <form action="/file-upload" class="dropzone">
@@ -327,6 +340,29 @@
         </div>
     </div>
 
+
+    <style>
+        [type=file] {
+    position: absolute;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    }
+input,
+[type=file] + label {
+  text-align: left;
+  position: relative;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
     <!-- Subscription Modal -->
     <div class="modal fade verify-bank__modal" id="subscriptionModal" tabindex="-1" role="dialog" aria-labelledby="subscriptionModalLabel"
         aria-hidden="true">
@@ -386,6 +422,18 @@
         })
     </script>
     <script src="js/dropzone.js"></script>
+    <script>
+        $("[type=file]").on("change", function () {
+            // Name of file and placeholder
+            var file = this.files[0].name;
+            var dflt = $(this).attr("placeholder");
+            if ($(this).val() != "") {
+                $(this).next().text(file);
+            } else {
+                $(this).next().text(dflt);
+            }
+        });
+    </script>
 </body>
 
 </html>

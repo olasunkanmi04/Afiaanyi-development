@@ -4148,7 +4148,10 @@ select:invalid {
         color: #E6B712;
         font-weight: normal;
         line-height: normal;
-        font-size: 16px; }
+        font-size: 14px; }
+        .seller-profile__started-ids li label {
+          color: #000000;
+          cursor: pointer; }
         .seller-profile__started-ids li:last-child {
           margin-right: 0; }
         .seller-profile__started-ids li:first-child {
@@ -4489,7 +4492,8 @@ select:invalid {
       line-height: normal;
       font-size: 14px;
       color: #000000;
-      padding-right: 41px; }
+      padding-right: 41px;
+      font-family: Segoe UI; }
 
 .seller__dashboard-announcement-modal-heading small {
   font-weight: 500;
@@ -4508,7 +4512,8 @@ select:invalid {
   font-weight: normal;
   line-height: normal;
   font-size: 14px;
-  color: #000000; }
+  color: #000000;
+  font-family: Segoe UI; }
 
 .seller__dashboard-announcement-modal-footer {
   background: #DEDEDE;
@@ -4545,10 +4550,13 @@ select:invalid {
     font-weight: 500;
     line-height: normal;
     font-size: 14px;
-    color: #000000; }
+    color: #000000;
+    background-color: #DEDEDE;
+    border-right: 2px solid red;
+    padding: 5px 20px 2px 20px; }
   .seller__dashboard-chart-tab.active span {
     background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
-    padding: 2px 8px;
+    padding: 5px 20px 2px 20px;
     color: #FFFFFF; }
   .seller__dashboard-chart-tab.active .sales-summary-tab {
     border-radius: 4px 0px 0px 4px; }
@@ -4807,6 +4815,10 @@ select:invalid {
       margin: 0 !important;
       display: table-cell;
       vertical-align: middle; }
+
+.seller-add-product__heading {
+  color: #000000;
+  font-weight: 600; }
 
 .seller-add-product__wrapper {
   background: #FFFFFF;

@@ -197,7 +197,13 @@
                 color: #E6B712;
                 font-weight: normal;
                 line-height: normal;
-                font-size: 16px;
+                font-size: 14px;
+
+                label {
+                    color: #000000;
+                    cursor: pointer;
+
+                }
 
                 &:last-child {
                     margin-right: 0;
@@ -672,6 +678,7 @@
                         font-size: 14px;
                         color: #000000;
                         padding-right: 41px;
+                        font-family: Segoe UI;
                     }
                 }
             }
@@ -700,6 +707,7 @@
                         line-height: normal;
                         font-size: 14px;
                         color: #000000;
+                        font-family: Segoe UI;
                     }
                 }
 
@@ -756,13 +764,17 @@
                     line-height: normal;
                     font-size: 14px;
                     color: #000000;
+                    background-color: #DEDEDE;
+                    border-right: 2px solid red;
+                    padding: 5px 20px 2px 20px;
+
                 }
 
 
                 &.active {
                     span {
                         background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
-                        padding: 2px 8px;
+                        padding: 5px 20px 2px 20px;
                         color: #FFFFFF;
                     }
 
@@ -1182,6 +1194,11 @@
 }
 
 .seller-add-product {
+    &__heading {
+        color: #000000;
+        font-weight: 600;
+    }
+
     &__wrapper {
         background: #FFFFFF;
         border: 1px solid #DEDEDE;
