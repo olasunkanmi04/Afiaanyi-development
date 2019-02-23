@@ -97,25 +97,26 @@
                 visible</p>
         </div>
         <div class="seller-profile__started seller__dashboard-wrapper">
-            <div class="user-personal__top">
+            <div class="user-personal__top pt-2">
                 <nav class="h-auto">
                     <div class="nav seller__dashboard-chart-tab-wrapper" id="nav-tab" role="tablist">
-                        <a class="nav-item seller__dashboard-chart-tab mr-5 text-capitalize active" id="nav-transaction-overview-tab"
-                            data-toggle="tab" href="#nav-transaction-overview" role="tab" aria-controls="nav-transaction-overview"
-                            aria-selected="true"><span class="sales-summary-tab">Transaction Overview</span>
+                        <a class="nav-item seller__dashboard-chart-tab seller-add-product__categories-buttontext-capitalize active"
+                            id="nav-transaction-overview-tab" data-toggle="tab" href="#nav-transaction-overview" role="tab"
+                            aria-controls="nav-transaction-overview" aria-selected="true"><span class="sales-summary-tab">Transaction
+                                Overview</span>
                             <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
                         </a>
-                        <a class="nav-item seller__dashboard-chart-tab mr-5 text-capitalize" id="nav-sales-report-tab"
+                        <a class="nav-item seller__dashboard-chart-tab text-capitalize" id="nav-sales-report-tab"
                             data-toggle="tab" href="#nav-sales-report" role="tab" aria-controls="nav-sales-report"
                             aria-selected="false"><span class="your-payment-tab">Sales Report</span>
                             <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
                         </a>
-                        <a class="nav-item seller__dashboard-chart-tab mr-5 text-capitalize" id="nav-catalog-performance-tab"
+                        <a class="nav-item seller__dashboard-chart-tab text-capitalize" id="nav-catalog-performance-tab"
                             data-toggle="tab" href="#nav-catalog-performance" role="tab" aria-controls="nav-catalog-performance"
                             aria-selected="true"><span class="sales-summary-tab">Catalog Performance</span>
                             <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
                         </a>
-                        <a class="nav-item seller__dashboard-chart-tab mr-5 text-capitalize" id="nav-account-statement-tab"
+                        <a class="nav-item seller__dashboard-chart-tab text-capitalize" id="nav-account-statement-tab"
                             data-toggle="tab" href="#nav-account-statement" role="tab" aria-controls="nav-account-statement"
                             aria-selected="false"><span class="your-payment-tab">Account Statement</span>
                             <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
@@ -274,21 +275,166 @@
                                         </div>
                                         <div class="seller-transaction__overview-two-table-row">
                                             <div class="seller-transaction__overview-two-table-row-col d-flex w-100">
-                                                <p class="seller-transaction__overview-two-table-text mx-auto seller-transaction__overview-two-table-foote-item">Item
+                                                <p class="seller-transaction__overview-two-table-text mx-auto seller-transaction__overview-two-table-footer-item">Item
                                                     Price
                                                     Credit</p>
                                                 <p class="seller-transaction__overview-two-table-text mx-auto seller-transaction__overview-two-table-footer-item">Commission</p>
                                             </div>
                                             <div class="seller-transaction__overview-two-table-row-col">
-                                                <p class="seller-transaction__overview-two-heading-text"></p>
+                                                <p class="seller-transaction__overview-two-heading-text mx-auto seller-transaction__overview-two-table-footer-item">Payment
+                                                    Amount</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <div class="seller-transaction__table-wrap">
+                                <div class="seller-transaction__table-filter">
+                                    <span class="seller-transaction__table-filter-text">Filter:</span>
+                                    <button class="btn seller-transaction__table-filter-button">Transactions from last
+                                        week</button>
+                                    <button class="btn seller-transaction__table-filter-button">Transactions from last
+                                        month</button>
+                                </div>
 
+                                <div class="seller-transaction__table">
+                                    <div class="seller-transaction__table-row">
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content-heading">Date</p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content-heading">Transaction Type</p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content-heading">Transaction Number</p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content-heading">Order Number</p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content-heading">Details</p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content-heading">Amount</p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content-heading">VAT</p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content-heading">Payment Status</p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content-heading">Statement</p>
+                                        </div>
+                                    </div>
+                                    <div class="seller-transaction__table-row">
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                    </div>
+                                    <div class="seller-transaction__table-row">
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                    </div>
+                                    <div class="seller-transaction__table-row">
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                        <div class="seller-transaction__table-row-col">
+                                            <p class="seller-transaction__table-content"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="seller__dashboard-content-navigate">
+                                <div class="d-flex ml-auto">
+                                    <span class="seller-order__content-paging">1</span>
+                                    <span class="seller-order__content-paging">of</span>
+                                    <span class="seller-order__content-paging">10</span>
+                                    <div class="seller__dashboard-announcement-modal-previous">
+                                        <svg class="icon icon-arrow-next">
+                                            <use xlink:href="#icon-arrow-next"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="seller__dashboard-announcement-modal-next active-modal">
+                                        <svg class="icon icon-arrow-next">
+                                            <use xlink:href="#icon-arrow-next"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -296,11 +442,480 @@
                     <div class="tab-pane fade" id="nav-sales-report" role="tabpanel" aria-labelledby="nav-sales-report-tab">
 
                     </div>
-                    <div class="tab-pane fade show active" id="nav-catalog-performance" role="tabpanel" aria-labelledby="nav-catalog-performance-tab">
-
+                    <div class="tab-pane fade" id="nav-catalog-performance" role="tabpanel" aria-labelledby="nav-catalog-performance-tab">
+                        <h3 class="seller-transaction__catalog-heading">Summary</h3>
+                        <div class="seller-transaction__catalog-wrap">
+                            <div class="seller-transaction__catalog-row">
+                                <p class="seller-transaction__catalog-row-heading">Last 30 days</p>
+                                <div class="seller-transaction__catalog-row-content">
+                                    <div class="seller-transaction__catalog-row-content-row-heading">
+                                        <div class="seller-transaction__catalog-row-content-row-heading-col">
+                                            <p class="seller-transaction__catalog-row-content-heading">Gross Sales</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-heading-col">
+                                            <p class="seller-transaction__catalog-row-content-heading">Gross Items Sold</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-heading-col">
+                                            <p class="seller-transaction__catalog-row-content-heading">Missed Sales</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-heading-col">
+                                            <p class="seller-transaction__catalog-row-content-heading">Top Perforemers</p>
+                                        </div>
+                                    </div>
+                                    <div class="seller-transaction__catalog-row-content-row">
+                                        <div class="seller-transaction__catalog-row-content-row-col">
+                                            <p class="seller-transaction__catalog-row-content-text">0 NGN</p>
+                                            <p class="seller-transaction__catalog-row-content-subtext">0 %</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-col">
+                                            <p class="seller-transaction__catalog-row-content-text">0 NGN</p>
+                                            <p class="seller-transaction__catalog-row-content-subtext">0 %</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-col">
+                                            <p class="seller-transaction__catalog-row-content-text">0 NGN</p>
+                                            <p class="seller-transaction__catalog-row-content-subtext">0 %</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-col">
+                                            <p class="seller-transaction__catalog-row-content-text">-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seller-transaction__catalog-row mt-5 mb-2">
+                                <div class="seller-transaction__catalog-row-heading-wrap">
+                                    <p class="seller-transaction__catalog-row-heading mr-auto">Trending</p>
+                                    <div class="seller-transaction__catalog-row-heading-select-wrap">
+                                        <label for="time-range">Time Range</label>
+                                        <select name="time-rande">
+                                            <option value="Last 7 days">Last 7 days</option>
+                                            <option value="Last 14 days">Last 14 days</option>
+                                            <option value="Last 2 months">Last 2 months</option>
+                                            <option value="Last 3 months">Last 3 months</option>
+                                        </select>
+                                    </div>
+                                    <div class="seller-transaction__catalog-row-heading-search-wrap">
+                                        <input type="text" placeholder="Brand or Category">
+                                        <svg class="icon icon-search-icon">
+                                            <use xlink:href="#icon-search-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="seller-transaction__catalog-row-content">
+                                    <div class="seller-transaction__catalog-row-content-row-heading">
+                                        <div class="seller-transaction__catalog-row-content-row-heading-col">
+                                            <p class="seller-transaction__catalog-row-content-heading">Gross Sales</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-heading-col">
+                                            <p class="seller-transaction__catalog-row-content-heading">Gross Items Sold</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-heading-col">
+                                            <p class="seller-transaction__catalog-row-content-heading">Missed Sales</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-heading-col">
+                                            <p class="seller-transaction__catalog-row-content-heading">Catalog</p>
+                                        </div>
+                                    </div>
+                                    <div class="seller-transaction__catalog-row-content-row">
+                                        <div class="seller-transaction__catalog-row-content-row-col">
+                                            <p class="seller-transaction__catalog-row-content-text">0 NGN</p>
+                                            <p class="seller-transaction__catalog-row-content-subtext"><span>0</span>%</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-col">
+                                            <p class="seller-transaction__catalog-row-content-text">0 NGN</p>
+                                            <p class="seller-transaction__catalog-row-content-subtext"><span>0</span>%</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-col">
+                                            <p class="seller-transaction__catalog-row-content-text">0 NGN</p>
+                                            <p class="seller-transaction__catalog-row-content-subtext"><span>0</span>%</p>
+                                        </div>
+                                        <div class="seller-transaction__catalog-row-content-row-col">
+                                            <p class="seller-transaction__catalog-row-content-text">0</p>
+                                            <p class="seller-transaction__catalog-row-content-subtext"><span>0</span>%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="tab-pane fade" id="nav-account-statement" role="tabpanel" aria-labelledby="nav-account-statement-tab">
+                        <div class="seller-transaction__catalog-wrap">
+                            <div class="seller-transaction__catalog-row">
+                                <p class="seller-transaction__catalog-row-heading">Account Statement</p>
+                                <div class="seller-transaction__account-row-content">
+                                    <div class="seller-transaction__account-row-content-row">
+                                        <div class="seller-transaction__account-row-content-row-col">
+                                            <p class="seller-transaction__account-row-content-subtext">Due & Unpaid</p>
+                                            <p class="seller-transaction__account-row-content-text">0 NGN</p>
+                                        </div>
+                                        <div class="seller-transaction__account-row-content-row-col">
+                                            <p class="seller-transaction__account-row-content-subtext">Open Statement</p>
+                                            <p class="seller-transaction__account-row-content-text">0 NGN</p>
+                                        </div>
+                                        <div class="seller-transaction__account-row-content-row-col">
+                                            <p class="seller-transaction__account-row-content-subtext">Paid in last 3
+                                                Months</p>
+                                            <p class="seller-transaction__account-row-content-text">0 NGN</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="seller-transaction__account-overview">
+                                    <div class="seller-transaction__account-overview-small">
+                                        <div class="seller-transaction__account-overview-small-guide-wrap">
+                                            <ul class="seller-transaction__account-overview-small-guide">
+                                                <li>All</li>
+                                                <li><span>Open</span></li>
+                                                <li><span>Paid</span></li>
+                                                <li><span>Unpaid</span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="seller-transaction__account-overview-small-detail">
+                                            <div class="seller-transaction__account-overview-small-detail-heading">
+                                                <p>Period</p>
+                                                <p class="ml-auto">Payout</p>
+                                            </div>
+
+                                            <div class="seller-transaction__account-overview-small-detail-table">
+                                                <div class="seller-transaction__account-overview-small-detail-table-row active">
+                                                    <div class="seller-transaction__account-overview-small-detail-table-row-col active">
+                                                        <p class="transaction__date">Mon, 21-01-2019 - Tue, 29-01-2019</p>
+                                                        <p class="transaction__info">Current Statement</p>
+                                                    </div>
+                                                    <div class="seller-transaction__account-overview-small-detail-table-row-col">
+                                                        <p class="transaction__status open"></p>
+                                                    </div>
+                                                    <div class="seller-transaction__account-overview-small-detail-table-row-col">
+                                                        <p class="transaction__amount">0 NGN</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="seller-transaction__account-overview-small-detail-table-row">
+                                                    <div class="seller-transaction__account-overview-small-detail-table-row-col">
+                                                        <p class="transaction__date">Mon, 21-01-2019 - Tue, 29-01-2019</p>
+                                                        <p class="transaction__info">AF0001-070219</p>
+                                                    </div>
+                                                    <div class="seller-transaction__account-overview-small-detail-table-row-col">
+                                                        <p class="transaction__status unpaid"></p>
+                                                    </div>
+                                                    <div class="seller-transaction__account-overview-small-detail-table-row-col">
+                                                        <p class="transaction__amount">0 NGN</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="seller-transaction__account-overview-small-detail-table-row">
+                                                    <div class="seller-transaction__account-overview-small-detail-table-row-col">
+                                                        <p class="transaction__date">Mon, 21-01-2019 - Tue, 29-01-2019</p>
+                                                        <p class="transaction__info">Account Statement No</p>
+                                                    </div>
+                                                    <div class="seller-transaction__account-overview-small-detail-table-row-col">
+                                                        <p class="transaction__status paid"></p>
+                                                    </div>
+                                                    <div class="seller-transaction__account-overview-small-detail-table-row-col">
+                                                        <p class="transaction__amount">0 NGN</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="seller-transaction__account-overview-big">
+                                        <div class="seller-transaction__account-overview-big-heading-table">
+                                            <div class="seller-transaction__account-overview-big-heading-table-row">
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="main__heading">Period</p>
+                                                    <p class="sub__heading">Mon, 21-01-2019 - Tue, 29-01-2019</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="main__heading">STATEMENET NO.</p>
+                                                    <p class="sub__heading">AF0001-070219</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="main__heading">Status</p>
+                                                    <p class="transaction__status open"></p>
+                                                    <p class="sub__heading">Open</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="table__line">
+                                        <div class="seller-transaction__account-overview-big-heading-table">
+                                            <div class="seller-transaction__account-overview-big-heading-table-row">
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-period">Opening
+                                                        Balance</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-statement">Negative
+                                                        closing balance from previous statements</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-status">0.00
+                                                        NGN</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="seller-transaction__account-overview-big-heading-table">
+                                            <div class="seller-transaction__account-overview-big-heading-table-row">
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-period">Orders</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col content__table">
+                                                    <div class="seller-transaction__account-overview-big-content-table">
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement">Sales
+                                                                    Revenue</p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status">0.00
+                                                                    NGN</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement">Other
+                                                                    Revenue</p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status">0.00
+                                                                    NGN</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement">Other
+                                                                    Fees</p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status">0.00
+                                                                    NGN</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="table__line mt-0 mb-1">
+                                                    <div class="seller-transaction__account-overview-big-content-table">
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement subtotal">Subtotal</p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status sumtotal">0.00
+                                                                    NGN</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="seller-transaction__account-overview-big-heading-table-row">
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-period">Refunds</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col content__table">
+                                                    <div class="seller-transaction__account-overview-big-content-table">
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement">Returned
+                                                                    or Cancelled orders</p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status">0.00
+                                                                    NGN</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement">Refund
+                                                                    on fees</p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status">0.00
+                                                                    NGN</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="table__line mt-0 mb-1">
+                                                    <div class="seller-transaction__account-overview-big-content-table">
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement subtotal">Subtotal</p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status sumtotal">0.00
+                                                                    NGN</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="seller-transaction__account-overview-big-heading-table-row">
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-period">Others</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col content__table">
+                                                    <div class="seller-transaction__account-overview-big-content-table">
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement"></p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status"></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement"></p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="table__line mt-0 mb-1">
+                                                    <div class="seller-transaction__account-overview-big-content-table">
+                                                        <div class="seller-transaction__account-overview-big-content-table-row">
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-statement subtotal">Subtotal</p>
+                                                            </div>
+                                                            <div class="seller-transaction__account-overview-big-content-table-row-col">
+                                                                <p class="seller-transaction__account-overview-big-content-status sumtotal">0.00
+                                                                    NGN</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="table__line">
+
+                                        <div class="seller-transaction__account-overview-big-heading-table">
+                                            <div class="seller-transaction__account-overview-big-heading-table-row">
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-period">Closing
+                                                        Balance</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-statement closing__balance">Total
+                                                        Balance</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-status closing__balance">0.00
+                                                        NGN</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="table__line color__change">
+                                        <div class="seller-transaction__account-overview-big-heading-table">
+                                            <div class="seller-transaction__account-overview-big-heading-table-row">
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-period">Payout</p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-statement closing__balance"></p>
+                                                </div>
+                                                <div class="seller-transaction__account-overview-big-heading-table-row-col">
+                                                    <p class="seller-transaction__account-overview-big-content-status closing__balance">0.00
+                                                        NGN</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="seller-transaction__account-overview-big-wrap">
+                                            <button class="btn seller-add-product__form-button-preview mx-auto">Download
+                                                all
+                                                Transactions</button>
+                                            <button class="btn seller-add-product__form-button-preview mx-auto">Print
+                                                Account
+                                                Statement</button>
+                                            <button class="btn seller-add-product__form-button-preview mx-auto continue">Sales
+                                                Report</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5">
+                                <div class="d-flex mb-2">
+                                    <h3 class="seller-order__content-export mr-auto">Exports</h3>
+                                    <div class="seller-transaction__catalog-row-heading-search-wrap">
+                                        <input type="text">
+                                        <svg class="icon icon-search-icon">
+                                            <use xlink:href="#icon-search-icon"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="seller-order__content-table-head-wrapper">
+                                    <div class="seller-order__content-export-table-head">
+                                        <p>#</p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p>Type</p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p>Time Requested</p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p>Time Completed</p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p>Status</p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p>Download</p>
+                                    </div>
+                                </div>
+
+                                <div class="seller-order__content-table-head-wrapper seller-order__content-table-rows">
+                                    <div class="seller-order__content-export-table-head">
+                                        <p></p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p></p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p></p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p></p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p></p>
+                                    </div>
+                                    <div class="seller-order__content-export-table-head">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="seller__dashboard-content-navigate">
+                                <div class="d-flex ml-auto">
+                                    <span class="seller-order__content-paging">1</span>
+                                    <span class="seller-order__content-paging">of</span>
+                                    <span class="seller-order__content-paging">10</span>
+                                    <div class="seller__dashboard-announcement-modal-previous">
+                                        <svg class="icon icon-arrow-next">
+                                            <use xlink:href="#icon-arrow-next"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="seller__dashboard-announcement-modal-next active-modal">
+                                        <svg class="icon icon-arrow-next">
+                                            <use xlink:href="#icon-arrow-next"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
@@ -319,7 +934,11 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <script src="js/main.js"></script>
-
+    <script>
+        $('#close-pop-message').click(function () {
+            $('.seller__dashboard-pop-message').addClass('d-none');
+        })
+    </script>
 
 </body>
 
