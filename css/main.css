@@ -5724,6 +5724,13 @@ select:invalid {
           .seller-transaction__account-overview-big-content-table-row-col:nth-child(2) {
             width: 25%; }
 
+.seller-transaction__sales-heading {
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 13px;
+  color: #000000; }
+
 .closing__balance {
   font-style: normal;
   font-weight: 600;

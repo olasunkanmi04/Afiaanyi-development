@@ -439,9 +439,152 @@
                         </div>
                     </div>
 
+
+
+
                     <div class="tab-pane fade" id="nav-sales-report" role="tabpanel" aria-labelledby="nav-sales-report-tab">
+                        <div class="user-personal__top pt-3">
+                            <nav class="h-auto">
+                                <span class="seller-transaction__sales-heading">Total Order Count</span>
+
+                                <div class="nav seller__dashboard-chart-tab-wrapper float-right" id="nav-tab" role="tablist">
+                                    <a class="nav-item seller-order__tab active mr-5 text-capitalize" id="nav-total-order-this-week-tab"
+                                        data-toggle="tab" href="#nav-total-order-this-week" role="tab" aria-controls="nav-total-order-this-week"
+                                        aria-selected="true"><span class="sales-summary-tab">This week</span>
+                                    </a>
+
+                                    <a class="nav-item seller-order__tab mr-5 text-capitalize" id="nav-total-order-last-week-tab"
+                                        data-toggle="tab" href="#nav-total-order-last-week" role="tab" aria-controls="nav-total-order-last-week"
+                                        aria-selected="false"><span class="your-payment-tab">Last week</span>
+                                    </a>
+                                    <a class="nav-item seller-order__tab mr-5 text-capitalize" id="nav-total-order-last-month-tab"
+                                        data-toggle="tab" href="#nav-total-order-last-month" role="tab" aria-controls="nav-total-order-last-month"
+                                        aria-selected="true"><span class="sales-summary-tab">Last month</span>
+                                    </a>
+
+                                    <a class="nav-item seller-order__tab mr-5 text-capitalize" id="nav-total-order-last-two-month-tab"
+                                        data-toggle="tab" href="#nav-total-order-last-two-month" role="tab"
+                                        aria-controls="nav-total-order-last-two-month" aria-selected="false"><span
+                                            class="your-payment-tab">Last two months</span>
+                                    </a>
+                                </div>
+                            </nav>
+
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-total-order-this-week" role="tabpanel"
+                                    aria-labelledby="nav-total-order-this-week-tab">
+                                    <div class="seller-transaction__catalog-wrap p-0 pb-4">
+                                        <div class="seller__dashboard-chart-wrapper">
+                                            <canvas id="orderCountThisWeekChart" width="500" class="w-100"></canvas>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-total-order-last-week" role="tabpanel"
+                                    aria-labelledby="nav-total-order-last-week-tab">
+                                    <div class="seller-transaction__catalog-wrap p-0 pb-4">
+                                        <div class="seller__dashboard-chart-wrapper">
+                                            <canvas id="orderCountLastWeekChart" width="500" class="w-100"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-total-order-last-month" role="tabpanel"
+                                    aria-labelledby="nav-total-order-last-month-tab">
+                                    <div class="seller-transaction__catalog-wrap p-0 pb-4">
+                                        <div class="seller__dashboard-chart-wrapper">
+                                            <canvas id="orderCountLastMonthChart" width="500" class="w-100"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-total-order-last-two-month" role="tabpanel"
+                                    aria-labelledby="nav-total-order-last-two-month-tab">
+                                    <div class="seller-transaction__catalog-wrap p-0 pb-4">
+                                        <div class="seller__dashboard-chart-wrapper">
+                                            <canvas id="orderCountLastTwoMonthsChart" width="500" class="w-100"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="user-personal__top pt-5">
+                            <nav class="h-auto">
+                                <span class="seller-transaction__sales-heading">Gross Sale Sum</span>
+
+                                <div class="nav seller__dashboard-chart-tab-wrapper float-right" id="nav-tab" role="tablist">
+                                    <a class="nav-item seller-order__tab active mr-5 text-capitalize" id="nav-gross-sales-this-week-tab"
+                                        data-toggle="tab" href="#nav-gross-sales-this-week" role="tab" aria-controls="nav-gross-sales-this-week"
+                                        aria-selected="true"><span class="sales-summary-tab">This week</span>
+                                    </a>
+
+                                    <a class="nav-item seller-order__tab mr-5 text-capitalize" id="nav-gross-sales-last-week-tab"
+                                        data-toggle="tab" href="#nav-gross-sales-last-week" role="tab" aria-controls="nav-gross-sales-last-week"
+                                        aria-selected="false"><span class="your-payment-tab">Last week</span>
+                                    </a>
+                                    <a class="nav-item seller-order__tab mr-5 text-capitalize" id="nav-gross-sales-last-month-tab"
+                                        data-toggle="tab" href="#nav-gross-sales-last-month" role="tab" aria-controls="nav-gross-sales-last-month"
+                                        aria-selected="true"><span class="sales-summary-tab">Last month</span>
+                                    </a>
+
+                                    <a class="nav-item seller-order__tab mr-5 text-capitalize" id="nav-gross-sales-last-two-month-tab"
+                                        data-toggle="tab" href="#nav-gross-sales-last-two-month" role="tab"
+                                        aria-controls="nav-gross-sales-last-two-month" aria-selected="false"><span
+                                            class="your-payment-tab">Last two months</span>
+                                    </a>
+                                </div>
+                            </nav>
+
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-gross-sales-this-week" role="tabpanel"
+                                    aria-labelledby="nav-gross-sales-this-week-tab">
+                                    <div class="seller-transaction__catalog-wrap p-0 pb-4">
+                                        <div class="seller__dashboard-chart-wrapper">
+                                            <canvas id="grossSalesThisWeekChart" width="500" class="w-100"></canvas>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-gross-sales-last-week" role="tabpanel"
+                                    aria-labelledby="nav-gross-sales-last-week-tab">
+                                    <div class="seller-transaction__catalog-wrap p-0 pb-4">
+                                        <div class="seller__dashboard-chart-wrapper">
+                                            <canvas id="grossSalesLastWeekChart" width="500" class="w-100"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-gross-sales-last-month" role="tabpanel"
+                                    aria-labelledby="nav-gross-sales-last-month-tab">
+                                    <div class="seller-transaction__catalog-wrap p-0 pb-4">
+                                        <div class="seller__dashboard-chart-wrapper">
+                                            <canvas id="grossSalesLastMonthChart" width="500" class="w-100"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="nav-gross-sales-last-two-month" role="tabpanel"
+                                    aria-labelledby="nav-gross-sales-last-two-month-tab">
+                                    <div class="seller-transaction__catalog-wrap p-0 pb-4">
+                                        <div class="seller__dashboard-chart-wrapper">
+                                            <canvas id="grossSalesLastTwoMonthsChart" width="500" class="w-100"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                     </div>
+
+
+
                     <div class="tab-pane fade" id="nav-catalog-performance" role="tabpanel" aria-labelledby="nav-catalog-performance-tab">
                         <h3 class="seller-transaction__catalog-heading">Summary</h3>
                         <div class="seller-transaction__catalog-wrap">
@@ -928,16 +1071,268 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+    <script src="js/Chart.min.js"></script>
     <script src="js/main.js"></script>
     <script>
         $('#close-pop-message').click(function () {
             $('.seller__dashboard-pop-message').addClass('d-none');
         })
+    </script>
+    <!-- Total order count charts -->
+
+    <!-- this week -->
+    <script>
+        var ctx = document.getElementById("orderCountThisWeekChart").getContext('2d');
+        var orderCountThisWeekChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Mon, 21-01-2019", "Tue, 22-01-2019", "Wed, 23-01-2019", "Thur, 24-01-2019",
+                    "Fri, 25-01-2019"
+                ],
+                datasets: [{
+                    label: 'This Week',
+                    data: [12, 6, 0, 3, 5, 21, 8],
+                    backgroundColor: 'rgba(230, 183, 18,0.1)',
+                    borderColor: "#E6B712",
+                    borderWidth: "5",
+                    defaultFontFamily: "Montserrat",
+                }]
+            },
+
+            options: {
+                animation: {
+                    duration: 0, // general animation time
+                },
+                hover: {
+                    animationDuration: 0, // duration of animations when hovering an item
+                },
+                responsiveAnimationDuration: 0, // animation duration after a resize
+            }
+        });
+    </script>
+
+    <!-- last week -->
+    <script>
+        var ctx = document.getElementById("orderCountLastWeekChart").getContext('2d');
+        var orderCountLastWeekChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Mon, 21-01-2019", "Tue, 22-01-2019", "Wed, 23-01-2019", "Thur, 24-01-2019",
+                    "Fri, 25-01-2019"
+                ],
+                datasets: [{
+                    label: 'Last Week',
+                    data: [12, 18, 3, 5, 2, 6, 0],
+                    backgroundColor: 'rgba(230, 183, 18,0.1)',
+                    borderColor: "#E6B712",
+                    borderWidth: "5",
+                    defaultFontFamily: "Montserrat",
+                }]
+            },
+
+            options: {
+                animation: {
+                    duration: 0, // general animation time
+                },
+                hover: {
+                    animationDuration: 0, // duration of animations when hovering an item
+                },
+                responsiveAnimationDuration: 0, // animation duration after a resize
+            }
+        });
+    </script>
+
+    <!-- Last Month -->
+    <script>
+        var ctx = document.getElementById("orderCountLastMonthChart").getContext('2d');
+        var orderCountLastMonthChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["1-01-2019", "05-01-2019", "10-01-2019", "15-01-2019",
+                    "20-01-2019", "25-01-2019", "30-01-2019"
+                ],
+                datasets: [{
+                    label: 'Last Month',
+                    data: [12, 6, 0, 3, 5, 21, 8],
+                    backgroundColor: 'rgba(230, 183, 18,0.1)',
+                    borderColor: "#E6B712",
+                    borderWidth: "5",
+                    defaultFontFamily: "Montserrat",
+                }]
+            },
+
+            options: {
+                animation: {
+                    duration: 0, // general animation time
+                },
+                hover: {
+                    animationDuration: 0, // duration of animations when hovering an item
+                },
+                responsiveAnimationDuration: 0, // animation duration after a resize
+            }
+        });
+    </script>
+
+    <!-- Last two Months -->
+    <script>
+        var ctx = document.getElementById("orderCountLastTwoMonthsChart").getContext('2d');
+        var orderCountLastTwoMonthsChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["1-01-2019", "10-01-2019", "20-01-2019", "30-01-2019",
+                    "1-02-2019", "10-02-2019", "20-02-2019", "30-02-2019"
+                ],
+                datasets: [{
+                    label: 'Last Two Months',
+                    data: [12, 6, 0, 3, 5, 21, 8, 18],
+                    backgroundColor: 'rgba(230, 183, 18,0.1)',
+                    borderColor: "#E6B712",
+                    borderWidth: "5",
+                    defaultFontFamily: "Montserrat",
+                }]
+            },
+
+            options: {
+                animation: {
+                    duration: 0, // general animation time
+                },
+                hover: {
+                    animationDuration: 0, // duration of animations when hovering an item
+                },
+                responsiveAnimationDuration: 0, // animation duration after a resize
+            }
+        });
+    </script>
+
+
+
+
+    <!-- Gross sales sum charts -->
+    <!-- this week -->
+    <script>
+        var ctx = document.getElementById("grossSalesThisWeekChart").getContext('2d');
+        var grossSalesThisWeekChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Mon, 21-01-2019", "Tue, 22-01-2019", "Wed, 23-01-2019", "Thur, 24-01-2019",
+                    "Fri, 25-01-2019"
+                ],
+                datasets: [{
+                    label: 'This Week',
+                    data: [12, 6, 0, 3, 5, 21, 8],
+                    backgroundColor: 'rgba(230, 183, 18,0.1)',
+                    borderColor: "#E6B712",
+                    borderWidth: "5",
+                    defaultFontFamily: "Montserrat",
+                }]
+            },
+
+            options: {
+                animation: {
+                    duration: 0, // general animation time
+                },
+                hover: {
+                    animationDuration: 0, // duration of animations when hovering an item
+                },
+                responsiveAnimationDuration: 0, // animation duration after a resize
+            }
+        });
+    </script>
+
+    <!-- last week -->
+    <script>
+        var ctx = document.getElementById("grossSalesLastWeekChart").getContext('2d');
+        var grossSalesLastWeekChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Mon, 21-01-2019", "Tue, 22-01-2019", "Wed, 23-01-2019", "Thur, 24-01-2019",
+                    "Fri, 25-01-2019"
+                ],
+                datasets: [{
+                    label: 'Last Week',
+                    data: [12, 18, 3, 5, 2, 6, 0],
+                    backgroundColor: 'rgba(230, 183, 18,0.1)',
+                    borderColor: "#E6B712",
+                    borderWidth: "5",
+                    defaultFontFamily: "Montserrat",
+                }]
+            },
+
+            options: {
+                animation: {
+                    duration: 0, // general animation time
+                },
+                hover: {
+                    animationDuration: 0, // duration of animations when hovering an item
+                },
+                responsiveAnimationDuration: 0, // animation duration after a resize
+            }
+        });
+    </script>
+
+    <!-- Last Month -->
+    <script>
+        var ctx = document.getElementById("grossSalesLastMonthChart").getContext('2d');
+        var grossSalesLastMonthChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["1-01-2019", "05-01-2019", "10-01-2019", "15-01-2019",
+                    "20-01-2019", "25-01-2019", "30-01-2019"
+                ],
+                datasets: [{
+                    label: 'Last Month',
+                    data: [12, 6, 0, 3, 5, 21, 8],
+                    backgroundColor: 'rgba(230, 183, 18,0.1)',
+                    borderColor: "#E6B712",
+                    borderWidth: "5",
+                    defaultFontFamily: "Montserrat",
+                }]
+            },
+
+            options: {
+                animation: {
+                    duration: 0, // general animation time
+                },
+                hover: {
+                    animationDuration: 0, // duration of animations when hovering an item
+                },
+                responsiveAnimationDuration: 0, // animation duration after a resize
+            }
+        });
+    </script>
+
+    <!-- Last two Months -->
+    <script>
+        var ctx = document.getElementById("grossSalesLastTwoMonthsChart").getContext('2d');
+        var grossSalesLastTwoMonthsChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["1-01-2019", "10-01-2019", "20-01-2019", "30-01-2019",
+                    "1-02-2019", "10-02-2019", "20-02-2019", "30-02-2019"
+                ],
+                datasets: [{
+                    label: 'Last Two Months',
+                    data: [12, 6, 0, 3, 5, 21, 8, 18],
+                    backgroundColor: 'rgba(230, 183, 18,0.1)',
+                    borderColor: "#E6B712",
+                    borderWidth: "5",
+                    defaultFontFamily: "Montserrat",
+                }]
+            },
+
+            options: {
+                animation: {
+                    duration: 0, // general animation time
+                },
+                hover: {
+                    animationDuration: 0, // duration of animations when hovering an item
+                },
+                responsiveAnimationDuration: 0, // animation duration after a resize
+            }
+        });
     </script>
 
 </body>
