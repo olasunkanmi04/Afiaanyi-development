@@ -4553,10 +4553,10 @@ select:invalid {
     color: #000000;
     background-color: #DEDEDE;
     border-right: 2px solid red;
-    padding: 5px 20px 2px 20px; }
+    padding: 10px 20px 2px 20px; }
   .seller__dashboard-chart-tab.active span {
     background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
-    padding: 5px 20px 2px 20px;
+    padding: 10px 20px 2px 20px;
     color: #FFFFFF; }
   .seller__dashboard-chart-tab.active .sales-summary-tab {
     border-radius: 4px 0px 0px 4px; }
