@@ -31,13 +31,44 @@
                 font-size: 12px;
                 color: #000000;
                 font-weight: 600;
+                align-self: center;
+                margin-right: 10px;
             }
         }
 
         &-individual {
-            // display: inline-block;
+            display: flex;
             margin-right: 30px;
+
+            .selectric {
+                border: 1px solid #E6B712;
+                box-sizing: border-box;
+                border-radius: 2px;
+                width: 165px;
+                height: 38px;
+                background: #fff;
+            }
+
+            .selectric-items {
+                border: none;
+                background: #fff;
+
+                li {
+                    &:hover {
+                        background: #C82600;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .selectric-items li.highlighted,
+            .selectric-items li.selected {
+                background: #C82600;
+                color: #fff;
+            }
         }
+
+
 
     }
 
@@ -65,6 +96,59 @@
 
         &:hover {
             color: #979797;
+        }
+    }
+}
+
+@media screen and (max-width: 848px) {
+    .top-brand__filter-wrapper {
+        padding: 30px;
+    }
+
+    .top-brand__filter-individual .selectric {
+        width: 150px;
+    }
+
+    .top-brand__filter-individual {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .top-brand__filter-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .top-brand__filter-individual .selectric {
+        width: 150px;
+    }
+
+    .top-brand__filter-individual {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .top-brand__filter-individual {
+        &:first-child {
+            .selectric {
+                width: 70px;
+            }
+        }
+
+        &:nth-child(2) {
+            span {
+                display: none;
+            }
+
+            .label {
+                display: block !important;
+            }
+        }
+
+        &:nth-child(3) {
+            display: none;
         }
     }
 }

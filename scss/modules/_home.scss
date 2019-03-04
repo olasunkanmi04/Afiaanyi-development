@@ -928,6 +928,16 @@ a {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .newsletter__info-getupdate {
+        display: none;
+    }
+
+    .newsletter__head {
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .newsletter__icon {
         width: 10px !important;
