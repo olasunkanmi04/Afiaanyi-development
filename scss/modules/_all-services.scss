@@ -64,7 +64,7 @@
     &__wrapper {
         padding: 70px;
         padding-top: 40px;
-        padding-bottom: 30px !important;
+        padding-bottom: 30px;
     }
 
     &__individual {
@@ -99,6 +99,7 @@
             .interest__individual-cover-img {
                 width: 70px;
                 height: 70px !important;
+                top: -8px;
             }
 
             p {
