@@ -2691,9 +2691,12 @@ a:hover {
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase; }
   .business-directory__category-individual {
+    height: auto;
+    width: 300px;
     border-radius: 4px;
     box-shadow: 0px 4px 26px rgba(202, 170, 59, 0.2);
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    margin-left: 22px; }
 
 .business-directory__testimony {
   background: rgba(202, 170, 59, 0.06);
@@ -2736,23 +2739,13 @@ a:hover {
 @media screen and (max-width: 834px) {
   .business-directory__category,
   .business-directory__recommend {
-    padding: 0 28px; }
-  .business-directory__wrapper {
-    grid-template-columns: repeat(3, 1fr); }
-  .business-directory__category-individual:last-child {
-    display: none; } }
+    padding: 0 28px; } }
 
-@media screen and (max-width: 658px) {
-  .business-directory__wrapper {
-    grid-template-columns: repeat(2, 1fr); }
-  .business-directory__category-individual:nth-child(3) {
-    display: none; } }
-
-@media screen and (max-width: 441px) {
-  .business-directory__wrapper {
-    grid-template-columns: repeat(1, 1fr); }
-  .business-directory__category-individual:nth-child(2) {
-    display: none; } }
+@media screen and (max-width: 494px) {
+  .business-directory__category-heading-text,
+  .business-directory__recommend-heading-text {
+    line-height: normal;
+    font-size: 16px; } }
 
 .all-services__hero {
   background: url("../images/all-services.jpg") no-repeat;
