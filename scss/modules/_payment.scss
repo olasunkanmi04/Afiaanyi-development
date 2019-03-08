@@ -35,7 +35,6 @@
         }
 
         &-individual {
-            width: 30%;
             height: 403px;
             background: #FFFFFF;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -101,13 +100,22 @@
                     left: 0;
                 }
             }
+
+            &-column {
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:nth-child(3) {
+                    padding-right: 0;
+                }
+            }
         }
     }
 
     &__startnow {
         margin: 30px 0;
         text-align: center;
-        height: 100px;
         background: #333333;
         width: 100%;
         font-weight: 500;
@@ -127,6 +135,7 @@
             font-weight: 500;
             font-size: 24px;
             color: #000000;
+            text-align: center;
         }
 
         &-wrapper {
@@ -218,5 +227,117 @@
             }
         }
 
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .payment__categories-wrapper {
+        padding: 0 60px;
+    }
+
+    .payment__other-businesses {
+        padding: 10px 60px;
+    }
+
+    .payment__banner-info {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width:909px) {
+    .payment__categories-individual {
+        padding: 20px;
+    }
+
+    .payment__other-businesses {
+        padding: 10px 20px;
+    }
+
+    .payment__categories-individual-button {
+        padding: 14px 20px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width:869px) {
+    .payment__categories-individual-button-wrapper {
+        bottom: 20px;
+    }
+
+    .payment__categories-individual-column {
+        &:nth-child(2) {
+            padding: 0;
+        }
+    }
+
+    .payment__categories-wrapper {
+        padding: 0 30px;
+    }
+
+    .payment__banner-info {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .payment__categories-individual {
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+
+    .payment__categories-individual-todo {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .payment__categories-individual-button {
+        width: 80%;
+    }
+
+    .payment__categories-individual-column {
+        padding: 0;
+    }
+
+    .payment__categories-individual-button-wrapper {
+        position: initial;
+    }
+}
+
+@media screen and (max-width:594px) {
+    .payment__confirmation-header {
+        background-position: center;
+    }
+
+    .payment__confirmation-info-header {
+        font-size: 28px;
+    }
+
+    .payment__confirmation-info-receipt,
+    .payment__confirmation-info-receipt-number {
+        margin-top: 20px;
+    }
+
+    .payment__confirmation-info-button {
+        margin-top: 34px;
+    }
+
+    .payment__confirmation-wrapper {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .payment__categories {
+        margin-top: -200px;
+    }
+
+    .payment__banner-info-heading {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .payment__banner-info-subtext {
+        font-size: 20px;
     }
 }
