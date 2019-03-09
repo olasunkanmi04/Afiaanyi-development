@@ -21,8 +21,17 @@
 
 <body>
     <div data-include="svg.html"></div>
-    <aside class="user-sidebar">
+    <aside class="user-sidebar resp__user-sidebar">
         <div class="user-sidebar__overlay">
+            <div class="user-sidebar__menu-icon
+            ">
+                <svg class="icon icon-menu show__menu">
+                    <use xlink:href="#icon-menu"></use>
+                </svg>
+                <svg class="icon icon-arrow-left hide__menu">
+                    <use xlink:href="#icon-arrow-left"></use>
+                </svg>
+            </div>
             <div class="user-sidebar__logo">
                 <img src="images/logo.png" alt="" class="img-fluid">
             </div>
@@ -78,7 +87,7 @@
             </ul>
         </div>
     </aside>
-    <nav>
+    <!-- <nav>
         <div class="row header__nav-content">
             <div style="visibility:hidden;">
                 <img src="images/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
@@ -116,8 +125,9 @@
 
             </div>
         </div>
-    </nav>
+    </nav> -->
     <section class="user-profile">
+        <div class="user-profile__overlay d-none"></div>
         <div class="user-profile__top">
             <p class="user-profile__heading">You have the ability to view a snapshot of ypur recent accoun activity and
                 update your account info from
@@ -140,7 +150,9 @@
                         </tr>
                         <tr class="user-profile__details-row">
                             <td class="user-profile__details-key">Email:</td>
-                            <td class="user-profile__details-answer">johndoe@gmail.com</td>
+                            <td class="user-profile__details-answer">
+                                <p>johndoe@gmail.com</p>
+                            </td>
                         </tr>
                         <tr class="user-profile__details-row">
                             <td class="user-profile__details-key">Business Hours:</td>
@@ -157,23 +169,23 @@
                         </tr>
                         <tr class="user-profile__details-row">
                             <td class="user-profile__details-key">Tel:</td>
-                            <td class="user-profile__details-answer">08030000000</td>
+                            <td class="user-profile__details-answer">
+                                <p>08030000000</p>
+                            </td>
                         </tr>
                         <tr class="user-profile__details-row">
                             <td class="user-profile__details-key">Website:</td>
-                            <td class="user-profile__details-answer">johndoeenterprise.com</td>
+                            <td class="user-profile__details-answer">
+                                <p>johndoeenterprise.com</p>
+                            </td>
                         </tr>
                         <tr>
-                            <td class="user-profile__details-key">Gallery:</td>
+                            <td class="user-profile__details-key">Bio:</td>
+                            <td class="user-profile__details-answer"><textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            </textarea></td>
                         </tr>
 
                     </table>
-                    <div class="d-flex mb-5">
-                        <div><img src="images/background-six.png" alt="" class="img-fluid mr-3" width="80" height="75"></div>
-                        <div><img src="images/background-six.png" alt="" class="img-fluid mr-3" width="80" height="75"></div>
-                        <div><img src="images/background-six.png" alt="" class="img-fluid mr-3" width="80" height="75"></div>
-                        <div><img src="images/background-six.png" alt="" class="img-fluid mr-3" width="80" height="75"></div>
-                    </div>
                 </div>
             </div>
             <div class="user-profile__business">
@@ -182,7 +194,7 @@
                     <div id="progressbar"></div>
                     <a href="#" class="user-profile__edit">Edit Profile</a>
                 </div>
-                <div class="user-profile__business-known">
+                <div class="user-profile__business-known non-resp__business-known">
                     <div class="user-profile__overview-heading">
                         <h3>Businesses you may know</h3>
                     </div>
@@ -224,7 +236,46 @@
                 </div>
             </div>
         </div>
-
+        <div class="user-profile__business-known resp__business-known">
+            <div class="user-profile__overview-heading">
+                <h3>Businesses you may know</h3>
+            </div>
+            <div class="user-profile__business-list">
+                <div class="user-profile__business-individual">
+                    <div class="user-profile__business-image">
+                        <img src="images/business-image.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="user-profile__business-details">
+                        <p class="user-profile__business-name">Furnishop</p>
+                        <p class="user-profile__business-follower"><span>1000</span> followers</p>
+                    </div>
+                    <button class="btn btn-primary user-profile__business-follow-btn">Follow</button>
+                    <span class="user-profile__business-delete">&times;</span>
+                </div>
+                <div class="user-profile__business-individual">
+                    <div class="user-profile__business-image">
+                        <img src="images/business-image.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="user-profile__business-details">
+                        <p class="user-profile__business-name">Furnishop</p>
+                        <p class="user-profile__business-follower"><span>1000</span> followers</p>
+                    </div>
+                    <button class="btn btn-primary user-profile__business-follow-btn">Follow</button>
+                    <span class="user-profile__business-delete">&times;</span>
+                </div>
+                <div class="user-profile__business-individual">
+                    <div class="user-profile__business-image">
+                        <img src="images/business-image.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="user-profile__business-details">
+                        <p class="user-profile__business-name">Furnishop</p>
+                        <p class="user-profile__business-follower"><span>1000</span> followers</p>
+                    </div>
+                    <button class="btn btn-primary user-profile__business-follow-btn">Follow</button>
+                    <span class="user-profile__business-delete">&times;</span>
+                </div>
+            </div>
+        </div>
 
     </section>
 
@@ -241,9 +292,16 @@
     <script>
         $(function () {
             $("#progressbar").progressbar({
-                value: 80
+                value: 40
             });
         });
+    </script>
+
+    <script>
+        $('.user-sidebar__menu-icon').click(function () {
+            $('.user-sidebar').toggleClass('resp__user-sidebar');
+            $('.user-profile__overlay').toggleClass('d-none');
+        })
     </script>
 </body>
 

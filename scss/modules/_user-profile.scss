@@ -50,6 +50,17 @@
             background: rgba(0, 0, 0, 0.5);
         }
     }
+
+    &__menu-icon {
+        text-align: center;
+        cursor: pointer;
+
+        svg {
+            fill: #E6B712 !important;
+            width: 18px;
+            height: 18px;
+        }
+    }
 }
 
 .user-profile {
@@ -122,6 +133,15 @@
 
         &-answer {
             padding-left: 80px;
+
+            textarea {
+                width: 100%;
+                border: 1px solid #DEDEDE;
+                box-sizing: border-box;
+                border-radius: 4px;
+                background-color: #FCFCFC;
+                padding: 10px;
+            }
         }
     }
 
@@ -298,6 +318,15 @@
 
     &__address {
         vertical-align: top;
+    }
+
+    &__overlay {
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 40px;
+        top: 0;
     }
 }
 
@@ -551,4 +580,156 @@
     background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
     border-radius: 4px;
     border: none;
+}
+
+.resp__business-known {
+    display: none;
+}
+
+.show__menu {
+    display: none;
+}
+
+.hide__menu {
+    float: right;
+    margin-right: 10px;
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .user-profile {
+        margin-right: 10px;
+        margin-left: 194px;
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width:926px) {
+    .user-profile__business {
+        margin-left: 0;
+        width: 45%;
+    }
+
+    .user-profile__details-answer {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width:863px) {
+    .user-profile {
+        padding: 50px 10px;
+    }
+
+    .user-profile__overview-heading h3 {
+        font-size: 14px;
+
+    }
+
+    .user-profile__overview-heading {
+        padding: 15px;
+    }
+
+    .user-profile__business-follow-btn {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .user-profile__content {
+        flex-wrap: wrap-reverse;
+    }
+
+    .non-resp__business-known {
+        display: none;
+    }
+
+    .resp__business-known {
+        display: block;
+    }
+
+    .user-profile__business {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .user-profile__overview {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .user-profile__business {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:528px) {
+    .resp__user-sidebar {
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        width: 59px;
+
+        .user-sidebar__logo,
+        .user-sidebar__link a span,
+        .hide__menu {
+            display: none;
+        }
+
+        .show__menu {
+            display: inline-block;
+        }
+
+    }
+
+    .hide__menu {
+        display: inline-block;
+    }
+
+    .user-profile {
+        margin-left: 68px;
+    }
+
+    .user-sidebar__logo {
+        width: 62px;
+        height: 59px;
+    }
+
+    .user-sidebar {
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width:383px) {
+    .user-profile__details {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .user-profile__details-answer {
+        padding-left: 0px;
+    }
+
+    .user-profile__details-table {
+        table-layout: fixed;
+    }
+
+    .user-sidebar__link {
+        padding: 13px;
+    }
+
+    .resp__user-sidebar {
+        width: 40px;
+    }
+
+    .user-profile {
+        margin-left: 43px;
+    }
+
+    .user-profile__details-answer {
+        p {
+            word-wrap: break-word;
+        }
+    }
 }
