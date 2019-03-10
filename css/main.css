@@ -3560,6 +3560,8 @@ select:invalid {
         padding: 10px;
         font-size: 14px;
         color: #000000; }
+    .user-profile__details-key {
+      vertical-align: top; }
     .user-profile__details-answer {
       padding-left: 80px; }
       .user-profile__details-answer textarea {
