@@ -6,6 +6,10 @@
     position: fixed;
     left: 0;
     background-position-x: -650px;
+    -webkit-transition: width 0.2s ease;
+    -o-transition: width 0.2s ease;
+    -moz-transition: width 0.2s ease;
+    transition: width 0.2s ease;
 
     &__overlay {
         height: 100%;
@@ -41,6 +45,8 @@
                 color: #FFFFFF;
                 vertical-align: middle;
                 margin-left: 5px;
+                -webkit-transition: display 0.3s ease;
+                transition: display 0.3s ease;
             }
         }
 
@@ -326,7 +332,7 @@
 
     &__overlay {
         background: rgba(0, 0, 0, 0.6);
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100%;
         left: 40px;
@@ -370,8 +376,8 @@
         border: 1px solid #DEDEDE;
         box-sizing: border-box;
         border-radius: 4px;
-        margin-right: 20px;
         margin-bottom: 20px;
+        width: 49.5%;
     }
 
     &__opening {
@@ -416,6 +422,10 @@
             background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
             border: none;
         }
+    }
+
+    &__content {
+        display: flex;
     }
 }
 
@@ -600,7 +610,19 @@
     display: none;
 }
 
+@media screen and (max-width:1055px) {
+    .user-personal__wrapper {
+        padding: 30px 10px;
+    }
+
+    .user-personal {
+        margin-right: 10px;
+        margin-left: 194px;
+    }
+}
+
 @media screen and (max-width:1000px) {
+
     .user-profile {
         margin-right: 10px;
         margin-left: 194px;
@@ -619,7 +641,18 @@
     }
 }
 
+@media screen and (max-width:850px) {
+    .user-personal__content {
+        flex-wrap: wrap;
+    }
+
+    .user-personal__contact {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width:863px) {
+
     .user-profile {
         padding: 50px 10px;
     }
@@ -670,8 +703,11 @@
 
 @media screen and (max-width:528px) {
     .resp__user-sidebar {
-        -webkit-transition: all 0.3s ease-in;
-        transition: all 0.3s ease-in;
+        -webkit-transition: width 0.3s ease;
+        -o-transition: width 0.3s ease;
+        -moz-transition: width 0.3s ease;
+        transition: width 0.3s ease;
+
         width: 59px;
 
         .user-sidebar__logo,
@@ -701,6 +737,10 @@
 
     .user-sidebar {
         z-index: 1;
+    }
+
+    .user-personal {
+        margin-left: 60px;
     }
 }
 
@@ -735,5 +775,10 @@
         p {
             word-wrap: break-word;
         }
+    }
+
+    .user-personal {
+        margin-left: 37px;
+        margin-right: 0;
     }
 }

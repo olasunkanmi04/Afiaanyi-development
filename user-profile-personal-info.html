@@ -21,8 +21,17 @@
 
 <body>
     <div data-include="svg.html"></div>
-    <aside class="user-sidebar">
+    <aside class="user-sidebar resp__user-sidebar">
         <div class="user-sidebar__overlay">
+            <div class="user-sidebar__menu-icon
+                ">
+                <svg class="icon icon-menu show__menu">
+                    <use xlink:href="#icon-menu"></use>
+                </svg>
+                <svg class="icon icon-arrow-left hide__menu">
+                    <use xlink:href="#icon-arrow-left"></use>
+                </svg>
+            </div>
             <div class="user-sidebar__logo">
                 <img src="images/logo.png" alt="" class="img-fluid">
             </div>
@@ -78,7 +87,7 @@
             </ul>
         </div>
     </aside>
-    <nav>
+    <!-- <nav>
         <div class="row header__nav-content">
             <div style="visibility:hidden;">
                 <img src="images/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
@@ -116,14 +125,15 @@
 
             </div>
         </div>
-    </nav>
+    </nav> -->
     <section class="user-personal">
+        <div class="user-profile__overlay d-none"></div>
         <div class="user-personal__top">
             <p class="user-personal__heading">personal Information</p>
             <hr class="user-personal__heading-divider">
         </div>
-        <div class="user-personal__wrapper d-flex">
-            <div class="user-profile__content mr-auto w-50">
+        <div class="user-personal__wrapper">
+            <div class="user-personal__content">
                 <div class="user-personal__contact">
                     <div class="user-profile__overview-heading">
                         <h3>Contact Info</h3>
@@ -140,7 +150,9 @@
                             </tr>
                             <tr class="user-profile__details-row">
                                 <td class="user-profile__details-key">Email:</td>
-                                <td class="user-profile__details-answer">johndoe@gmail.com</td>
+                                <td class="user-profile__details-answer">
+                                    <p>johndoe@gmail.com</p>
+                                </td>
                             </tr>
                             <tr class="user-profile__details-row">
                                 <td class="user-profile__details-key">Password:</td>
@@ -153,44 +165,7 @@
                         </table>
                     </div>
                 </div>
-
-                <div class="user-personal__contact">
-                    <div class="user-profile__overview-heading">
-                        <h3>Opening/Closing Hours</h3>
-                    </div>
-                    <div class="user-profile__details">
-                        <table class="w-100 user-profile__details-table">
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key user-personal__opening">Weekdays (Mon-Fri):</td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Opening:</td>
-                                <td class="user-profile__details-answer">07:00 AM</td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Closing:</td>
-                                <td class="user-profile__details-answer">08:00 PM</td>
-                            </tr>
-                        </table>
-
-                        <table class="w-100 user-profile__details-table">
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key user-personal__opening">Weekends (Saturday):</td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Opening:</td>
-                                <td class="user-profile__details-answer">10:00 AM</td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Closing:</td>
-                                <td class="user-profile__details-answer">05:00 PM</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="user-profile__content w-50">
-                <div class="user-personal__contact">
+                <div class="user-personal__contact ml-auto">
                     <div class="user-profile__overview-heading">
                         <h3>Address</h3>
                     </div>
@@ -202,12 +177,49 @@
                             </tr>
                             <tr class="user-profile__details-row">
                                 <td class="user-profile__details-key">Website:</td>
-                                <td class="user-profile__details-answer">johndoeenterprises.com</td>
+                                <td class="user-profile__details-answer">
+                                    <p>johndoeenterprises.com</p>
+                                </td>
                             </tr>
                         </table>
                     </div>
                 </div>
             </div>
+            <div class="user-personal__contact">
+                <div class="user-profile__overview-heading">
+                    <h3>Opening/Closing Hours</h3>
+                </div>
+                <div class="user-profile__details">
+                    <table class="w-100 user-profile__details-table">
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key user-personal__opening">Weekdays (Mon-Fri):</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Opening:</td>
+                            <td class="user-profile__details-answer">07:00 AM</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Closing:</td>
+                            <td class="user-profile__details-answer">08:00 PM</td>
+                        </tr>
+                    </table>
+
+                    <table class="w-100 user-profile__details-table">
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key user-personal__opening">Weekends (Saturday):</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Opening:</td>
+                            <td class="user-profile__details-answer">10:00 AM</td>
+                        </tr>
+                        <tr class="user-profile__details-row">
+                            <td class="user-profile__details-key">Closing:</td>
+                            <td class="user-profile__details-answer">05:00 PM</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
         </div>
         <div class="user-personal__edit-profile-wrapper">
             <a href="user-profile-settings.html" class="btn btn-primary user-personal__edit-profile">Edit Profile</a>
@@ -230,6 +242,12 @@
                 value: 40
             });
         });
+    </script>
+    <script>
+        $('.user-sidebar__menu-icon').click(function () {
+            $('.user-sidebar').toggleClass('resp__user-sidebar');
+            $('.user-profile__overlay').toggleClass('d-none');
+        })
     </script>
 </body>
 
