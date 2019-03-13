@@ -22,8 +22,17 @@
 
 <body>
     <div data-include="svg.html"></div>
-    <aside class="user-sidebar">
+    <aside class="user-sidebar resp__user-sidebar">
         <div class="user-sidebar__overlay">
+            <div class="user-sidebar__menu-icon
+                        ">
+                <svg class="icon icon-menu show__menu">
+                    <use xlink:href="#icon-menu"></use>
+                </svg>
+                <svg class="icon icon-arrow-left hide__menu">
+                    <use xlink:href="#icon-arrow-left"></use>
+                </svg>
+            </div>
             <div class="user-sidebar__logo">
                 <img src="images/logo.png" alt="" class="img-fluid">
             </div>
@@ -79,7 +88,7 @@
             </ul>
         </div>
     </aside>
-    <nav>
+    <!-- <nav>
         <div class="row header__nav-content">
             <div style="visibility:hidden;">
                 <img src="images/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
@@ -117,8 +126,9 @@
 
             </div>
         </div>
-    </nav>
+    </nav> -->
     <section class="user-personal">
+        <div class="user-profile__overlay d-none"></div>
         <div class="user-personal__top">
             <p class="user-personal__heading">REVIEWS/RATINGS</p>
             <hr class="user-personal__heading-divider">

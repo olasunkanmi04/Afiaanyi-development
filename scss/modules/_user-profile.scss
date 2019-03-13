@@ -685,6 +685,14 @@
     .user-profile__details-answer {
         padding-left: 30px;
     }
+
+    .user-review__individual {
+        width: 100%;
+    }
+
+    .user-review__details {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:892px) {
@@ -749,6 +757,17 @@
     .user-profile__overview {
         width: 100%;
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width:685px) {
+    .user-review__image {
+        display: none;
+    }
+
+    .user-review__details,
+    .user-review__text {
+        width: 100%;
     }
 }
 
