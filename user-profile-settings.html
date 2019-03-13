@@ -21,8 +21,17 @@
 
 <body>
     <div data-include="svg.html"></div>
-    <aside class="user-sidebar">
+    <aside class="user-sidebar resp__user-sidebar">
         <div class="user-sidebar__overlay">
+            <div class="user-sidebar__menu-icon
+                    ">
+                <svg class="icon icon-menu show__menu">
+                    <use xlink:href="#icon-menu"></use>
+                </svg>
+                <svg class="icon icon-arrow-left hide__menu">
+                    <use xlink:href="#icon-arrow-left"></use>
+                </svg>
+            </div>
             <div class="user-sidebar__logo">
                 <img src="images/logo.png" alt="" class="img-fluid">
             </div>
@@ -78,7 +87,7 @@
             </ul>
         </div>
     </aside>
-    <nav>
+    <!-- <nav>
         <div class="row header__nav-content">
             <div style="visibility:hidden;">
                 <img src="images/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
@@ -116,50 +125,51 @@
 
             </div>
         </div>
-    </nav>
+    </nav> -->
     <section class="user-personal">
+        <div class="user-profile__overlay d-none"></div>
         <div class="user-personal__top">
             <p class="user-personal__heading">Profile settings</p>
             <hr class="user-personal__heading-divider">
         </div>
-        <div class="user-personal__wrapper d-flex">
-            <div class="user-profile__content mr-auto w-50">
-                <div class="user-personal__contact">
+        <div class="user-personal__wrapper d-flex resp-user-personal__wrapper">
+            <div class="user-profile__edit-wrap">
+                <div class="user-personal__contact w-100">
                     <div class="user-profile__overview-heading">
                         <h3>Edit profile</h3>
                     </div>
-                    <div class="user-profile__details">
-                        <table class="w-100 user-profile__details-table">
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">First Name:</td>
-                                <td class="user-profile__details-answer">
+                    <div class="user-profile__details resp__user-profile-edit">
+                        <div class="w-100 user-profile__details-table">
+                            <div class="user-profile__details-row user-profile__settings-row">
+                                <div class="user-profile__details-key">First Name:</div>
+                                <div class="user-profile__details-answer">
                                     <input type="text" value="John">
-                                </td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Last Name:</td>
-                                <td class="user-profile__details-answer">
+                                </div>
+                            </div>
+                            <div class="user-profile__details-row user-profile__settings-row">
+                                <div class="user-profile__details-key">Last Name:</div>
+                                <div class="user-profile__details-answer">
                                     <input type="text" value="Deo">
-                                </td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Business Name:</td>
-                                <td class="user-profile__details-answer">
+                                </div>
+                            </div>
+                            <div class="user-profile__details-row user-profile__settings-row">
+                                <div class="user-profile__details-key">Business Name:</div>
+                                <div class="user-profile__details-answer">
                                     <input type="text" value="John & Doe Enterprises">
-                                </td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Tel:</td>
-                                <td class="user-profile__details-answer">
+                                </div>
+                            </div>
+                            <div class="user-profile__details-row user-profile__settings-row">
+                                <div class="user-profile__details-key">Tel:</div>
+                                <div class="user-profile__details-answer">
                                     <input type="text" value="08030000000">
-                                </td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key">Business Hours:</td>
-                            </tr>
-                            <tr class="user-profile__details-row ml-3">
-                                <td class="user-profile__details-key user-profile__edit-key">Weekdays:</td>
-                                <td class="user-profile__details-answer user-profile__edit-answer">
+                                </div>
+                            </div>
+                            <div class="user-profile__details-row user-profile__settings-row">
+                                <div class="user-profile__details-key">Business Hours:</div>
+                            </div>
+                            <div class="user-profile__details-row ml-auto user-profile__settings-row">
+                                <div class="user-profile__details-key user-profile__edit-key">Weekdays:</div>
+                                <div class="user-profile__details-answer user-profile__edit-answer">
                                     <select name="time" class="user-profile__edit-time">
                                         <option value="07:00 AM">07:00 AM</option>
                                         <option value="08:00 AM">08:00 AM</option>
@@ -169,11 +179,11 @@
                                         <option value="07:00 PM">07:00 PM</option>
                                         <option value="08:00 PM">08:00 PM</option>
                                     </select>
-                                </td>
-                            </tr>
-                            <tr class="user-profile__details-row ml-3">
-                                <td class="user-profile__details-key user-profile__edit-key">Weekends:</td>
-                                <td class="user-profile__details-answer user-profile__edit-answer">
+                                </div>
+                            </div>
+                            <div class="user-profile__details-row ml-auto user-profile__settings-row">
+                                <div class="user-profile__details-key user-profile__edit-key">Weekends:</div>
+                                <div class="user-profile__details-answer user-profile__edit-answer">
                                     <select name="time" class="user-profile__edit-time">
                                         <option value="10:00 AM">10:00 AM</option>
                                         <option value="11:00 AM">11:00 AM</option>
@@ -183,22 +193,30 @@
                                         <option value="07:00 PM">07:00 PM</option>
                                         <option value="08:00 PM">08:00 PM</option>
                                     </select>
-                                </td>
-                            </tr>
-                            <tr class="user-profile__details-row">
-                                <td class="user-profile__details-key user-profile__address">
+                                </div>
+                            </div>
+                            <div class="user-profile__details-row user-profile__settings-row">
+                                <div class="user-profile__details-key user-profile__address">
                                     <div style="width:100px">Address:</div>
-                                </td>
-                                <td class="user-profile__details-answer user-profile__edit-textarea">
+                                </div>
+                                <div class="user-profile__details-answer user-profile__edit-textarea">
                                     <textarea name="" id="" cols="30" rows="7"></textarea>
-                                </td>
-                            </tr>
-                        </table>
+                                </div>
+                            </div>
+                            <div class="user-profile__details-row user-profile__settings-row">
+                                <div class="user-profile__details-key user-profile__address">
+                                    <div style="width:100px">Bio:</div>
+                                </div>
+                                <div class="user-profile__details-answer user-profile__edit-textarea">
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="user-profile__content w-50">
-                <div class="user-personal__contact">
+            <div class="user-profile__settings-column">
+                <div class="user-personal__contact w-100">
                     <div class="user-profile__overview-heading">
                         <h3>Password Settings</h3>
                     </div>
@@ -209,19 +227,20 @@
                     </div>
                 </div>
 
-                <div class="user-personal__contact">
+                <div class="user-personal__contact w-100">
                     <div class="user-profile__overview-heading">
                         <h3>Profile Picture</h3>
                     </div>
                     <div class="user-profile__details">
-                        <div class="user-profile__edit-add-picture-preview">
-                            <p>Preview</p>
+                        <div class="d-flex">
+                            <div class="user-profile__edit-add-picture-preview">
+                                <p>Preview</p>
+                            </div>
+                            <label class="user-profile__edit-add-picture">
+                                <input type="file" class="user-profile__edit-add-picture-input">
+                                Browse
+                            </label>
                         </div>
-                        <label class="user-profile__edit-add-picture">
-                            <input type="file" class="user-profile__edit-add-picture-input">
-                            Browse
-                        </label>
-
                     </div>
                 </div>
             </div>

@@ -155,6 +155,30 @@
         }
     }
 
+    &__settings {
+        &-row {
+            display: flex;
+            margin-bottom: 10px;
+
+            .user-profile__details-key {
+                align-self: center;
+            }
+
+            .user-profile__details-answer {
+                padding-left: 0;
+                margin-left: auto;
+            }
+
+            .user-profile__address {
+                align-self: flex-start;
+            }
+        }
+
+        &-column {
+            width: 50%;
+        }
+    }
+
     &__business {
         width: 40%;
         margin-left: auto;
@@ -243,18 +267,19 @@
             color: #E6B712;
         }
 
+        &-wrap {
+            width: 50%;
+            margin-right: 0.5rem;
+        }
+
         &-time {
             width: 100px;
             border: none;
             background-color: transparent !important;
         }
 
-        &-answer {
-            padding-left: 20px !important;
-        }
-
         &-key {
-            padding-left: 59px !important;
+            padding-left: 30px;
         }
 
         &-textarea {
@@ -291,15 +316,18 @@
         }
 
         &-add-picture {
-            padding: 9px 40px;
+            width: 150px;
             border: 1px solid #E6B712;
             cursor: pointer;
-            display: inline-block;
             border-radius: 2px;
             font-size: 14px;
             font-weight: 500;
             color: #000000;
-            margin-left: 90px;
+            margin-left: auto;
+            text-align: center;
+            height: 45px;
+            line-height: 45px;
+            align-self: center;
 
 
             &:hover {
@@ -310,7 +338,6 @@
 
             &-preview {
                 text-align: center;
-                display: inline-block;
                 border: 1px solid #E6B712;
                 width: 150px;
                 height: 136px;
@@ -610,6 +637,12 @@
     display: none;
 }
 
+@media screen and (max-width:1121px) {
+    .resp__user-profile-edit {
+        padding: 26px 7px;
+    }
+}
+
 @media screen and (max-width:1055px) {
     .user-personal__wrapper {
         padding: 30px 10px;
@@ -630,6 +663,19 @@
     }
 }
 
+@media screen and (max-width:944px) {
+    .user-profile__edit-add-picture-preview {
+        margin-right: 3px;
+    }
+}
+
+@media screen and (max-width:933px) {
+    .user-profile__edit-key {
+        padding-left: 10px;
+    }
+}
+
+
 @media screen and (max-width:926px) {
     .user-profile__business {
         margin-left: 0;
@@ -638,6 +684,17 @@
 
     .user-profile__details-answer {
         padding-left: 30px;
+    }
+}
+
+@media screen and (max-width:892px) {
+    .resp-user-personal__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .user-profile__edit-wrap,
+    .user-profile__settings-column {
+        width: 80%;
     }
 }
 
@@ -692,6 +749,14 @@
     .user-profile__overview {
         width: 100%;
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width:632px) {
+
+    .user-profile__edit-wrap,
+    .user-profile__settings-column {
+        width: 100%;
     }
 }
 
