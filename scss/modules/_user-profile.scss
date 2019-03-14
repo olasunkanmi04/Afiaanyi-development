@@ -628,6 +628,8 @@
             color: #000000;
         }
     }
+
+
 }
 
 .user-notification__label input:checked~.user-notification__checkbox {
@@ -881,6 +883,10 @@
     .user-personal {
         margin-left: 60px;
     }
+
+    .user-notification__tab {
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width:430px) {
@@ -910,7 +916,7 @@
     }
 
     .user-sidebar__link {
-        padding: 13px;
+        padding: 20px 13px;
     }
 
     .resp__user-sidebar {

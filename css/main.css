@@ -4085,7 +4085,9 @@ select:invalid {
   .user-sidebar {
     z-index: 1; }
   .user-personal {
-    margin-left: 60px; } }
+    margin-left: 60px; }
+  .user-notification__tab {
+    margin-left: 10px; } }
 
 @media screen and (max-width: 430px) {
   .user-notification__individual {
@@ -4104,7 +4106,7 @@ select:invalid {
   .user-profile__details-table {
     table-layout: fixed; }
   .user-sidebar__link {
-    padding: 13px; }
+    padding: 20px 13px; }
   .resp__user-sidebar {
     width: 40px; }
   .user-profile {
