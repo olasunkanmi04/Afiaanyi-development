@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="css/star-rating-svg.css">
@@ -22,8 +21,17 @@
 
 <body>
     <div data-include="svg.html"></div>
-    <aside class="user-sidebar">
+    <aside class="user-sidebar resp__user-sidebar">
         <div class="user-sidebar__overlay">
+            <div class="user-sidebar__menu-icon
+                            ">
+                <svg class="icon icon-menu show__menu">
+                    <use xlink:href="#icon-menu"></use>
+                </svg>
+                <svg class="icon icon-arrow-left hide__menu">
+                    <use xlink:href="#icon-arrow-left"></use>
+                </svg>
+            </div>
             <div class="user-sidebar__logo">
                 <img src="images/logo.png" alt="" class="img-fluid">
             </div>
@@ -42,14 +50,6 @@
                             <use xlink:href="#icon-person-profile"></use>
                         </svg>
                         <span>My personal Info</span>
-                    </a>
-                </li>
-                <li class="user-sidebar__link">
-                    <a href="user-profile-gallery.html">
-                        <svg class="icon icon-gallary">
-                            <use xlink:href="#icon-gallary"></use>
-                        </svg>
-                        <span>Gallery</span>
                     </a>
                 </li>
                 <li class="user-sidebar__link">
@@ -79,7 +79,7 @@
             </ul>
         </div>
     </aside>
-    <nav>
+    <!-- <nav>
         <div class="row header__nav-content">
             <div style="visibility:hidden;">
                 <img src="images/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
@@ -117,36 +117,137 @@
 
             </div>
         </div>
-    </nav>
+    </nav> -->
     <section class="user-personal">
+        <div class="user-profile__overlay d-none"></div>
         <div class="user-personal__top">
             <p class="user-personal__heading">Notification</p>
             <hr class="user-personal__heading-divider">
+            <nav class="h-auto mt-4">
+                <div class="nav seller__dashboard-chart-tab-wrapper" id="nav-tab" role="tablist">
+                    <a class="nav-item seller__dashboard-chart-tab text-capitalize active" id="nav-manage-products-tab"
+                        data-toggle="tab" href="#nav-manage-products" role="tab" aria-controls="nav-manage-products"
+                        aria-selected="true"><span class="sales-summary-tab">Notifies</span>
+                        <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
+                    </a>
+                    <a class="nav-item seller__dashboard-chart-tab text-capitalize" id="nav-manage-images-tab"
+                        data-toggle="tab" href="#nav-manage-images" role="tab" aria-controls="nav-manage-images"
+                        aria-selected="false"><span class="your-payment-tab">Email Notifications</span>
+                        <hr class="seller__dashboard-chart-tab-line user-personal__heading-divider">
+                    </a>
+                </div>
+                <hr class="user-personal__heading-divider">
+            </nav>
+
         </div>
         <div class="user-personal__wrapper">
             <div class="user-review">
-                <h3 class="user-notification__heading">Email Notifications</h3>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-manage-products" role="tabpanel" aria-labelledby="nav-manage-products-tab">
+                        <div class="user-notification__individual">
+                            <div class="user-notification__individual-image">
+                                <img src="images/man.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="user-notification__individual-details">
+                                <p class="user-notification__individual-name">John Doe <span>10:30 AM</span></p>
+                                <p class="user-notification__individual-text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
 
-                <div>
-                    <p class="user-notification__subheading">Send me an email when:</p>
-                    <label class="user-notification__label">
-                        <input type="checkbox" name="new follower" checked>
-                        <span class="user-notification__label-text">I have a new follower</span>
-                        <span class="user-notification__checkbox"></span>
-                    </label>
+                        <div class="user-notification__individual">
+                            <div class="user-notification__individual-image">
+                                <img src="images/man.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="user-notification__individual-details">
+                                <p class="user-notification__individual-name">John Doe <span>10:30 AM</span></p>
+                                <p class="user-notification__individual-text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
 
-                    <label class="user-notification__label">
-                        <input type="checkbox" name="new follower" checked>
-                        <span class="user-notification__label-text">Someone I follow write a review of rate a business</span>
-                        <span class="user-notification__checkbox"></span>
-                    </label>
+                        <div class="user-notification__individual">
+                            <div class="user-notification__individual-image">
+                                <img src="images/man.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="user-notification__individual-details">
+                                <p class="user-notification__individual-name">John Doe <span>10:30 AM</span></p>
+                                <p class="user-notification__individual-text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
 
-                    <label class="user-notification__label">
-                        <input type="checkbox" name="Newsletter" checked>
-                        <span class="user-notification__label-text">A Newsletter is available</span>
-                        <span class="user-notification__checkbox"></span>
-                    </label>
+                        <div class="user-notification__individual">
+                            <div class="user-notification__individual-image">
+                                <img src="images/man.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="user-notification__individual-details">
+                                <p class="user-notification__individual-name">John Doe <span>10:30 AM</span></p>
+                                <p class="user-notification__individual-text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="product-page__customer-review-paging">
+                            <div class="product-page__customer-review-paging-individual">
+                                1
+                            </div>
+                            <div class="product-page__customer-review-paging-individual current">
+                                2
+                            </div>
+                            <div class="product-page__customer-review-paging-individual">
+                                3
+                            </div>
+                            <span>...</span>
+                            <div class="product-page__customer-review-paging-individual">
+                                30
+                            </div>
+                            <div class="product-page__customer-review-paging-individual">
+                                <svg class="icon icon-next-page">
+                                    <use xlink:href="#icon-next-page"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-manage-images" role="tabpanel" aria-labelledby="nav-manage-images-tab">
+                        <div>
+                            <p class="user-notification__subheading">Send me an email when:</p>
+                            <label class="user-notification__label">
+                                <input type="checkbox" name="new follower" checked>
+                                <span class="user-notification__label-text">I have a new follower</span>
+                                <span class="user-notification__checkbox"></span>
+                            </label>
+
+                            <label class="user-notification__label">
+                                <input type="checkbox" name="new follower" checked>
+                                <span class="user-notification__label-text">Someone I follow write a review of rate a
+                                    business</span>
+                                <span class="user-notification__checkbox"></span>
+                            </label>
+
+                            <label class="user-notification__label">
+                                <input type="checkbox" name="Newsletter" checked>
+                                <span class="user-notification__label-text">A Newsletter is available</span>
+                                <span class="user-notification__checkbox"></span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
+
+
+
+
+
+
+
+
+                <h3 class="user-notification__heading"></h3>
+
+
             </div>
         </div>
     </section>
@@ -158,7 +259,12 @@
     <script src="js/tether.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script>
+        $('.user-sidebar__menu-icon').click(function () {
+            $('.user-sidebar').toggleClass('resp__user-sidebar');
+            $('.user-profile__overlay').toggleClass('d-none');
+        })
+    </script>
 
 </body>
 

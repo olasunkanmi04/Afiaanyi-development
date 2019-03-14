@@ -382,8 +382,8 @@
         text-transform: uppercase;
 
         &-divider {
-            background: #E6B712;
-            border: 1px solid #E6B712;
+            background: #DEDEDE;
+            border: 1px solid #DEDEDE;
             box-sizing: border-box;
             border-radius: 4px 4px 0px 0px;
             margin-bottom: 0;
@@ -577,6 +577,57 @@
         border: 1px solid #000000;
         border-radius: 2px;
     }
+
+    &__individual {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px 21px;
+
+        &-image {
+            width: 82px;
+            height: 82px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 16px;
+            margin-left: auto;
+            align-self: center;
+
+        }
+
+        &-details {
+            width: 70%;
+            align-self: center;
+            margin-right: auto;
+        }
+
+        &-name {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            color: #000000;
+
+            span {
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 22px;
+                color: #000000;
+                float: right;
+            }
+        }
+
+        &-text {
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 22px;
+            color: #000000;
+        }
+    }
 }
 
 .user-notification__label input:checked~.user-notification__checkbox {
@@ -704,6 +755,10 @@
     .user-profile__settings-column {
         width: 80%;
     }
+
+    .user-notification__individual {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:850px) {
@@ -825,6 +880,17 @@
 
     .user-personal {
         margin-left: 60px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .user-notification__individual {
+        padding: 12px;
+    }
+
+    .user-notification__individual-image {
+        width: 60px;
+        height: 60px;
     }
 }
 
