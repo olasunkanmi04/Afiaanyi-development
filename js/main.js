@@ -70,7 +70,7 @@ $(document).ready(function () {
     $('.interest__container').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         variableWidth: true,
         infinite: true,

@@ -212,6 +212,24 @@
     }
 }
 
+@media screen and (min-width:1613px) {
+    .business-directory__hero-content {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1157px) {
+    .business-directory__hero-search {
+        margin-top: 60px;
+    }
+
+    .business-directory__hero-content h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
 
     .business-directory__category,
@@ -225,6 +243,13 @@
     .business-directory__category,
     .business-directory__recommend {
         padding: 0 28px;
+    }
+}
+
+@media screen and (max-width: 744px) {
+
+    .business-directory__hero-search {
+        margin-top: 20px;
     }
 }
 

@@ -153,6 +153,10 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            span {
+                display: none;
+            }
         }
     }
 
@@ -965,14 +969,50 @@ a {
 
     .hero__search-categories,
     .hero__search-location {
-        display: none;
+        width: 49%;
         transition: .5s;
+        margin-top: 14px;
+        margin-bottom: 14px;
+        border-radius: 4px;
 
     }
 
+    .hero__search-location {
+        margin-left: auto;
+
+    }
+
+    .hero__search {
+        flex-wrap: wrap;
+    }
+
     .hero__search-companies {
-        width: 90%;
+        width: 100%;
         transition: .5s;
+        border-radius: 4px;
+    }
+
+    .hero__search-icon-wrapper {
+        width: auto;
+        height: auto;
+
+        img {
+            display: none;
+        }
+
+        span {
+            display: block;
+            line-height: 28px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+    }
+
+    .hero__search-btn {
+        width: 100%;
+        border-radius: 4px;
     }
 }
 
@@ -1170,6 +1210,10 @@ a {
     .interest__third {
         width: 100vw;
     }
+
+    .interest__individual-restauarant {
+        background-position: 100%;
+    }
 }
 
 @media screen and (max-width: 455px) {
@@ -1187,7 +1231,7 @@ a {
     }
 
     .hero__content {
-        width: 86%;
+        width: 90%;
     }
 
     .hero__content-heading {
@@ -1253,10 +1297,6 @@ a {
 }
 
 @media screen and (max-width:379px) {
-    .hero__content {
-        width: 90%;
-    }
-
     .navbar__home {
         padding: 22px 10px;
 
@@ -1279,6 +1319,16 @@ a {
         margin-left: -13px;
     }
 
+}
+
+@media screen and (max-width:332px) {
+
+    .hero__search-categories,
+    .hero__search-location {
+        width: 48%;
+
+
+    }
 }
 
 @media screen and (max-width: 306px) {

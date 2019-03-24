@@ -66,6 +66,10 @@
                 background: #C82600;
                 color: #fff;
             }
+
+            &-resp {
+                display: none;
+            }
         }
 
 
@@ -96,7 +100,7 @@
     }
 
     &__verify {
-        background: #2F80ED;
+        background: #43B840;
         border-radius: 4px;
         padding: 4px 10px;
         width: fit-content;
@@ -244,38 +248,31 @@
 
 @media screen and (max-width:690px) {
     .top-brand__filter-individual {
-        &:first-child {
-            .selectric {
-                width: 70px;
-            }
-        }
+        display: none;
 
-        &:nth-child(2) {
-            span {
-                display: none;
-            }
+        &-resp {
+            display: block;
+            width: 100%;
 
-            .label {
-                display: block !important;
-            }
-        }
+            &-button {
+                width: 100%;
+                border: 1px solid #E6B712;
+                background-color: #fff;
+                padding: 18px 0;
+                border-radius: 4px;
+                cursor: pointer;
 
-        &:nth-child(3) {
-            display: none;
+                span {
+                    color: #BDBDBD !important;
+                    font-size: 18px;
+                    margin-left: 8px;
+                    vertical-align: middle;
+                }
+            }
         }
     }
 }
 
-@media screen and (max-width:1157px) {
-    .business-directory__hero-search {
-        margin-top: 60px;
-    }
-
-    .business-directory__hero-content h1 {
-        font-size: 30px;
-        line-height: 45px;
-    }
-}
 
 @media screen and (max-width:840px) {
     .top-brand__search {
