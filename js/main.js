@@ -411,3 +411,11 @@ $('.user-sidebar__menu-icon').click(function () {
     $('.user-sidebar').toggleClass('resp__user-sidebar');
     $('.user-profile__overlay').toggleClass('d-none');
 })
+
+$('.top-brand__filter-individual-resp').click(function () {
+    $('.resp__filter').toggleClass('resp__filter-show');
+})
+
+$('.close__filter').click(function () {
+    $('.resp__filter').toggleClass('resp__filter-show');
+})
