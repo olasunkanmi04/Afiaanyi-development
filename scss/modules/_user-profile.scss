@@ -66,6 +66,10 @@
             width: 18px;
             height: 18px;
         }
+
+        img {
+            display: none;
+        }
     }
 }
 
@@ -771,6 +775,18 @@
     .user-personal__contact {
         width: 100%;
     }
+
+    .resp__user-sidebar {
+        width: 170px;
+    }
+
+    .user-sidebar__link a span {
+        font-size: 12px;
+    }
+
+    .user-personal {
+        margin-left: 170px;
+    }
 }
 
 @media screen and (max-width:863px) {
@@ -855,6 +871,14 @@
         .user-sidebar__link a span,
         .hide__menu {
             display: none;
+        }
+
+        .user-sidebar__menu-icon {
+            img {
+                display: inline-block;
+                margin-bottom: 30px;
+                width: 45px;
+            }
         }
 
         .show__menu {
