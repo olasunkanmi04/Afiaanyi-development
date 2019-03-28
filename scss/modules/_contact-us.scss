@@ -2,7 +2,7 @@
     &__hero {
         background: url('../images/contact-us-hero.png') no-repeat;
         width: 100%;
-        height: 100vh;
+        height: 762px;
 
         background-size: cover;
 
@@ -29,22 +29,16 @@
 
     &__form {
         padding: 30px;
-        width: 50%;
+        // width: 50%;
 
         &-wrapper {
             background: #FFFFFF;
             box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
             border-radius: 4px;
             margin: auto;
-            display: flex;
-            position: absolute;
             width: 90%;
-            height: 80vh;
-            bottom: -80px;
-            top: 400px;
-            left: 50%;
-            margin-left: -45%;
-
+            height: 580px;
+            margin-top: -43vh;
         }
 
         &-label {
@@ -109,7 +103,8 @@
             box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.1);
             border-radius: 0px 4px 4px 0px;
             padding: 30px;
-            width: 50%;
+            // width: 50%;
+            height: 580px;
         }
 
         &-overlay {
@@ -146,7 +141,7 @@
     &__details {
         padding: 0 70px;
         margin-bottom: 65px;
-        margin-top: 200px;
+        margin-top: 40px;
 
         &-wrapper {
             width: 100%;
@@ -246,3 +241,98 @@
 //         height: 400px !important;
 //     }
 // }
+
+@media screen and(max-width:1026px) {
+
+    .contact-us__details-one,
+    .contact-us__details-two {
+        margin-bottom: 30px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contact-us__details {
+        margin-top: 60px;
+    }
+
+    .contact-us__form-wrapper {
+        height: auto;
+    }
+}
+
+@media screen and(max-width:883px) {
+
+    .contact-us__details-three {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-us__map-wrapper {
+        height: 400px;
+        margin-top: 20px;
+    }
+
+    .contact-us__form-wrapper {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .contact-us__hero-text {
+        padding-left: 50px;
+        padding-right: 20px;
+
+        h3 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+}
+
+@media screen and(max-width:645px) {
+    .contact-us__details {
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .contact-us__form-input-top {
+        flex-wrap: wrap;
+    }
+
+    .contact-us__form-input-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (min-height:1128px) {
+    .contact-us__form-wrapper {
+        margin-top: -32vh;
+    }
+}
+
+@media screen and (max-height:859px) {
+    .contact-us__form-wrapper {
+        margin-top: -53vh;
+    }
+}
+
+@media screen and (max-height: 667px) {
+    .contact-us__form-wrapper {
+        margin-top: -67vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-us__map-address {
+        left: 20px;
+        width: 80%;
+    }
+}
