@@ -345,6 +345,7 @@ $(".quickview__modal-ratings-stars").starRating({
     hoverColor: '#E6B712',
     activeColor: '#E6B712',
     useGradient: false,
+    readOnly: true,
     callback: function (currentRating, $el) {
         alert('rated ' + currentRating);
         console.log('DOM element ', $el);

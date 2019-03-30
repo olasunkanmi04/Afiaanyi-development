@@ -729,6 +729,7 @@
                     color: #030303;
                     margin-bottom: 10px;
                     font-weight: 600;
+                    line-height: 30px;
                 }
             }
 
@@ -774,6 +775,10 @@
                         color: #CAAA3B;
                         font-size: 12px;
                     }
+                }
+
+                &-wrapper {
+                    display: flex;
                 }
             }
 
@@ -942,14 +947,19 @@
                 width: 180px;
                 margin-left: 20px;
                 height: 40px;
+                min-width: 120px;
             }
         }
 
         &-quantity {
             display: inline-block;
-            width: 120px;
+            min-width: 120px;
             border: 1px solid #DEDEDE;
             box-sizing: border-box;
+
+            &-wrap {
+                display: flex;
+            }
 
             &-increase {
                 float: right;
@@ -978,6 +988,7 @@
                 background-color: transparent;
                 color: #000000;
                 width: 180px;
+                min-width: 120px;
                 margin-left: 20px;
                 height: 40px;
 
@@ -991,6 +1002,8 @@
 
         &-share {
             margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap-reverse;
 
             span {
                 font-size: 14px;
@@ -1051,10 +1064,10 @@
     overflow: hidden;
 }
 
-.full {
-    height: 600px;
-    overflow: hidden;
-}
+// .full {
+//     height: 600px;
+//     overflow: hidden;
+// }
 
 
 
@@ -1270,6 +1283,42 @@
     }
 }
 
+@media screen and (max-width:991px) and (min-width: 768px) {
+    .quickview__modal-body-description-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .quickview__modal-body-description {
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:952px) {
+    .quickview__modal-quantity-wrap {
+        flex-wrap: wrap;
+    }
+
+    .quickview__modal-button-wrapper .marketplace__product-quickview-btn {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .quickview__modal-quantity-addtocart {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+}
+
+
+@media screen and (max-width: 903px) {
+    .quickview__modal-save {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
 @media screen and (max-width: 884px) {
     .marketplace__featured-individual-brand {
         &:nth-child(4) {
@@ -1291,6 +1340,17 @@
         &:nth-child(2) {
             margin-right: 0;
         }
+    }
+}
+
+@media screen and (max-width:588px) {
+    .quickview__modal-body-description-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .quickview__modal-body-description {
+        width: auto;
+        margin-bottom: 10px;
     }
 }
 
