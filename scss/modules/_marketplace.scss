@@ -1283,17 +1283,6 @@
     }
 }
 
-@media screen and (max-width:991px) and (min-width: 768px) {
-    .quickview__modal-body-description-wrapper {
-        flex-wrap: wrap;
-    }
-
-    .quickview__modal-body-description {
-        width: auto;
-        margin-bottom: 10px;
-    }
-}
-
 @media screen and (max-width:952px) {
     .quickview__modal-quantity-wrap {
         flex-wrap: wrap;
