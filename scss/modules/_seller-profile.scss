@@ -523,6 +523,24 @@
                 margin-right: 7px;
                 cursor: pointer;
             }
+
+            a {
+                line-height: 64px;
+                font-weight: 500;
+                font-size: 14px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-left: 44px;
+
+                &:first-child {
+                    margin-left: 20px;
+                }
+
+                svg {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
         }
 
         &-wrapper {

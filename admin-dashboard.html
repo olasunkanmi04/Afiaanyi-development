@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dropzone.css">
+
+    <link rel="stylesheet" href="css/logged-navbar.css">
+
+    <script src="js/csi.min.js"></script>
+
+    <title>Afiaanyi | Admin-Dashboard</title>
+</head>
+
+<body class="seller__body">
+    <div data-include="svg.html"></div>
+    <aside class="user-sidebar admin__sidebar">
+        <div class="user-sidebar__overlay admin__sidebar-overlay">
+            <div class="user-sidebar__logo">
+                <img src="images/logo.png" alt="" class="img-fluid">
+            </div>
+            <ul class="user-sidebar__item admin__sidebar-item">
+                <li class="user-sidebar__link user-sidebar__link-active admin__sidebar-business-directory">
+                    <a href="#">
+                        <svg class="icon icon-directory">
+                            <use xlink:href="#icon-directory"></use>
+                        </svg>
+                        <span>Business Directory</span>
+                    </a>
+                </li>
+                <!-- business directory sub link -->
+                <ul class="admin__subitem admin__sidebar-business">
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-business-category">
+                                <use xlink:href="#icon-business-category"></use>
+                            </svg>
+                            <span>Business Categories</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-line-chart">
+                                <use xlink:href="#icon-line-chart"></use>
+                            </svg>
+                            <span>Manage Business</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-subscription">
+                                <use xlink:href="#icon-subscription"></use>
+                            </svg>
+                            <span>Subscriptions</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-top-star">
+                                <use xlink:href="#icon-top-star"></use>
+                            </svg>
+                            <span>Top Brands</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-loyalty">
+                                <use xlink:href="#icon-loyalty"></use>
+                            </svg>
+                            <span>Loyalties</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- </business directory sub link> -->
+
+                <li class="user-sidebar__link admin__sidebar-marketplace">
+                    <a href="#">
+                        <svg class="icon icon-market-place">
+                            <use xlink:href="#icon-market-place"></use>
+                        </svg>
+                        <span>Marketplace</span>
+                    </a>
+                </li>
+                <!-- Marketplace sub link -->
+                <ul class="admin__subitem admin__sidebar-marketplace-sub d-none">
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-buffer">
+                                <use xlink:href="#icon-buffer"></use>
+                            </svg>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-person-profile">
+                                <use xlink:href="#icon-person-profile"></use>
+                            </svg>
+                            <span>Orders</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-store">
+                                <use xlink:href="#icon-store"></use>
+                            </svg>
+                            <span>Stores</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- </Marketplace sub link> -->
+
+                <li class="user-sidebar__link admin__sidebar-user">
+                    <a href="#">
+                        <svg class="icon icon-users-group">
+                            <use xlink:href="#icon-users-group"></use>
+                        </svg>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <!-- User -->
+                <ul class="admin__subitem admin__sidebar-user-sub d-none">
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-add-user">
+                                <use xlink:href="#icon-add-user"></use>
+                            </svg>
+                            <span>Add User</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-edit-user">
+                                <use xlink:href="#icon-edit-user"></use>
+                            </svg>
+                            <span>Edit User</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-delete-user">
+                                <use xlink:href="#icon-delete-user"></use>
+                            </svg>
+                            <span>Delete User</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- </User> -->
+
+                <li class="user-sidebar__link admin__sidebar-blog">
+                    <a href="#">
+                        <svg class="icon icon-admin-blog">
+                            <use xlink:href="#icon-admin-blog"></use>
+                        </svg>
+                        <span>Blog Admin</span>
+                    </a>
+                </li>
+                <!-- Blog -->
+                <ul class="admin__subitem admin__sidebar-blog-sub d-none">
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-admin-blogging">
+                                <use xlink:href="#icon-admin-blogging"></use>
+                            </svg>
+                            <span>Blog Posts</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-blog-comment">
+                                <use xlink:href="#icon-blog-comment"></use>
+                            </svg>
+                            <span>Comments</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-blog-category">
+                                <use xlink:href="#icon-blog-category"></use>
+                            </svg>
+                            <span>Categories</span>
+                        </a>
+                    </li>
+                    <li class="user-sidebar__link admin__sidebar-link">
+                        <a href="#">
+                            <svg class="icon icon-admin-blog-image">
+                                <use xlink:href="#icon-admin-blog-image"></use>
+                            </svg>
+                            <span>Images</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- </blog> -->
+            </ul>
+        </div>
+    </aside>
+
+
+    <section class="seller-profile admin__body">
+        <div class="seller__dashboard-pop-message">
+            <a href="#">
+                <svg class="icon icon-dashboard">
+                    <use xlink:href="#icon-dashboard"></use>
+                </svg> Afiaanyi Admin Dashboard
+            </a>
+
+            <a href="#">
+                <svg class="icon icon-external-link">
+                    <use xlink:href="#icon-external-link"></use>
+                </svg> Open Afiaanyi Marketplace
+            </a>
+
+            <a href="#">
+                <svg class="icon icon-external-link">
+                    <use xlink:href="#icon-external-link"></use>
+                </svg> Open Afiaanyi Business Directory
+            </a>
+
+            <a href="#" class="admin__logout">
+                <svg class="icon icon-logout">
+                    <use xlink:href="#icon-logout"></use>
+                </svg> Logout
+            </a>
+        </div>
+
+        <h2 class="admin__body-username">Welcome, John Doe</h2>
+        <hr class="admin__body-hr">
+
+        <div class="admin__sublink-wrap">
+            <div class="admin__sublink-individual">
+                <div class="admin__sublink-individual-item-wrap">
+                    <svg class="icon icon-directory-big">
+                        <use xlink:href="#icon-directory-big"></use>
+                    </svg>
+                    <p class="admin__sublink-individual-text">Business categories</p>
+                </div>
+                <a href="#" class="admin__sublink-link">
+                    <span>View</span>
+                    <svg class="icon icon-view-arrow">
+                        <use xlink:href="#icon-view-arrow"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="admin__sublink-individual ml-auto">
+                <div class="admin__sublink-individual-item-wrap">
+                    <svg class="icon icon-market-place-big">
+                        <use xlink:href="#icon-market-place-big"></use>
+                    </svg>
+                    <p class="admin__sublink-individual-text">MARKETPLACE</p>
+                </div>
+                <a href="#" class="admin__sublink-link">
+                    <span>View</span>
+                    <svg class="icon icon-view-arrow">
+                        <use xlink:href="#icon-view-arrow"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="admin__sublink-individual ml-auto">
+                <div class="admin__sublink-individual-item-wrap">
+                    <svg class="icon icon-users-group">
+                        <use xlink:href="#icon-users-group"></use>
+                    </svg>
+                    <p class="admin__sublink-individual-text">USERS</p>
+                </div>
+                <a href="#" class="admin__sublink-link">
+                    <span>View</span>
+                    <svg class="icon icon-view-arrow">
+                        <use xlink:href="#icon-view-arrow"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="admin__sublink-wrap">
+            <div class="admin__sublink-individual">
+                <div class="admin__sublink-individual-item-wrap">
+                    <svg class="icon icon-admin-blog-big">
+                        <use xlink:href="#icon-admin-blog-big"></use>
+                    </svg>
+                    <p class="admin__sublink-individual-text">BLOG ADMIN</p>
+                </div>
+                <a href="#" class="admin__sublink-link">
+                    <span>View</span>
+                    <svg class="icon icon-view-arrow">
+                        <use xlink:href="#icon-view-arrow"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        $('.admin__sidebar-business-directory').click(function () {
+            $('.admin__sidebar-business').toggleClass('d-none');
+        });
+
+        $('.admin__sidebar-marketplace').click(function () {
+            $('.admin__sidebar-marketplace-sub').toggleClass('d-none');
+        });
+
+        $('.admin__sidebar-user').click(function () {
+            $('.admin__sidebar-user-sub').toggleClass('d-none');
+        })
+
+        $('.admin__sidebar-blog').click(function () {
+            $('.admin__sidebar-blog-sub').toggleClass('d-none');
+        })
+    </script>
+
+
+</body>
+
+</html>

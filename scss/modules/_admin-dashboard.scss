@@ -1,0 +1,124 @@
+.admin {
+    &__sidebar {
+        width: 210px;
+
+        &-item {
+            margin-top: 30px !important;
+        }
+
+        &-overlay {
+            padding-top: 17px;
+        }
+
+        &-link {
+            padding: 10px;
+
+            svg {
+                width: 14px !important;
+                height: 14px !important;
+            }
+
+
+            span {
+                font-size: 12px !important;
+            }
+        }
+
+        &-user {
+            svg {
+                fill: #FFFFFF !important;
+            }
+
+        }
+    }
+
+    &__body {
+        margin-left: 210px;
+
+        &-hr {
+            height: 2px;
+            background-color: #CAAA3B;
+            margin-top: 0;
+        }
+
+        &-username {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: normal;
+            color: #333333;
+        }
+    }
+
+    &__subitem {
+        margin-left: 20px;
+
+        &.admin__sidebar-marketplace-sub,
+        &.admin__sidebar-blog-sub,
+        &.admin__sidebar-user-sub {
+            margin-left: 40px;
+        }
+    }
+
+    &__logout {
+        margin-left: 120px !important;
+
+        svg {
+            fill: #f30000 !important;
+        }
+
+        color: #f30000 !important;
+    }
+
+    &__sublink {
+        &-wrap {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        &-individual {
+            width: 32%;
+            background: #FFFFFF;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05), -2px -2px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            height: 250px;
+            position: relative;
+            padding-top: 35px;
+
+            &-item {
+                &-wrap {
+                    text-align: center;
+
+                    svg {
+                        width: 80px;
+                        height: 80px;
+                        fill: #CAAA3B !important;
+                    }
+
+                }
+            }
+
+            &-text {
+                margin-top: 20px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: normal;
+                text-transform: uppercase;
+                color: #000000;
+            }
+        }
+
+        &-link {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+
+            span {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: normal;
+                color: #CAAA3B;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
