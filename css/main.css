@@ -7030,3 +7030,9 @@ select:invalid {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05); }
   .admin__add-upload .dz-message {
     font-weight: normal !important; }
+
+.admin__subscription-filter-text {
+  margin-left: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000; }
