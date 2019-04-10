@@ -386,7 +386,9 @@
     }
 
     &__add {
-        &-input {
+
+        &-input,
+        &-textarea {
             background: #FFFFFF;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
             width: 100%;
@@ -397,7 +399,7 @@
             line-height: normal;
             color: #333333;
             padding-left: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
 
             &::placeholder {
                 font-weight: 500;
@@ -405,6 +407,11 @@
                 line-height: normal;
                 color: #333333;
             }
+        }
+
+        &-textarea {
+            height: 140px;
+            padding: 20px;
         }
 
         &-upload {
@@ -426,6 +433,49 @@
 
             .dz-message {
                 font-weight: normal !important;
+            }
+        }
+
+        &-tag {
+            background: #FFFFFF;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
+            height: 30px;
+            padding: 7px;
+            align-self: center;
+            margin-right: 25px;
+
+            span {
+                font-style: normal;
+                font-weight: 200;
+                font-size: 14px;
+                line-height: normal;
+                color: #333333;
+            }
+
+            svg {
+                width: 9px;
+                height: 9px;
+                cursor: pointer;
+                fill: #000000 !important;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__image {
+        &-thumbnail {
+            background: #FFFFFF;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
+            height: 100px;
+            width: 100px;
+            margin-right: 20px;
+
+            &:first-child {
+                margin-left: auto;
+            }
+
+            &:last-child {
+                margin-right: auto;
             }
         }
     }
