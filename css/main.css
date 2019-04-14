@@ -6994,6 +6994,23 @@ select:invalid {
   .admin__section-store:nth-child(8) {
     width: 11%;
     border-right: 1px solid #C4C4C4; }
+  .admin__section-user:first-child {
+    width: 5%; }
+  .admin__section-user:nth-child(2) {
+    width: 5%; }
+  .admin__section-user:nth-child(3) {
+    width: 30%;
+    padding-left: 10px; }
+    .admin__section-user:nth-child(3) p {
+      text-align: left; }
+  .admin__section-user:nth-child(4) {
+    width: 20%; }
+  .admin__section-user:nth-child(5) {
+    width: 20%;
+    border-right: none; }
+  .admin__section-user:nth-child(6) {
+    width: 20%;
+    border-right: 1px solid #C4C4C4; }
 
 .admin__edit-product {
   font-weight: 500;

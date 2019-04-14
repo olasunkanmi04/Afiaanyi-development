@@ -15,7 +15,7 @@
 
     <script src="js/csi.min.js"></script>
 
-    <title>Afiaanyi-Admin | Stores</title>
+    <title>Afiaanyi-Admin | Users</title>
 </head>
 
 <body class="seller__body">
@@ -79,7 +79,7 @@
                 </ul>
                 <!-- </business directory sub link> -->
 
-                <li class="user-sidebar__link admin__sidebar-marketplace user-sidebar__link-active">
+                <li class="user-sidebar__link admin__sidebar-marketplace">
                     <a href="admin-marketplace.html">
                         <svg class="icon icon-market-place">
                             <use xlink:href="#icon-market-place"></use>
@@ -88,7 +88,7 @@
                     </a>
                 </li>
                 <!-- Marketplace sub link -->
-                <ul class="admin__subitem admin__sidebar-marketplace-sub">
+                <ul class="admin__subitem admin__sidebar-marketplace-sub d-none">
                     <li class="user-sidebar__link admin__sidebar-link">
                         <a href="admin-products.html">
                             <svg class="icon icon-buffer">
@@ -116,7 +116,7 @@
                 </ul>
                 <!-- </Marketplace sub link> -->
 
-                <li class="user-sidebar__link admin__sidebar-user">
+                <li class="user-sidebar__link admin__sidebar-user user-sidebar__link-active">
                     <a href="admin-user.html">
                         <svg class="icon icon-users-group">
                             <use xlink:href="#icon-users-group"></use>
@@ -214,20 +214,20 @@
 
             <div class="admin__section-body">
                 <div class="admin__section-top">
-                    <svg class="icon icon-store-big">
-                        <use xlink:href="#icon-store-big"></use>
+                    <svg class="icon icon-users-big">
+                        <use xlink:href="#icon-users-big"></use>
                     </svg>
-                    <span>Stores</span>
+                    <span>Users</span>
 
                     <a href="#" data-toggle="modal" data-target="#addCategoryModal">+ Add Store</a>
                     <a href="#" data-toggle="modal" data-target="#editModal" class="admin__edit-product">
                         <svg class="icon icon-pencil-edit-small" style="width:10px !important; height:10px;">
                             <use xlink:href="#icon-pencil-edit-small"></use>
-                        </svg> Edit Store</a>
+                        </svg> Edit User</a>
                     <a href="#" data-toggle="modal" data-target="#deleteModal" class="admin__edit-product">
                         <svg class="icon icon-cancel" style="width:10px !important; height:10px;">
                             <use xlink:href="#icon-cancel"></use>
-                        </svg> Delete Store</a>
+                        </svg> Delete User</a>
                     <hr class="admin__body-hr mt-1">
                 </div>
             </div>
@@ -241,7 +241,7 @@
                 </label>
 
                 <div class="seller-order__content-actions-print ml-auto">
-                    <input type="text" name="" id="" placeholder="Search Category"
+                    <input type="text" name="" id="" placeholder="Search User"
                         class="seller-order__content-actions-print-input">
                 </div>
                 <div class="newsletter__input-btn seller-order__content-actions-search ml-0">
@@ -251,34 +251,28 @@
                 </div>
             </div>
             <div class="admin__section-table">
-                <div class="admin__section-table-column admin__section-store">
+                <div class="admin__section-table-column admin__section-user">
                     <p></p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
+                <div class="admin__section-table-column admin__section-user">
                     <p>S/N</p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
-                    <p>Store Name</p>
+                <div class="admin__section-table-column admin__section-user">
+                    <p>First Name</p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
-                    <p>Store Number</p>
+                <div class="admin__section-table-column admin__section-user">
+                    <p>Last Name</p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
-                    <p>Date Created</p>
+                <div class="admin__section-table-column admin__section-user">
+                    <p>Email</p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
-                    <p>Subscription Status</p>
-                </div>
-                <div class="admin__section-table-column admin__section-store">
-                    <p>Pending Payment</p>
-                </div>
-                <div class="admin__section-table-column admin__section-store">
-                    <p>Store Ratings</p>
+                <div class="admin__section-table-column admin__section-user">
+                    <p>Date Register</p>
                 </div>
             </div>
 
             <div class="admin__section-table">
-                <div class="admin__section-table-column admin__section-store">
+                <div class="admin__section-table-column admin__section-user">
                     <p>
                         <label class="user-notification__label" style="margin-left:18px; margin-right:18px;">
                             <input type="checkbox" name="new follower">
@@ -287,25 +281,19 @@
                         </label>
                     </p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
+                <div class="admin__section-table-column admin__section-user">
                     <p>01</p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
+                <div class="admin__section-table-column admin__section-user">
                     <p></p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
+                <div class="admin__section-table-column admin__section-user">
                     <p></p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
+                <div class="admin__section-table-column admin__section-user">
                     <p></p>
                 </div>
-                <div class="admin__section-table-column admin__section-store">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column admin__section-store">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column admin__section-store">
+                <div class="admin__section-table-column admin__section-user">
                     <p></p>
                 </div>
             </div>

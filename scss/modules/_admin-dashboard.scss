@@ -426,6 +426,40 @@
 
             }
         }
+
+        &-user {
+            &:first-child {
+                width: 5%;
+            }
+
+            &:nth-child(2) {
+                width: 5%;
+            }
+
+            &:nth-child(3) {
+                width: 30%;
+                padding-left: 10px;
+
+                p {
+                    text-align: left;
+                }
+            }
+
+            &:nth-child(4) {
+                width: 20%;
+            }
+
+            &:nth-child(5) {
+                width: 20%;
+                border-right: none;
+
+            }
+
+            &:nth-child(6) {
+                width: 20%;
+                border-right: 1px solid #C4C4C4;
+            }
+        }
     }
 
     &__edit {
