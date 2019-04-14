@@ -15,7 +15,7 @@
 
     <script src="js/csi.min.js"></script>
 
-    <title>Afiaanyi-Admin | Top Brands</title>
+    <title>Afiaanyi-Admin | Products</title>
 </head>
 
 <body class="seller__body">
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <!-- business directory sub link -->
-                <ul class="admin__subitem admin__sidebar-business">
+                <ul class="admin__subitem admin__sidebar-business d-none">
                     <li class="user-sidebar__link admin__sidebar-link">
                         <a href="admin-business-category.html">
                             <svg class="icon icon-business-category">
@@ -88,9 +88,9 @@
                     </a>
                 </li>
                 <!-- Marketplace sub link -->
-                <ul class="admin__subitem admin__sidebar-marketplace-sub d-none">
+                <ul class="admin__subitem admin__sidebar-marketplace-sub">
                     <li class="user-sidebar__link admin__sidebar-link">
-                        <a href="#">
+                        <a href="admin-products.html">
                             <svg class="icon icon-buffer">
                                 <use xlink:href="#icon-buffer"></use>
                             </svg>
@@ -98,7 +98,7 @@
                         </a>
                     </li>
                     <li class="user-sidebar__link admin__sidebar-link">
-                        <a href="#">
+                        <a href="admin-order.html">
                             <svg class="icon icon-person-profile">
                                 <use xlink:href="#icon-person-profile"></use>
                             </svg>
@@ -242,12 +242,20 @@
 
             <div class="admin__section-body">
                 <div class="admin__section-top">
-                    <svg class="icon icon-top-brands-big">
-                        <use xlink:href="#icon-top-brands-big"></use>
+                    <svg class="icon icon-buffer-big">
+                        <use xlink:href="#icon-buffer-big"></use>
                     </svg>
-                    <span>Top Brands</span>
+                    <span>Products</span>
 
-                    <a href="#" data-toggle="modal" data-target="#addCategoryModal">+ Add Top Brands</a>
+                    <a href="#" data-toggle="modal" data-target="#addCategoryModal">+ Add Product</a>
+                    <a href="#" data-toggle="modal" data-target="#editModal" class="admin__edit-product">
+                        <svg class="icon icon-pencil-edit-small" style="width:10px !important; height:10px;">
+                            <use xlink:href="#icon-pencil-edit-small"></use>
+                        </svg> Edit Product</a>
+                    <a href="#" data-toggle="modal" data-target="#deleteModal" class="admin__edit-product">
+                        <svg class="icon icon-cancel" style="width:10px !important; height:10px;">
+                            <use xlink:href="#icon-cancel"></use>
+                        </svg> Delete Product</a>
                     <hr class="admin__body-hr mt-1">
                 </div>
             </div>
@@ -255,16 +263,24 @@
             <div class="admin__section-body-top">
                 <label class="user-notification__label mr-4">
                     <input type="checkbox" name="new follower">
+                    <span class="admin__subscription-filter-text">All</span>
                     <span class="user-notification__checkbox"
                         style="border: 1px solid #C4C4C4; border-radius:0;"></span>
                 </label>
 
-                <a href="#" style="align-self: center; margin-left: 20px;" data-toggle="modal"
-                    data-target="#deleteModal">
-                    <svg class="icon icon-delete-bin">
-                        <use xlink:href="#icon-delete-bin"></use>
-                    </svg>
-                </a>
+                <label class="user-notification__label mr-4">
+                    <input type="checkbox" name="new follower">
+                    <span class="admin__subscription-filter-text">Product Variant</span>
+                    <span class="user-notification__checkbox"
+                        style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                </label>
+
+                <label class="user-notification__label mr-4">
+                    <input type="checkbox" name="new follower">
+                    <span class="admin__subscription-filter-text">Product Brand</span>
+                    <span class="user-notification__checkbox"
+                        style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                </label>
 
                 <div class="seller-order__content-actions-print ml-auto">
                     <input type="text" name="" id="" placeholder="Search Category"
@@ -277,24 +293,37 @@
                 </div>
             </div>
             <div class="admin__section-table">
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p></p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p>S/N</p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p>Name</p>
                 </div>
-                <div class="admin__section-table-column">
-                    <p>Edit Category</p>
+                <div class="admin__section-table-column admin__section-product">
+                    <p>SKU</p>
                 </div>
-                <div class="admin__section-table-column">
-                    <p>Delete Category</p>
+                <div class="admin__section-table-column admin__section-product">
+                    <p>Created</p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p>Price</p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p>Sale Price</p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p>Recommended Price</p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p>Available</p>
                 </div>
             </div>
+
             <div class="admin__section-table">
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p>
                         <label class="user-notification__label" style="margin-left:18px; margin-right:18px;">
                             <input type="checkbox" name="new follower">
@@ -303,33 +332,38 @@
                         </label>
                     </p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p>01</p>
                 </div>
-                <div class="admin__section-table-column">
-                    <p>Lorem Ipsum dolor sit amet</p>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
                 </div>
-                <div class="admin__section-table-column">
-                    <p>
-                        <a data-toggle="modal" data-target="#editModal">
-                            <svg class="icon icon-pencil-edit">
-                                <use xlink:href="#icon-pencil-edit"></use>
-                            </svg>
-                        </a>
-                    </p>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
                     <p>
-                        <a data-toggle="modal" data-target="#deleteModal">
-                            <svg class="icon icon-delete-button">
-                                <use xlink:href="#icon-delete-button"></use>
-                            </svg>
-                        </a>
+                        <svg class="icon icon-delete-button">
+                            <use xlink:href="#icon-delete-button"></use>
+                        </svg>
                     </p>
                 </div>
             </div>
+
             <div class="admin__section-table">
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p>
                         <label class="user-notification__label" style="margin-left:18px; margin-right:18px;">
                             <input type="checkbox" name="new follower">
@@ -338,25 +372,38 @@
                         </label>
                     </p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p>02</p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p></p>
                 </div>
-                <div class="admin__section-table-column">
-                    <p>
-
-                    </p>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
                     <p>
-
+                        <svg class="icon icon-check" style="fill: #43B840;">
+                            <use xlink:href="#icon-check"></use>
+                        </svg>
                     </p>
                 </div>
             </div>
+
             <div class="admin__section-table">
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p>
                         <label class="user-notification__label" style="margin-left:18px; margin-right:18px;">
                             <input type="checkbox" name="new follower">
@@ -365,25 +412,38 @@
                         </label>
                     </p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p>03</p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p></p>
                 </div>
-                <div class="admin__section-table-column">
-                    <p>
-
-                    </p>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
                     <p>
-
+                        <svg class="icon icon-delete-button">
+                            <use xlink:href="#icon-delete-button"></use>
+                        </svg>
                     </p>
                 </div>
             </div>
+
             <div class="admin__section-table">
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p>
                         <label class="user-notification__label" style="margin-left:18px; margin-right:18px;">
                             <input type="checkbox" name="new follower">
@@ -392,51 +452,35 @@
                         </label>
                     </p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
+                    <p>04</p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
                     <p></p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
                     <p></p>
                 </div>
-                <div class="admin__section-table-column">
-                    <p>
-
-                    </p>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
                 </div>
-                <div class="admin__section-table-column">
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
+                    <p></p>
+                </div>
+                <div class="admin__section-table-column admin__section-product">
                     <p>
-
+                        <svg class="icon icon-check" style="fill: #43B840;">
+                            <use xlink:href="#icon-check"></use>
+                        </svg>
                     </p>
                 </div>
             </div>
-            <div class="admin__section-table">
-                <div class="admin__section-table-column">
-                    <p>
-                        <label class="user-notification__label" style="margin-left:18px; margin-right:18px;">
-                            <input type="checkbox" name="new follower">
-                            <span class="user-notification__checkbox"
-                                style="border: 1px solid #C4C4C4; border-radius:0;"></span>
-                        </label>
-                    </p>
-                </div>
-                <div class="admin__section-table-column">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column">
-                    <p>
-
-                    </p>
-                </div>
-                <div class="admin__section-table-column">
-                    <p>
-
-                    </p>
-                </div>
-            </div>
-
 
             <div class="seller__dashboard-content-navigate">
                 <div class="d-flex ml-auto">
