@@ -7011,6 +7011,29 @@ select:invalid {
   .admin__section-user:nth-child(6) {
     width: 20%;
     border-right: 1px solid #C4C4C4; }
+  .admin__section-blog:first-child {
+    width: 5%; }
+  .admin__section-blog:nth-child(2) {
+    width: 5%; }
+  .admin__section-blog:nth-child(3) {
+    width: 20%;
+    padding-left: 10px; }
+    .admin__section-blog:nth-child(3) p {
+      text-align: left; }
+  .admin__section-blog:nth-child(4) {
+    width: 12%; }
+  .admin__section-blog:nth-child(5) {
+    width: 10%; }
+  .admin__section-blog:nth-child(6) {
+    width: 13%;
+    border-left: none; }
+  .admin__section-blog:nth-child(7) {
+    width: 10%; }
+  .admin__section-blog:nth-child(8) {
+    width: 12%; }
+  .admin__section-blog:nth-child(9) {
+    width: 13%;
+    border-right: 1px solid #C4C4C4; }
 
 .admin__edit-product {
   font-weight: 500;
@@ -7064,6 +7087,16 @@ select:invalid {
   border-radius: 0;
   height: 40px;
   width: 130px; }
+  .admin__edit-modal-button-alt {
+    background: #DEDEDE;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+    line-height: normal;
+    color: #666666;
+    text-transform: uppercase;
+    border-radius: 0;
+    height: 40px;
+    width: 130px; }
   .admin__edit-modal-button-opp {
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
@@ -7133,7 +7166,7 @@ select:invalid {
   background: #FFFFFF;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
   height: 30px;
-  padding: 7px;
+  padding: 5px 7px;
   align-self: center;
   margin-right: 25px; }
   .admin__add-tag span {
@@ -7143,6 +7176,67 @@ select:invalid {
     line-height: normal;
     color: #333333; }
   .admin__add-tag svg {
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+    fill: #000000 !important;
+    margin-left: 10px; }
+
+.admin__add-blog-input, .admin__add-blog-textarea {
+  background: #FFFFFF;
+  width: 100%;
+  height: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  color: #333333;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  border-radius: 4px; }
+  .admin__add-blog-input::placeholder, .admin__add-blog-textarea::placeholder {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: normal;
+    color: #000000; }
+  .admin__add-blog-input-btn::after, .admin__add-blog-textarea-btn::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: 100%;
+    padding: 0.375rem 0.75rem;
+    line-height: 35px;
+    color: #fff;
+    content: "Upload  Header Image";
+    background-color: #CAAA3B !important;
+    border-left: 1px solid #CAAA3B;
+    border-radius: 0 4px 4px 0; }
+
+.admin__add-blog-textarea {
+  height: 200px;
+  padding: 20px; }
+
+.admin__add-blog-tag {
+  background: #FFFFFF;
+  height: 30px;
+  padding: 5px 7px;
+  align-self: center;
+  margin-right: 25px;
+  border: 1px solid #666666;
+  box-sizing: border-box;
+  border-radius: 1px; }
+  .admin__add-blog-tag span {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: normal;
+    color: #333333; }
+  .admin__add-blog-tag svg {
     width: 9px;
     height: 9px;
     cursor: pointer;
@@ -7165,3 +7259,9 @@ select:invalid {
   font-weight: 500;
   font-size: 14px;
   color: #000000; }
+
+.upload__header:lang(en) ~ .custom-file-label::after {
+  content: "Upload Header Image" !important; }
+
+.upload__other:lang(en) ~ .custom-file-label::after {
+  content: "Upload Other Image" !important; }

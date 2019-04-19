@@ -460,6 +460,52 @@
                 border-right: 1px solid #C4C4C4;
             }
         }
+
+        &-blog {
+            &:first-child {
+                width: 5%;
+            }
+
+            &:nth-child(2) {
+                width: 5%;
+            }
+
+            &:nth-child(3) {
+                width: 20%;
+                padding-left: 10px;
+
+                p {
+                    text-align: left;
+                }
+            }
+
+            &:nth-child(4) {
+                width: 12%;
+            }
+
+            &:nth-child(5) {
+                width: 10%;
+            }
+
+            &:nth-child(6) {
+                width: 13%;
+                border-left: none;
+            }
+
+            &:nth-child(7) {
+                width: 10%;
+            }
+
+            &:nth-child(8) {
+                width: 12%;
+
+            }
+
+            &:nth-child(9) {
+                width: 13%;
+                border-right: 1px solid #C4C4C4;
+            }
+        }
     }
 
     &__edit {
@@ -528,6 +574,18 @@
                 border-radius: 0;
                 height: 40px;
                 width: 130px;
+
+                &-alt {
+                    background: #DEDEDE;
+                    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
+                    font-size: 18px;
+                    line-height: normal;
+                    color: #666666;
+                    text-transform: uppercase;
+                    border-radius: 0;
+                    height: 40px;
+                    width: 130px;
+                }
 
                 &-opp {
                     border: 1px solid #C4C4C4;
@@ -624,7 +682,7 @@
             background: #FFFFFF;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
             height: 30px;
-            padding: 7px;
+            padding: 5px 7px;
             align-self: center;
             margin-right: 25px;
 
@@ -642,6 +700,84 @@
                 cursor: pointer;
                 fill: #000000 !important;
                 margin-left: 10px;
+            }
+        }
+
+        &-blog {
+
+            &-input,
+            &-textarea {
+                background: #FFFFFF;
+                width: 100%;
+                height: 50px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: normal;
+                color: #333333;
+                padding-left: 20px;
+                margin-bottom: 20px;
+                border: 1px solid #666666;
+                box-sizing: border-box;
+                border-radius: 4px;
+
+                &::placeholder {
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 14px;
+                    line-height: normal;
+                    color: #000000;
+                }
+
+                &-btn {
+                    &::after {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 3;
+                        display: block;
+                        height: 100%;
+                        padding: 0.375rem 0.75rem;
+                        line-height: 35px;
+                        color: #fff;
+                        content: "Upload  Header Image";
+                        background-color: #CAAA3B !important;
+                        border-left: 1px solid #CAAA3B;
+                        border-radius: 0 4px 4px 0;
+                    }
+                }
+            }
+
+            &-textarea {
+                height: 200px;
+                padding: 20px;
+            }
+
+            &-tag {
+                background: #FFFFFF;
+                height: 30px;
+                padding: 5px 7px;
+                align-self: center;
+                margin-right: 25px;
+                border: 1px solid #666666;
+                box-sizing: border-box;
+                border-radius: 1px;
+
+                span {
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 14px;
+                    line-height: normal;
+                    color: #333333;
+                }
+
+                svg {
+                    width: 9px;
+                    height: 9px;
+                    cursor: pointer;
+                    fill: #000000 !important;
+                    margin-left: 10px;
+                }
             }
         }
     }
@@ -674,4 +810,12 @@
             }
         }
     }
+}
+
+.upload__header:lang(en)~.custom-file-label::after {
+    content: "Upload Header Image" !important;
+}
+
+.upload__other:lang(en)~.custom-file-label::after {
+    content: "Upload Other Image" !important;
 }

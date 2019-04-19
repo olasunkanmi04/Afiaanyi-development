@@ -16,7 +16,7 @@
 
     <script src="js/csi.min.js"></script>
 
-    <title>Afiaanyi-Admin | Business Directory</title>
+    <title>Afiaanyi-Admin | Blog</title>
 </head>
 
 <body class="seller__body">
@@ -27,7 +27,7 @@
                 <img src="images/logo.png" alt="" class="img-fluid">
             </div>
             <ul class="user-sidebar__item admin__sidebar-item">
-                <li class="user-sidebar__link user-sidebar__link-active admin__sidebar-business-directory">
+                <li class="user-sidebar__link admin__sidebar-business-directory">
                     <a href="admin-dashboard.html">
                         <svg class="icon icon-directory">
                             <use xlink:href="#icon-directory"></use>
@@ -36,7 +36,7 @@
                     </a>
                 </li>
                 <!-- business directory sub link -->
-                <ul class="admin__subitem admin__sidebar-business">
+                <ul class="admin__subitem admin__sidebar-business d-none">
                     <li class="user-sidebar__link admin__sidebar-link">
                         <a href="admin-business-category.html">
                             <svg class="icon icon-business-category">
@@ -91,7 +91,7 @@
                 <!-- Marketplace sub link -->
                 <ul class="admin__subitem admin__sidebar-marketplace-sub d-none">
                     <li class="user-sidebar__link admin__sidebar-link">
-                        <a href="#">
+                        <a href="admin-products.html">
                             <svg class="icon icon-buffer">
                                 <use xlink:href="#icon-buffer"></use>
                             </svg>
@@ -126,8 +126,8 @@
                     </a>
                 </li>
 
-                <li class="user-sidebar__link admin__sidebar-blog">
-                    <a href="#">
+                <li class="user-sidebar__link admin__sidebar-blog user-sidebar__link-active">
+                    <a href="admin-blog.html">
                         <svg class="icon icon-admin-blog">
                             <use xlink:href="#icon-admin-blog"></use>
                         </svg>
@@ -135,9 +135,9 @@
                     </a>
                 </li>
                 <!-- Blog -->
-                <ul class="admin__subitem admin__sidebar-blog-sub d-none">
+                <ul class="admin__subitem admin__sidebar-blog-sub">
                     <li class="user-sidebar__link admin__sidebar-link">
-                        <a href="admin-blog.html">
+                        <a href="#">
                             <svg class="icon icon-admin-blogging">
                                 <use xlink:href="#icon-admin-blogging"></use>
                             </svg>
@@ -217,12 +217,12 @@
         <div class="admin__sublink-wrap">
             <div class="admin__sublink-individual">
                 <div class="admin__sublink-individual-item-wrap">
-                    <svg class="icon icon-business-categories-big">
-                        <use xlink:href="#icon-business-categories-big"></use>
+                    <svg class="icon icon-blogging-big">
+                        <use xlink:href="#icon-blogging-big"></use>
                     </svg>
-                    <p class="admin__sublink-individual-text">BUSINESS CATEGORIES</p>
+                    <p class="admin__sublink-individual-text">BLOG POSTS</p>
                 </div>
-                <a href="admin-business-category.html" class="admin__sublink-link">
+                <a href="admin-blog-post.html" class="admin__sublink-link">
                     <span>View</span>
                     <svg class="icon icon-view-arrow">
                         <use xlink:href="#icon-view-arrow"></use>
@@ -232,12 +232,12 @@
 
             <div class="admin__sublink-individual">
                 <div class="admin__sublink-individual-item-wrap">
-                    <svg class="icon icon-line-chart-big">
-                        <use xlink:href="#icon-line-chart-big"></use>
+                    <svg class="icon icon-comment-big">
+                        <use xlink:href="#icon-comment-big"></use>
                     </svg>
-                    <p class="admin__sublink-individual-text">MANAGE BUSINESS</p>
+                    <p class="admin__sublink-individual-text">COMMENTS</p>
                 </div>
-                <a href="admin-manage-business.html" class="admin__sublink-link">
+                <a href="#" class="admin__sublink-link">
                     <span>View</span>
                     <svg class="icon icon-view-arrow">
                         <use xlink:href="#icon-view-arrow"></use>
@@ -247,12 +247,12 @@
 
             <div class="admin__sublink-individual">
                 <div class="admin__sublink-individual-item-wrap">
-                    <svg class="icon icon-subscription-big">
-                        <use xlink:href="#icon-subscription-big"></use>
+                    <svg class="icon icon-blog-category-big">
+                        <use xlink:href="#icon-blog-category-big"></use>
                     </svg>
-                    <p class="admin__sublink-individual-text">SUBSCRIPTION</p>
+                    <p class="admin__sublink-individual-text">CATEGORIES</p>
                 </div>
-                <a href="admin-subscription.html" class="admin__sublink-link">
+                <a href="#" class="admin__sublink-link">
                     <span>View</span>
                     <svg class="icon icon-view-arrow">
                         <use xlink:href="#icon-view-arrow"></use>
@@ -264,26 +264,10 @@
         <div class="admin__sublink-wrap">
             <div class="admin__sublink-individual">
                 <div class="admin__sublink-individual-item-wrap">
-                    <svg class="icon icon-top-brands-big">
-                        <use xlink:href="#icon-top-brands-big"></use>
+                    <svg class="icon icon-image">
+                        <use xlink:href="#icon-image"></use>
                     </svg>
-                    <p class="admin__sublink-individual-text">Top Brands</p>
-                </div>
-                <a href="admin-top-brands.html" class="admin__sublink-link">
-                    <span>View</span>
-                    <svg class="icon icon-view-arrow">
-                        <use xlink:href="#icon-view-arrow"></use>
-                    </svg>
-                </a>
-            </div>
-
-
-            <div class="admin__sublink-individual">
-                <div class="admin__sublink-individual-item-wrap">
-                    <svg class="icon icon-loyalty-big">
-                        <use xlink:href="#icon-loyalty-big"></use>
-                    </svg>
-                    <p class="admin__sublink-individual-text">Loyalties</p>
+                    <p class="admin__sublink-individual-text">IMAGES</p>
                 </div>
                 <a href="#" class="admin__sublink-link">
                     <span>View</span>
@@ -293,7 +277,6 @@
                 </a>
             </div>
         </div>
-
 
 
     </section>
