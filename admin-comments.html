@@ -15,7 +15,7 @@
 
     <script src="js/csi.min.js"></script>
 
-    <title>Afiaanyi-Admin | Blog Post</title>
+    <title>Afiaanyi-Admin | Blog Comments</title>
 </head>
 
 <body class="seller__body">
@@ -214,20 +214,16 @@
 
             <div class="admin__section-body">
                 <div class="admin__section-top">
-                    <svg class="icon icon-blogging-big">
-                        <use xlink:href="#icon-blogging-big"></use>
+                    <svg class="icon icon-comment-big">
+                        <use xlink:href="#icon-comment-big"></use>
                     </svg>
-                    <span>Blog Post</span>
+                    <span>Comments</span>
 
-                    <a href="#" data-toggle="modal" data-target="#addCategoryModal">+ Add Post</a>
-                    <a href="#" data-toggle="modal" data-target="#editModal" class="admin__edit-product">
-                        <svg class="icon icon-pencil-edit-small" style="width:10px !important; height:10px;">
-                            <use xlink:href="#icon-pencil-edit-small"></use>
-                        </svg> Edit Post</a>
-                    <a href="#" data-toggle="modal" data-target="#deleteModal" class="admin__edit-product">
-                        <svg class="icon icon-cancel" style="width:10px !important; height:10px;">
+                    <a href="#" data-toggle="modal" data-target="#deleteModal">
+                        <svg class="icon icon-cancel" style="width:10px !important; height:10px; fill:#CAAA3B;">
                             <use xlink:href="#icon-cancel"></use>
-                        </svg> Delete Post</a>
+                        </svg>
+                        Delete Comment</a>
                     <hr class="admin__body-hr mt-1">
                 </div>
             </div>
@@ -249,20 +245,13 @@
 
                 <label class="user-notification__label mr-4">
                     <input type="checkbox" name="new follower">
-                    <span class="admin__subscription-filter-text">Most Rated</span>
-                    <span class="user-notification__checkbox"
-                        style="border: 1px solid #C4C4C4; border-radius:0;"></span>
-                </label>
-
-                <label class="user-notification__label mr-4">
-                    <input type="checkbox" name="new follower">
-                    <span class="admin__subscription-filter-text">Least Rated</span>
+                    <span class="admin__subscription-filter-text">Approved</span>
                     <span class="user-notification__checkbox"
                         style="border: 1px solid #C4C4C4; border-radius:0;"></span>
                 </label>
 
                 <div class="seller-order__content-actions-print ml-auto">
-                    <input type="text" name="" id="" placeholder="Search Post"
+                    <input type="text" name="" id="" placeholder="Search Comment"
                         class="seller-order__content-actions-print-input">
                 </div>
                 <div class="newsletter__input-btn seller-order__content-actions-search ml-0">
@@ -271,160 +260,112 @@
                     </svg>
                 </div>
             </div>
-            <div class="admin__section-table">
-                <div class="admin__section-table-column admin__section-blog">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>S/N</p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>Topic</p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>Category</p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>Author</p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>Date Created</p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>Images</p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>Tags</p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>Modified</p>
-                </div>
-            </div>
+
 
             <div class="admin__section-table">
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>
-                        <label class="user-notification__label" style="margin-left:18px; margin-right:18px;">
+                <div class="admin__comment-check">
+                    <div class="admin__comment-check-individual">
+                        <label class="user-notification__label">
                             <input type="checkbox" name="new follower">
+                            <span class="admin__subscription-filter-text"></span>
                             <span class="user-notification__checkbox"
                                 style="border: 1px solid #C4C4C4; border-radius:0;"></span>
                         </label>
-                    </p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p>01</p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p></p>
-                </div>
-                <div class="admin__section-table-column admin__section-blog">
-                    <p></p>
-                </div>
-            </div>
+                    </div>
 
-            <div class="seller__dashboard-content-navigate">
-                <div class="d-flex ml-auto">
-                    <span class="seller-order__content-paging">1</span>
-                    <span class="seller-order__content-paging">of</span>
-                    <span class="seller-order__content-paging">10</span>
-                    <div class="seller__dashboard-announcement-modal-previous">
-                        <svg class="icon icon-arrow-next">
-                            <use xlink:href="#icon-arrow-next"></use>
-                        </svg>
+                    <div class="admin__comment-check-individual">
+                        <label class="user-notification__label">
+                            <input type="checkbox" name="new follower">
+                            <span class="admin__subscription-filter-text"></span>
+                            <span class="user-notification__checkbox"
+                                style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                        </label>
                     </div>
-                    <div class="seller__dashboard-announcement-modal-next active-modal">
-                        <svg class="icon icon-arrow-next">
-                            <use xlink:href="#icon-arrow-next"></use>
-                        </svg>
+
+                    <div class="admin__comment-check-individual">
+                        <label class="user-notification__label">
+                            <input type="checkbox" name="new follower">
+                            <span class="admin__subscription-filter-text"></span>
+                            <span class="user-notification__checkbox"
+                                style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                        </label>
                     </div>
+
+                    <div class="admin__comment-check-individual">
+                        <label class="user-notification__label">
+                            <input type="checkbox" name="new follower">
+                            <span class="admin__subscription-filter-text"></span>
+                            <span class="user-notification__checkbox"
+                                style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="admin__comment-wrap">
+                    <div class="admin__comment-individual">
+                        <h3 class="admin__comment-individual-topic">Topic</h3>
+                        <div class="d-flex">
+                            <p class="admin__comment-individual-author">Author</p>
+                            <p class="admin__comment-individual-author ml-auto">Date</p>
+                        </div>
+
+                        <p class="admin__comment-individual-comment">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididun....
+                        </p>
+                    </div>
+
+                    <div class="admin__comment-individual">
+                        <h3 class="admin__comment-individual-topic">Topic</h3>
+                        <div class="d-flex">
+                            <p class="admin__comment-individual-author">Author</p>
+                            <p class="admin__comment-individual-author ml-auto">Date</p>
+                        </div>
+
+                        <p class="admin__comment-individual-comment">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididun....
+                        </p>
+                    </div>
+
+                    <div class="admin__comment-individual">
+                        <h3 class="admin__comment-individual-topic">Topic</h3>
+                        <div class="d-flex">
+                            <p class="admin__comment-individual-author">Author</p>
+                            <p class="admin__comment-individual-author ml-auto">Date</p>
+                        </div>
+
+                        <p class="admin__comment-individual-comment">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididun....
+                        </p>
+                    </div>
+
+                    <div class="admin__comment-individual">
+                        <h3 class="admin__comment-individual-topic">Topic</h3>
+                        <div class="d-flex">
+                            <p class="admin__comment-individual-author">Author</p>
+                            <p class="admin__comment-individual-author ml-auto">Date</p>
+                        </div>
+
+                        <p class="admin__comment-individual-comment">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididun....
+                        </p>
+                    </div>
+                </div>
+                <div class="admin__comment-display">
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </p>
                 </div>
             </div>
         </section>
     </section>
 
-
-
-    <!-- edit modal -->
-    <div class="modal fade admin__edit-modal" id="editModal" tabindex="-1" role="dialog"
-        aria-labelledby="editModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-title" id="addCategoryTitle">
-                        <svg class="icon icon-pencil-edit-small">
-                            <use xlink:href="#icon-pencil-edit-small"></use>
-                        </svg>
-                        <span>Edit Post</span>
-                    </p>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <svg class="icon icon-cancel">
-                            <use xlink:href="#icon-cancel"></use>
-                        </svg>
-                    </button>
-                </div>
-                <hr class="admin__body-hr mt-1">
-
-                <div class="modal-body">
-                    <input type="text" name="" id="" placeholder="Topic" class="admin__add-blog-input">
-                    <input type="text" name="" id="" placeholder="Category" class="admin__add-blog-input">
-                    <div class="admin__add-blog-input">
-                        <div class="d-flex h-100">
-                            <div class="admin__add-blog-tag">
-                                <span>Tags</span>
-                                <svg class="icon icon-cancel">
-                                    <use xlink:href="#icon-cancel"></use>
-                                </svg>
-                            </div>
-
-                            <div class="admin__add-blog-tag">
-                                <span>Tags</span>
-                                <svg class=" icon icon-cancel">
-                                    <use xlink:href="#icon-cancel"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-file admin__add-blog-input p-0 border-0">
-                        <input type="file" class="custom-file-input admin__add-blog-input upload__header"
-                            id="customFileLangHTML">
-                        <label class="custom-file-label admin__add-blog-input admin__add-blog-input-btn"
-                            for="customFileLangHTML" data-browse="Upload Header Image"></label>
-                    </div>
-                    <div class="custom-file admin__add-blog-input p-0 border-0">
-                        <input type="file" class="custom-file-input admin__add-blog-input upload__other"
-                            id="customFileLangHTML">
-                        <label class="custom-file-label admin__add-blog-input admin__add-blog-input-btn"
-                            for="customFileLangHTML" data-browse="Upload andere afbeelding"></label>
-                    </div>
-
-                    <textarea name="" id="" class="admin__add-blog-textarea mb-0"
-                        placeholder="Write Post..."></textarea>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn admin__edit-modal-button-alt" id="firstNext">Save</button>
-                    <button type="button" class="btn admin__edit-modal-button" id="firstNext">Publish</button>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
 
 
 
@@ -456,73 +397,6 @@
                     <button type="button" class="btn admin__edit-modal-button-opp" data-dismiss="modal">No</button>
                     <button type="button" class="btn admin__edit-modal-button">Yes</button>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Post modal -->
-    <div class="modal fade admin__edit-modal" id="addCategoryModal" tabindex="-1" role="dialog"
-        aria-labelledby="addCategoryModalTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <p class="modal-title" id="addCategoryTitle">
-                        <svg class="icon icon-blogging-big">
-                            <use xlink:href="#icon-blogging-big"></use>
-                        </svg>
-                        <span>New Blog Post</span>
-                    </p>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <svg class="icon icon-cancel">
-                            <use xlink:href="#icon-cancel"></use>
-                        </svg>
-                    </button>
-                </div>
-                <hr class="admin__body-hr mt-1">
-
-                <div class="modal-body">
-                    <input type="text" name="" id="" placeholder="Topic" class="admin__add-blog-input">
-                    <input type="text" name="" id="" placeholder="Category" class="admin__add-blog-input">
-                    <div class="admin__add-blog-input">
-                        <div class="d-flex h-100">
-                            <div class="admin__add-blog-tag">
-                                <span>Tags</span>
-                                <svg class="icon icon-cancel">
-                                    <use xlink:href="#icon-cancel"></use>
-                                </svg>
-                            </div>
-
-                            <div class="admin__add-blog-tag">
-                                <span>Tags</span>
-                                <svg class=" icon icon-cancel">
-                                    <use xlink:href="#icon-cancel"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="custom-file admin__add-blog-input p-0 border-0">
-                        <input type="file" class="custom-file-input admin__add-blog-input upload__header"
-                            id="customFileLangHTML">
-                        <label class="custom-file-label admin__add-blog-input admin__add-blog-input-btn"
-                            for="customFileLangHTML" data-browse="Upload Header Image"></label>
-                    </div>
-                    <div class="custom-file admin__add-blog-input p-0 border-0">
-                        <input type="file" class="custom-file-input admin__add-blog-input upload__other"
-                            id="customFileLangHTML">
-                        <label class="custom-file-label admin__add-blog-input admin__add-blog-input-btn"
-                            for="customFileLangHTML" data-browse="Upload andere afbeelding"></label>
-                    </div>
-
-                    <textarea name="" id="" class="admin__add-blog-textarea mb-0"
-                        placeholder="Write Post..."></textarea>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn admin__edit-modal-button-alt" id="firstNext">Save</button>
-                    <button type="button" class="btn admin__edit-modal-button" id="firstNext">Publish</button>
-                </div>
-
-
             </div>
         </div>
     </div>
