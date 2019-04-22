@@ -4,15 +4,15 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.23.5",
-    "chart.js": "^2.7.1",
+    "chart.js": "^2.8.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-plumber": "^1.2.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
-    "jquery": "^3.3.1",
-    "tether": "^1.4.3"
+    "jquery": "^3.4.0",
+    "tether": "^1.4.6"
   },
   "devDependencies": {
     "gulp-install": "^1.1.0"

@@ -836,6 +836,50 @@
                 margin-right: auto;
             }
         }
+
+        &-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 30px 10px;
+
+            &-wrap {
+                position: relative;
+                padding: 30px;
+                padding-bottom: 10px;
+                background: #FFFFFF;
+                border: 1px solid #F3F3F3;
+                box-sizing: border-box;
+                border-radius: 4px;
+
+                .user-notification__label {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: normal;
+                    color: #000000;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+
+                img {
+                    transition: transform 1.5s;
+                }
+
+                &:hover img {
+                    -ms-transform: scale(1.07);
+                    /* IE 9 */
+                    -webkit-transform: scale(1.07);
+                    /* Safari 3-8 */
+                    transform: scale(1.07);
+                }
+            }
+        }
     }
 
     &__subscription {

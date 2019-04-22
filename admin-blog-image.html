@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/simplelightbox.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/dropzone.css">
     <link rel="stylesheet" href="css/logged-navbar.css">
@@ -214,20 +215,20 @@
 
             <div class="admin__section-body">
                 <div class="admin__section-top">
-                    <svg class="icon icon-blog-category-big">
-                        <use xlink:href="#icon-blog-category-big"></use>
+                    <svg class="icon icon-image">
+                        <use xlink:href="#icon-image"></use>
                     </svg>
-                    <span>Categories</span>
+                    <span>Images</span>
 
-                    <a href="#" data-toggle="modal" data-target="#addCategoryModal">+ Add Category</a>
+                    <a href="#" data-toggle="modal" data-target="#addCategoryModal">+ Add Image</a>
                     <a href="#" data-toggle="modal" data-target="#editModal" class="admin__edit-product">
                         <svg class="icon icon-pencil-edit-small" style="width:10px !important; height:10px;">
                             <use xlink:href="#icon-pencil-edit-small"></use>
-                        </svg> Edit Category</a>
+                        </svg> Edit Image</a>
                     <a href="#" data-toggle="modal" data-target="#deleteModal" class="admin__edit-product">
                         <svg class="icon icon-cancel" style="width:10px !important; height:10px;">
                             <use xlink:href="#icon-cancel"></use>
-                        </svg> Delete Category</a>
+                        </svg> Delete Image</a>
                     <hr class="admin__body-hr mt-1">
                 </div>
             </div>
@@ -242,13 +243,13 @@
 
                 <label class="user-notification__label mr-4">
                     <input type="checkbox" name="new follower">
-                    <span class="admin__subscription-filter-text">Recently Added</span>
+                    <span class="admin__subscription-filter-text">Recently Uploaded</span>
                     <span class="user-notification__checkbox"
                         style="border: 1px solid #C4C4C4; border-radius:0;"></span>
                 </label>
 
                 <div class="seller-order__content-actions-print ml-auto">
-                    <input type="text" name="" id="" placeholder="Search Post"
+                    <input type="text" name="" id="" placeholder="Search Images"
                         class="seller-order__content-actions-print-input">
                 </div>
                 <div class="newsletter__input-btn seller-order__content-actions-search ml-0">
@@ -257,48 +258,127 @@
                     </svg>
                 </div>
             </div>
-            <div class="admin__section-table">
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p></p>
+            <div class="admin__image-gallery">
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/laundry.png">
+                        <img src="images/laundry.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p>S/N</p>
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/img-placeholder.png">
+                        <img src="images/img-placeholder.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p>Category Name</p>
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/img-placeholder.png">
+                        <img src="images/img-placeholder.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p>Category Icon</p>
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/img-placeholder.png">
+                        <img src="images/img-placeholder.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p>Date Created</p>
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/img-placeholder.png">
+                        <img src="images/img-placeholder.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-
-            </div>
-
-            <div class="admin__section-table">
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p>
-                        <label class="user-notification__label" style="margin-left:18px; margin-right:18px;">
-                            <input type="checkbox" name="new follower">
-                            <span class="user-notification__checkbox"
-                                style="border: 1px solid #C4C4C4; border-radius:0;"></span>
-                        </label>
-                    </p>
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/img-placeholder.png">
+                        <img src="images/img-placeholder.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p>01</p>
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/img-placeholder.png">
+                        <img src="images/img-placeholder.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p></p>
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/img-placeholder.png">
+                        <img src="images/img-placeholder.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p></p>
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/img-placeholder.png">
+                        <img src="images/img-placeholder.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-                <div class="admin__section-table-column admin__section-blog-category">
-                    <p></p>
+                <div class="admin__image-gallery-wrap">
+                    <label class="user-notification__label">
+                        <input type="checkbox" name="new follower">
+                        <span class="admin__subscription-filter-text"></span>
+                        <span class="user-notification__checkbox"
+                            style="border: 1px solid #C4C4C4; border-radius:0;"></span>
+                    </label>
+                    <a href="images/img-placeholder.png">
+                        <img src="images/img-placeholder.png" alt="" title="Image Name" class="img-fluid">
+                        <p>Image Name</p>
+                    </a>
                 </div>
-
             </div>
 
             <div class="seller__dashboard-content-navigate">
@@ -333,7 +413,7 @@
                         <svg class="icon icon-pencil-edit-small">
                             <use xlink:href="#icon-pencil-edit-small"></use>
                         </svg>
-                        <span>Edit Category</span>
+                        <span>Edit Image</span>
                     </p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <svg class="icon icon-cancel">
@@ -349,7 +429,7 @@
                             <svg class="icon icon-upload-to-cloud">
                                 <use xlink:href="#icon-upload-to-cloud"></use>
                             </svg>
-                            <p class="dz-message">Upload Icon <br>50px x 50px</p>
+                            <p class="dz-message">Upload Image <br>500px x 500px</p>
                             <div class="fallback">
                                 <input name="file" type="file" multiple>
                             </div>
@@ -408,7 +488,7 @@
                         <svg class="icon icon-plus">
                             <use xlink:href="#icon-plus"></use>
                         </svg>
-                        <span>Add Category</span>
+                        <span>Add Image</span>
                     </p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <svg class="icon icon-cancel">
@@ -419,13 +499,13 @@
                 <hr class="admin__body-hr mt-1">
 
                 <div class="modal-body">
-                    <input type="text" name="" id="" placeholder="Category Name" class="admin__add-input">
+                    <input type="text" name="" id="" placeholder="Image Name (Optional)" class="admin__add-input">
                     <div class="admin__add-upload">
                         <form action="/file-upload" class="dropzone">
                             <svg class="icon icon-upload-to-cloud">
                                 <use xlink:href="#icon-upload-to-cloud"></use>
                             </svg>
-                            <p class="dz-message">Upload Icon <br>50px x 50px</p>
+                            <p class="dz-message">Upload Image <br>500px x 500px</p>
                             <div class="fallback">
                                 <input name="file" type="file" multiple>
                             </div>
@@ -450,6 +530,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/Chart.min.js"></script>
+    <script src="js/simple-lightbox.js"></script>
     <script src="js/main.js"></script>
 
 
@@ -491,6 +572,53 @@
         $('#secondNext').on('click', function () {
             $('#nav-thirdForm-tab').click();
         })
+    </script>
+
+    <script>
+        $(function () {
+            var $gallery = $('.admin__image-gallery a').simpleLightbox();
+
+            // $gallery.on('show.simplelightbox', function(){
+            // 	console.log('Requested for showing');
+            // })
+            // .on('shown.simplelightbox', function(){
+            // 	console.log('Shown');
+            // })
+            // .on('close.simplelightbox', function(){
+            // 	console.log('Requested for closing');
+            // })
+            // .on('closed.simplelightbox', function(){
+            // 	console.log('Closed');
+            // })
+            // .on('change.simplelightbox', function(){
+            // 	console.log('Requested for change');
+            // })
+            // .on('next.simplelightbox', function(){
+            // 	console.log('Requested for next');
+            // })
+            // .on('prev.simplelightbox', function(){
+            // 	console.log('Requested for prev');
+            // })
+            // .on('nextImageLoaded.simplelightbox', function(){
+            // 	console.log('Next image loaded');
+            // })
+            // .on('prevImageLoaded.simplelightbox', function(){
+            // 	console.log('Prev image loaded');
+            // })
+            // .on('changed.simplelightbox', function(){
+            // 	console.log('Image changed');
+            // })
+            // .on('nextDone.simplelightbox', function(){
+            // 	console.log('Image changed to next');
+            // })
+            // .on('prevDone.simplelightbox', function(){
+            // 	console.log('Image changed to prev');
+            // })
+            // .on('error.simplelightbox', function(e){
+            // 	console.log('No image found, go to the next/prev');
+            // 	console.log(e);
+            // });
+        });
     </script>
 
 
